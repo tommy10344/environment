@@ -1,0 +1,20 @@
+##############################
+# bash
+##############################
+
+# bash-completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+source /usr/local/etc/bash_completion.d/git-prompt.sh
+source /usr/local/etc/bash_completion.d/git-completion.bash
+
+# Git
+export PS1='\h\[\033[00m\]:\W\[\033[31m\]$(__git_ps1 [%s])\[\033[00m\]\$ '
+
+##############################
+# Import external rc
+##############################
+for f in ${HOME}/shrc.d/*; do
+   source $f
+done

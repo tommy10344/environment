@@ -1,0 +1,226 @@
+[[plugins]]
+repo = 'Shougo/neocomplete.vim'
+if = 'has("lua")'
+on_event = 'InsertEnter'
+hook_source = '''
+    let g:deoplete#enable_at_startup = 1
+'''
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+if = 'has("nvim")'
+on_event = 'InsertEnter'
+hook_source = '''
+    let g:deoplete#enable_at_startup = 1
+    source ~/.vim/rc/plugins/deoplete.vim
+'''
+
+[[plugins]]
+repo = 'Shougo/neosnippet'
+on_event = 'InsertEnter'
+hook_source = '''
+    imap <C-k> <Plug>(neosnippet_expand_or_jump)
+    smap <C-k> <Plug>(neosnippet_expand_or_jump)
+    xmap <C-k> <Plug>(neosnippet_expand_target)
+    let g:neosnippet#enable_snipmate_compatibility = 1
+    let g:neosnippet#enable_completed_snippet = 1
+    let g:neosnippet#expand_word_boundary = 1
+'''
+
+[[plugins]]
+repo = 'Shougo/vimshell'
+on_cmd = ['VimShell', 'VimShellCreate']
+hook_source = '''
+    let g:vimshell_prompt_expr = 'escape(fnamemodify(getcwd(), ":~").">", "\\[]()?! ")." "'
+    let g:vimshell_prompt_pattern = '^\%(\f\|\\.\)\+> '
+'''
+
+[[plugins]]
+repo = 'Shougo/vimfiler'
+depends = 'unite.vim'
+on_cmd = ['VimFiler', 'VimFilerCurrentDir']
+hook_source = '''
+    let g:vimfiler_as_default_explorer = 1
+    let g:vimfiler_safe_mode_by_default = 0
+    let g:vimfiler_ignore_pattern = []
+'''
+
+[[plugins]]
+repo = 'SirVer/ultisnips'
+on_event = 'InsertEnter'
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+on_event = 'InsertEnter'
+
+
+##############################
+# Previewing document
+##############################
+
+[[plugins]]
+repo = 'kannokanno/previm'
+# on_ft = ['markdown', 'rst']
+on_cmd = 'PrevimOpen'
+hook_source = '''
+    let g:previm_open_cmd = 'open -a Safari'
+    command! Preview :PrevimOpen
+'''
+
+
+##############################
+# Markdown
+##############################
+
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+on_ft = 'markdown'
+hook_source = '''
+    let g:vim_markdown_folding_disabled = 1
+'''
+
+
+##############################
+# C++
+##############################
+
+[[plugins]]
+repo = 'vim-jp/vim-cpp'
+on_ft = 'cpp'
+
+[[plugins]]
+repo = 'octol/vim-cpp-enhanced-highlight'
+on_ft = 'cpp'
+
+[[plugins]]
+repo = 'osyo-manga/vim-marching'
+on_ft = ['c', 'cpp']
+on_event = 'InsertEnter'
+
+
+##############################
+# C#
+##############################
+
+[[plugins]]
+repo = 'OmniSharp/omnisharp-vim'
+on_ft = 'cs'
+build = 'xbuild server/OmniSharp.sln'
+
+##############################
+# haskell 
+##############################
+
+# [[plugins]]
+# repo = 'dag/vim2hs'
+# on_ft = 'haskell'
+
+[[plugins]]
+repo = 'kana/vim-filetype-haskell'
+on_ft = 'haskell'
+
+[[plugins]]
+repo = 'itchyny/vim-haskell-indent'
+on_ft = 'haskell'
+
+[[plugins]]
+repo = 'ujihisa/unite-haskellimport'
+on_ft = 'haskell'
+
+[[plugins]]
+repo = 'eagletmt/neco-ghc'
+on_ft = 'haskell'
+on_event = 'InsertEnter'
+
+[[plugins]]
+repo = 'eagletmt/ghcmod-vim'
+on_ft = 'haskell'
+
+##############################
+# swift
+##############################
+
+[[plugins]]
+repo = 'keith/swift.vim'
+on_ft = 'swift'
+
+[[plugins]]
+repo = 'kballard/vim-swift'
+on_ft = 'swift'
+
+[[plugins]]
+repo = 'landaire/deoplete-swift'
+on_ft = 'swift'
+on_event = 'InsertEnter'
+
+##############################
+# javascript
+##############################
+
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+on_ft = 'javascript'
+
+[[plugins]]
+repo = 'ternjs/tern_for_vim'
+on_ft = 'javascript'
+on_event = 'InsertEnter'
+build = 'npm install'
+
+[[plugins]]
+repo = 'nicklasos/vim-jsx-riot'
+on_ft = 'javascript'
+
+##############################
+# Typescript
+##############################
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+on_ft = 'typescript'
+hook_source = '''
+    let g:typescript_compiler_binary = 'tsc'
+    let g:typescript_compiler_options = ''
+    autocmd FileType typescript :set makeprg=tsc
+    autocmd QuickFixCmdPost [^l]* nested cwindow
+    autocmd QuickFixCmdPost    l* nested lwindow
+'''
+
+[[plugins]]
+repo = 'magarcia/vim-angular2-snippets'
+on_ft = 'typescript'
+
+
+##############################
+# python
+##############################
+
+# [[plugins]]
+# repo = 'davidhalter/jedi-vim'
+# on_ft = ['python', 'python3']
+# on_event = 'InsertEnter'
+
+# [[plugins]]
+# repo = 'lambdalisue/vim-pyenv'
+# on_ft = ['python', 'python3']
+# depends = 'jedi-vim'
+
+repo = 'zchee/deoplete-jedi'
+on_ft = ['python', 'python3']
+on_event = 'InsertEnter'
+
+##############################
+# PowerShell
+##############################
+
+# [[plugins]]
+# repo = 'PProvost/vim-ps1'
+# on_ft = "ps1"
+
+
+##############################
+# TOML
+##############################
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = 'toml'

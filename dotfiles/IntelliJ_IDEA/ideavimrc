@@ -1,0 +1,56 @@
+set number
+set hlsearch
+
+" 小文字のみで入力の場合 -> 大文字小文字を区別しない
+" 大文字混在で入力の場合 -> 大文字小文字を区別する
+set ignorecase
+set smartcase
+
+" 行番号相対表示
+set relativenumber
+
+" for US keyboard
+nnoremap ; :
+nnoremap : ;
+
+" 挿入モードでのカーソル移動
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+
+" 行頭・行末に移動
+nnoremap <Space>h 0
+vnoremap <Space>h 0
+nnoremap <Space>l $
+vnoremap <Space>l $
+
+" タブ移動
+nnoremap <C-h> gT
+nnoremap <C-l> gt
+
+" 画面上の最初の行、最後の行に移動
+nnoremap <Space>k H
+vnoremap <Space>k H
+nnoremap <Space>j L
+vnoremap <Space>j L
+
+" "0レジスタから貼付け
+nnoremap <Space>p "0p
+vnoremap <Space>p "0p
+
+nnoremap <Space>r :action Run<CR>
+nnoremap <Space>c :action CommentByLineComment<CR>
+
+" Escape
+inoremap <c-]> <Esc>
+inoremap jj    <Esc>
+nnoremap <C-@> <Esc>
+vnoremap <C-@> <Esc>
+xnoremap <C-@> <Esc>
+snoremap <C-@> <Esc>
+onoremap <C-@> <Esc>
+inoremap <C-@> <Esc>
+lnoremap <C-@> <Esc>
+cnoremap <C-@> <Esc>
+tnoremap <C-@> <Esc>

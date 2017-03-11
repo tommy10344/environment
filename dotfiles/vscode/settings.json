@@ -1,0 +1,13 @@
+// 既定の設定を上書きするには、このファイル内に設定を挿入します
+{
+    "editor.fontFamily": "RictyDiminished-Regular",
+    "editor.fontSize": 14,
+    "window.zoomLevel": 1,
+    "vim.useCtrlKeys": true,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "files.associations": {
+        "Fastfile": "ruby"
+    }
+    "vim.smartcase": true
+}

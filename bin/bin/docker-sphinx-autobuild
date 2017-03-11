@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# ソースディレクトリ = 設定ディレクトリである前提
+source_dir=`find . -type f -name "conf.py" | xargs dirname`
+docker run --rm -v "$(pwd):/docs" -p 8000:8000 htomiyoshi/sphinx sphinx-autobuild --host "0.0.0.0" ${source_dir} build/html 
