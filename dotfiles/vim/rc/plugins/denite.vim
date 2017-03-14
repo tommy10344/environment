@@ -2,11 +2,16 @@
 " Denite.nvim
 "
 
-nnoremap <Space>: :<C-u>Denite command mapping<CR>
 nnoremap <Space>o :<C-u>Denite file_rec file_mru<CR>
+nnoremap <C-p>    :<C-u>Denite file_rec file_mru<CR>
+
 nnoremap <Space>d :<C-u>Denite directory_rec<CR>
 nnoremap cd :<C-u>Denite directory_rec<CR>
+
 nnoremap <Space>g :<C-u>Denite grep<CR>
+nnoremap <C-g>    :<C-u>Denite grep<CR>
+
+nnoremap <Space>: :<C-u>Denite command mapping<CR>
 nnoremap <Space>t :<C-u>Denite tag<CR>
 " nnoremap <Space>l :<C-u>Denite outline<CR>
 nnoremap <Space>b :<C-u>Denite buffer<CR>
