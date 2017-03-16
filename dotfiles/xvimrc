@@ -47,12 +47,14 @@ lnoremap <C-@> <Esc>
 cnoremap <C-@> <Esc>
 tnoremap <C-@> <Esc>
 
+
 nnoremap <Space>a :xccmd jumpToNextCounterpart<CR>
 nnoremap <Space>r :run<CR>
 nnoremap <Space>b :make<CR>
 nnoremap <Space>c :xcmenucmd Comment Selection<CR>
 vnoremap <Space>c :xcmenucmd Comment Selection<CR>
 nnoremap <Space>o :xccmd openQuickly<CR>
+nnoremap <C-p> :xccmd openQuickly<CR>
 nnoremap <Space>g :xccmd findInWorkspace<CR>
 
 " タブ移動
