@@ -3,7 +3,6 @@
 # cd ${HOME}/src/neovim/
 cd $(ghq root)/github.com/neovim/neovim
 
-rm -r build/
+git pull origin master
 make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/neovim"
 make install
-export PATH="$HOME/neovim/bin:$PATH"

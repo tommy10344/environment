@@ -13,5 +13,4 @@ pip3 install --upgrade jedi
 
 # brew doctor
 
-cd ${HOME}/src/neovim && git pull origin master
-install-neovim.sh
+update-neovim.sh

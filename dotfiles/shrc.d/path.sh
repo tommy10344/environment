@@ -32,7 +32,7 @@ fi
 # fi
 
 # NeoVim
-export PATH="$HOME/neovim/bin:$PATH"
+export PATH=$HOME/neovim/bin:$PATH
 
 # fastlane
-export PATH="$HOME/.fastlane/bin:$PATH"
+export PATH=$HOME/.fastlane/bin:$PATH
