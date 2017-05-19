@@ -38,6 +38,21 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 # defaults write com.apple.dock wvous-br-modifier -int 0
 
 
+# ----- Key repeat -----
+
+# キーリピート速度
+defaults write -g KeyRepeat -int 1
+# キーリピート開始速度
+defaults write -g InitialKeyRepeat -int 10
+
+# Reset
+# defaults delete -g KeyRepeat
+# defaults delete -g InitialKeyRepeat
+
+# Read
+# defaults read -g KeyRepeat
+# defaults read -g InitialKeyRepeat
+
 
 # ----- Finder Settings -----
 
