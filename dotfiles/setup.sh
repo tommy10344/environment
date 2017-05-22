@@ -43,7 +43,7 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 # キーリピート速度
 defaults write -g KeyRepeat -int 1
 # キーリピート開始速度
-defaults write -g InitialKeyRepeat -int 10
+defaults write -g InitialKeyRepeat -int 15
 
 # Reset
 # defaults delete -g KeyRepeat
