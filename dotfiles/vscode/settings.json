@@ -8,6 +8,9 @@
     "vim.hlsearch": true,
     "files.associations": {
         "Fastfile": "ruby"
-    }
-    "vim.smartcase": true
+    },
+    "vim.smartcase": true,
+    "vim.enableNeovim": true,
+    "vim.neovimPath": "/usr/local/bin/nvim",
+    "": ""
 }
