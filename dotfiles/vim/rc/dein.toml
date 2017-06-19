@@ -87,6 +87,9 @@ hook_add = '''
     source ~/.vim/rc/plugins/vaffle.vim
 '''
 
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
+
 ##############################
 # Unite/Denite
 ##############################
