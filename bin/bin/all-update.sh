@@ -13,4 +13,4 @@ pip3 install --upgrade jedi
 
 # brew doctor
 
-update-neovim.sh
+# update-neovim.sh
