@@ -1,3 +1,4 @@
+execute 'source' expand('~/.vim/rc/python_host_prog.vim')
 execute 'source' expand('~/.vim/rc/basic.vim')
 execute 'source' expand('~/.vim/rc/command.vim')
 execute 'source' expand('~/.vim/rc/mapping.vim')
