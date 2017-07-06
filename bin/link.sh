@@ -2,4 +2,4 @@
 
 BASE_DIR=$(cd $(dirname $0);pwd)
 
-ln -sf "${BASE_DIR}/bin" "${HOME}/bin"
+ln -sfn "${BASE_DIR}/bin" "${HOME}/bin"
