@@ -127,8 +127,9 @@ brew install rbenv
 brew install ruby-build
 
 # git config
-git config --global user.name "Hiroaki Tomiyoshi"
-git config --global user.email htomiyosi@icloud.com
+# git config --global user.name "Hiroaki Tomiyoshi"
+# git config --global user.email htomiyosi@icloud.com
+git config --global user.useConfigOnly true
 git config --global ghq.root ~/src
 
 # oss-src
