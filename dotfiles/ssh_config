@@ -1,5 +1,0 @@
-Host bitbucket.org
-    HostName bitbucket.org
-    IdentityFile ~/.ssh/bitbucket/id_rsa
-    StrictHostKeyChecking no
-    User kurozu
