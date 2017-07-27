@@ -115,6 +115,7 @@ brew install vim --with-lua --with-luajit --with-python3
 brew install neovim/neovim/neovim --HEAD
 pip install neovim
 pip3 install neovim
+pip3 install neovim-remote
 
 # haskell
 # brew install haskell-stack
