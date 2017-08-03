@@ -1,3 +1,3 @@
-autocmd FileType cs set omnifunc=OmniSharp#Complete
+setlocal omnifunc=OmniSharp#Complete
 
 let g:OmniSharp_selector_ui = 'denite'

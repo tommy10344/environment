@@ -15,7 +15,7 @@ if !exists('g:neocomplete#force_omni_input_patterns')
 endif
 let g:neocomplete#force_omni_input_patterns.cpp =
             \ '[^.[:digit:] *\t]\%(\.\|->\)\w*\|\h\w*::\w*'
-set updatetime=200
+setlocal updatetime=200
 
 " インクルードパス一覧
 let g:vimrc_include_paths = []

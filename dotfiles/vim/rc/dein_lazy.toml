@@ -148,8 +148,13 @@ on_ft = 'swift'
 repo = 'kballard/vim-swift'
 on_ft = 'swift'
 
+# [[plugins]]
+# repo = 'landaire/deoplete-swift'
+# on_ft = 'swift'
+# on_event = 'InsertEnter'
+
 [[plugins]]
-repo = 'landaire/deoplete-swift'
+repo = 'mitsuse/autocomplete-swift'
 on_ft = 'swift'
 on_event = 'InsertEnter'
 
