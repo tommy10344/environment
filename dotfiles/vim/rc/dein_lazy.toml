@@ -166,15 +166,25 @@ on_event = 'InsertEnter'
 repo = 'pangloss/vim-javascript'
 on_ft = 'javascript'
 
-[[plugins]]
-repo = 'ternjs/tern_for_vim'
-on_ft = 'javascript'
-on_event = 'InsertEnter'
-build = 'npm install'
+# [[plugins]]
+# repo = 'ternjs/tern_for_vim'
+# on_ft = 'javascript'
+# on_event = 'InsertEnter'
+# build = 'npm install'
+
+# [[plugins]]
+# repo = 'nicklasos/vim-jsx-riot'
+# on_ft = 'javascript'
 
 [[plugins]]
-repo = 'nicklasos/vim-jsx-riot'
+repo = 'carlitux/deoplete-ternjs'
 on_ft = 'javascript'
+on_event = 'InsertEnter'
+build = 'npm install -g tern'
+hook_source = '''
+    let g:tern_request_timeout = 1
+    let g:tern_show_signature_in_pum = '0'
+'''
 
 ##############################
 # Typescript
