@@ -16,6 +16,9 @@ hook_add = '''
     vmap <Space>c <Plug>NERDCommenterToggle
 '''
 
+# [[plugins]]
+# repo = 'scrooloose/nerdtree'
+
 [[plugins]]
 repo = 'thinca/vim-ref'
 
@@ -79,13 +82,11 @@ hook_add = '''
 repo = 'tpope/vim-dispatch'
 
 
-[[plugins]]
-repo = 'cocopon/vaffle.vim'
-# on_cmd = 'Vaffle'
-# hook_source = '''
-hook_add = '''
-    source ~/.vim/rc/plugins/vaffle.vim
-'''
+# [[plugins]]
+# repo = 'cocopon/vaffle.vim'
+# hook_add = '''
+    # source ~/.vim/rc/plugins/vaffle.vim
+# '''
 
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
@@ -116,8 +117,8 @@ repo = 'tsukkee/unite-tag'
 # Git
 ##############################
 
-# [[plugins]]
-# repo = 'tpope/vim-fugitive'
+[[plugins]]
+repo = 'tpope/vim-fugitive'
 
 ##############################
 # Colorscheme
