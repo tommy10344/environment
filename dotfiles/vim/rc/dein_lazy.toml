@@ -144,9 +144,9 @@ on_ft = 'haskell'
 repo = 'keith/swift.vim'
 on_ft = 'swift'
 
-[[plugins]]
-repo = 'kballard/vim-swift'
-on_ft = 'swift'
+# [[plugins]]
+# repo = 'kballard/vim-swift'
+# on_ft = 'swift'
 
 # [[plugins]]
 # repo = 'landaire/deoplete-swift'

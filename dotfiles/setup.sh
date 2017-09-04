@@ -127,6 +127,10 @@ brew install ruby
 brew install rbenv
 brew install ruby-build
 
+# swift
+brew install sourcekitten
+pip3 install pyyaml # for autocomplete-swift plugin (vim)
+
 # git config
 # git config --global user.name "Hiroaki Tomiyoshi"
 # git config --global user.email htomiyosi@icloud.com
