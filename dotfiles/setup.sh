@@ -96,7 +96,7 @@ brew install ctags
 brew install tree
 brew install gibo
 brew install docker-clean
-brew install peco
+brew install fzf
 brew install ghq
 
 # zsh (to default shell)
