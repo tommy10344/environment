@@ -225,6 +225,17 @@ repo = 'zchee/deoplete-jedi'
 on_ft = ['python', 'python3']
 on_event = 'InsertEnter'
 
+
+##############################
+# Ruby
+##############################
+
+[[plugins]]
+repo = 'Shougo/deoplete-rct'
+on_ft = 'ruby'
+on_event = 'InsertEnter'
+
+
 ##############################
 # PowerShell
 ##############################

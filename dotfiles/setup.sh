@@ -126,6 +126,7 @@ pip3 install neovim-remote
 brew install ruby
 brew install rbenv
 brew install ruby-build
+gem install rcodetools  # for deoplete-rct
 
 # swift
 brew install sourcekitten
