@@ -11,6 +11,8 @@ pip3 install --upgrade neovim
 pip2 install --upgrade jedi
 pip3 install --upgrade jedi
 
+go get -u github.com/nsf/gocode
+
 # brew doctor
 
 update-neovim.sh

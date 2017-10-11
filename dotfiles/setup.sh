@@ -88,6 +88,7 @@ brew install python
 brew install python3
 brew install lua
 brew install node
+brew install go
 brew install git
 brew install wget
 brew install the_silver_searcher
@@ -131,6 +132,9 @@ gem install rcodetools  # for deoplete-rct
 # swift
 brew install sourcekitten
 pip3 install pyyaml # for autocomplete-swift plugin (vim)
+
+# golang
+go get -u github.com/nsf/gocode
 
 # git config
 # git config --global user.name "Hiroaki Tomiyoshi"
