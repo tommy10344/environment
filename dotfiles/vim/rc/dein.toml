@@ -55,16 +55,22 @@ repo = 'osyo-manga/shabadou.vim'
     #let g:watchdogs_check_CursorHold_enable = 1
 #'''
 
+# [[plugins]]
+# repo = 'vim-syntastic/syntastic'
+# hook_add = '''
+    # set statusline+=%#warningmsg#
+    # set statusline+=%{SyntasticStatuslineFlag()}
+    # set statusline+=%*
+    # let g:syntastic_always_populate_loc_list = 1
+    # let g:syntastic_auto_loc_list = 1
+    # let g:syntastic_check_on_open = 1
+    # let g:syntastic_check_on_wq = 0
+# '''
+
 [[plugins]]
-repo = 'vim-syntastic/syntastic'
+repo = 'neomake/neomake'
 hook_add = '''
-    set statusline+=%#warningmsg#
-    set statusline+=%{SyntasticStatuslineFlag()}
-    set statusline+=%*
-    let g:syntastic_always_populate_loc_list = 1
-    let g:syntastic_auto_loc_list = 1
-    let g:syntastic_check_on_open = 1
-    let g:syntastic_check_on_wq = 0
+    autocmd! BufWritePost,BufEnter * Neomake
 '''
 
 [[plugins]]
