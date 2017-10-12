@@ -8,7 +8,7 @@ augroup vimrc-go
     au FileType go nmap <Space>r <Plug>(go-run)
     au FileType go nmap <Space>b <Plug>(go-build)
     au FileType go nmap <Space>t <Plug>(go-test)
-    au FileType go nmap <Space>c <Plug>(go-coverage)
+    au FileType go nmap <Space>C <Plug>(go-coverage)
     au FileType go nmap <Space>D <Plug>(go-doc)
     au FileType go nmap <Space>V <Plug>(go-doc-vertical)
     au FileType go nmap <Space>B <Plug>(go-doc-browser)
