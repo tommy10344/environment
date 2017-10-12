@@ -41,6 +41,7 @@ inoremap jj     <Esc>
 noremap <C-@>   <Esc>
 noremap! <C-@>  <Esc>
 if has('nvim')
+    nnoremap T :<C-u>terminal<CR>a
     tnoremap <Esc>  <C-\><C-n>
     tnoremap <C-@>  <C-\><C-n>
 endif
