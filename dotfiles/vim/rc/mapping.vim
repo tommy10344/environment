@@ -16,9 +16,12 @@ vnoremap <Space>h 0
 nnoremap <Space>l $
 vnoremap <Space>l $
 
-" タブ移動
+" tab
 nnoremap <C-h> gT
 nnoremap <C-l> gt
+nnoremap <C-t> :<C-u>tabe<CR>
+vnoremap <C-t> :<C-u>tabe<CR>
+cnoremap <C-t> :<C-u>tabe<CR>
 
 " 画面上の最初の行、最後の行に移動
 nnoremap <Space>k H
@@ -44,6 +47,7 @@ if has('nvim')
     nnoremap T :<C-u>terminal<CR>a
     tnoremap <Esc>  <C-\><C-n>
     tnoremap <C-@>  <C-\><C-n>
+    tnoremap <C-t> <C-\><C-n>:<C-u>tabe<CR>
 endif
 
 " Command mode mapping
