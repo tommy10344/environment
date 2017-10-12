@@ -3,16 +3,19 @@
 "
 
 " vim-go
-au FileType go nmap <Space>r <Plug>(go-run)
-au FileType go nmap <Space>b <Plug>(go-build)
-au FileType go nmap <Space>t <Plug>(go-test)
-au FileType go nmap <Space>c <Plug>(go-coverage)
-au FileType go nmap <Space>gd <Plug>(go-doc)
-au FileType go nmap <Space>gv <Plug>(go-doc-vertical)
-au FileType go nmap <Space>gb <Plug>(go-doc-browser)
-au FileType go nmap <Space>s <Plug>(go-implements)
-au FileType go nmap <Space>i <Plug>(go-info)
-au FileType go nmap <Space>e <Plug>(go-rename)
+augroup vimrc-go
+    autocmd!
+    au FileType go nmap <Space>r <Plug>(go-run)
+    au FileType go nmap <Space>b <Plug>(go-build)
+    au FileType go nmap <Space>t <Plug>(go-test)
+    au FileType go nmap <Space>c <Plug>(go-coverage)
+    au FileType go nmap <Space>D <Plug>(go-doc)
+    au FileType go nmap <Space>V <Plug>(go-doc-vertical)
+    au FileType go nmap <Space>B <Plug>(go-doc-browser)
+    au FileType go nmap <Space>s <Plug>(go-implements)
+    au FileType go nmap <Space>i <Plug>(go-info)
+    au FileType go nmap <Space>e <Plug>(go-rename)
+augroup end
 
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
