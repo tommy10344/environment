@@ -44,7 +44,7 @@ inoremap jj     <Esc>
 noremap <C-@>   <Esc>
 noremap! <C-@>  <Esc>
 if has('nvim')
-    nnoremap T :<C-u>terminal<CR>a
+    nnoremap T :<C-u>terminal<CR>
     tnoremap <Esc>  <C-\><C-n>
     tnoremap <C-@>  <C-\><C-n>
     tnoremap <C-t> <C-\><C-n>:<C-u>tabe<CR>
