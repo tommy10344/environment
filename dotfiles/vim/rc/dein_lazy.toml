@@ -45,9 +45,9 @@ hook_source = '''
     let g:vimfiler_ignore_pattern = []
 '''
 
-[[plugins]]
-repo = 'SirVer/ultisnips'
-on_event = 'InsertEnter'
+# [[plugins]]
+# repo = 'SirVer/ultisnips'
+# on_event = 'InsertEnter'
 
 [[plugins]]
 repo = 'tpope/vim-endwise'
