@@ -1,3 +1,5 @@
+set debug
+
 set number
 set hlsearch
 
