@@ -72,8 +72,8 @@ killall Finder
 
 ## プログレスバーにビルド時間を表示
 defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
-## 並列ビルド設定 (並列数: 4)
-defaults write com.apple.dt.Xcode IDEBuildOperationMaxNumberOfConcurrentCompileTasks 4
+## 並列ビルド設定 (並列数: 8)
+defaults write com.apple.dt.Xcode IDEBuildOperationMaxNumberOfConcurrentCompileTasks 8
 
 
 # ----- CLI tools -----
