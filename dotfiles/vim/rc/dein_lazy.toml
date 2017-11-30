@@ -231,6 +231,14 @@ on_event = 'InsertEnter'
 ##############################
 
 [[plugins]]
+repo = 'vim-ruby/vim-ruby'
+on_ft = 'ruby'
+
+[[plugins]]
+repo = 'tpope/vim-rails'
+on_ft = 'ruby'
+
+[[plugins]]
 repo = 'Shougo/deoplete-rct'
 on_ft = 'ruby'
 on_event = 'InsertEnter'
