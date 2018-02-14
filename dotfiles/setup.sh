@@ -113,7 +113,8 @@ brew install vim --with-lua --with-luajit --with-python3
 # brew linkapps macvim
 
 # neovim
-brew install neovim/neovim/neovim --HEAD
+# brew install neovim/neovim/neovim --HEAD
+brew install ninja libtool automake cmake pkg-config gettext
 pip install neovim
 pip3 install neovim
 pip3 install neovim-remote
