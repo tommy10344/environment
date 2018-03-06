@@ -39,9 +39,6 @@ vnoremap <Space>j L
 nnoremap <Space>p "0p
 vnoremap <Space>p "0p
 
-nnoremap <Space>r :action Run<CR>
-nnoremap <Space>c :action CommentByLineComment<CR>
-
 " Escape
 inoremap <c-]> <Esc>
 inoremap jj    <Esc>
@@ -54,3 +51,14 @@ inoremap <C-@> <Esc>
 lnoremap <C-@> <Esc>
 cnoremap <C-@> <Esc>
 tnoremap <C-@> <Esc>
+
+" IdeaVIM only
+set surround
+nnoremap <Space>r :<C-u>action Run<CR>
+nnoremap <Space>d :<C-u>action Debug<CR>
+nnoremap <Space>n :<C-u>action RenameElement<CR>
+nnoremap <Space>c :<C-u>action CommentByLineComment<CR>
+nnoremap <Space>o :<C-u>action GotoFile<CR>
+nnoremap <Space>g :<C-u>action SearchEverywhere<CR>
+nnoremap / :<C-u>action Find<CR>
+
