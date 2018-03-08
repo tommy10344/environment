@@ -61,4 +61,3 @@ nnoremap <Space>c :<C-u>action CommentByLineComment<CR>
 nnoremap <Space>o :<C-u>action GotoFile<CR>
 nnoremap <Space>g :<C-u>action SearchEverywhere<CR>
 " nnoremap / :<C-u>action Find<CR>
-
