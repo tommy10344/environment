@@ -134,6 +134,14 @@ gem install rcodetools  # for deoplete-rct
 brew install sourcekitten
 pip3 install pyyaml # for autocomplete-swift plugin (vim)
 
+# Cocoapods
+brew install cocoapods
+pod setup
+
+# Flutter
+brew install --HEAD libimobiledevice
+brew install ideviceinstaller ios-deploy
+
 # golang
 go get -u github.com/nsf/gocode
 
@@ -148,6 +156,7 @@ ghq get https://github.com/github/gitignore
 ghq get https://github.com/XVimProject/XVim
 ghq get https://github.com/altercation/solarized
 ghq get https://github.com/ArtSabintsev/Solarized-Dark-for-Xcode
+ghq get https://github.com/flutter/flutter
 
 
 # ----- Setup dotfiles -----

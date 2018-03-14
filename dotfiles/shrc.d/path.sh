@@ -36,3 +36,8 @@ export PATH=$HOME/neovim/bin:$PATH
 
 # fastlane
 export PATH=$HOME/.fastlane/bin:$PATH
+
+# Flutter
+if [ -d "`ghq root`/github.com/flutter/flutter" ]; then
+  export PATH=`ghq root`/github.com/flutter/flutter/bin:$PATH
+fi
