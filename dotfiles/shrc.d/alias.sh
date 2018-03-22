@@ -13,6 +13,7 @@ alias vimrc="vim ~/.vimrc"
 
 # git
 alias gs="git status"
+alias gf="git fetch --all"
 alias gd="git diff"
 alias gdc="git diff --cached"
 
