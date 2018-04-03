@@ -48,6 +48,8 @@ if has('nvim')
     tnoremap <Esc>  <C-\><C-n>
     tnoremap <C-@>  <C-\><C-n>
     tnoremap <C-t> <C-\><C-n>:<C-u>tabe<CR>
+else
+    nnoremap T :<C-u>terminal<CR>
 endif
 
 " Command mode mapping
