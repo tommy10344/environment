@@ -17,5 +17,8 @@ go get -u github.com/nsf/gocode
 
 # brew doctor
 
-update-neovim.sh
-update-xvim.sh
+# Update neovim
+${HOME}/bin/update-neovim.sh
+
+# Update XVim
+${HOME}/bin/XVim/update-xvim.sh
