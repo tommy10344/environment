@@ -4,6 +4,7 @@ alias grep="grep --color"
 alias cl="clear"
 alias cls="clear"
 alias mkdirtoday="mkdir $(date +'%Y-%m-%d')"
+alias cdtoday="cd $(date +'%Y-%m-%d')"
 
 # vim
 if type nvim > /dev/null 2>&1; then
