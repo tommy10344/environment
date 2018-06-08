@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Stitch specified images left to right
+# Require Imagemagick
+convert $@ +append output.png

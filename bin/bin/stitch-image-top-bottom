@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Stitch specified images top to bottom
+# Required Imagemagick
+convert $@ -append output.png
