@@ -2,7 +2,7 @@
 export TERM=xterm-256color
 
 # EDITOR
-export EDITOR="vim"
+export EDITOR="nvim"
 
 # Git
 GIT_PS1_SHOWDIRTYSTATE=true
