@@ -43,14 +43,6 @@ vnoremap * "zy:let @/ = @z<CR>n
 inoremap jj     <Esc>
 noremap <C-@>   <Esc>
 noremap! <C-@>  <Esc>
-if has('nvim')
-    nnoremap T :<C-u>terminal<CR>
-    tnoremap <Esc>  <C-\><C-n>
-    tnoremap <C-@>  <C-\><C-n>
-    tnoremap <C-t> <C-\><C-n>:<C-u>tabe<CR>
-else
-    nnoremap T :<C-u>terminal<CR>
-endif
 
 " Command mode mapping
 cnoremap <C-a>  <Home>
@@ -60,3 +52,30 @@ cnoremap <C-l>  <Right>
 cnoremap <C-d>  <Del>
 " paste
 cnoremap <C-p>  <C-r>*
+
+" Terminal
+if has('nvim')
+    nnoremap T :<C-u>call SplitTerminal()<CR>
+    nnoremap VT :<C-u>call VSplitTerminal()<CR>
+    tnoremap <Esc>  <C-\><C-n>
+    tnoremap <C-@>  <C-\><C-n>
+    tnoremap <C-t> <C-\><C-n>:<C-u>tabe<CR>
+else
+    nnoremap T :<C-u>terminal<CR>
+endif
+
+" Split window and launch terminal under the current window
+function! SplitTerminal() abort
+    split
+    wincmd j
+    terminal
+    startinsert
+endfunction
+
+" Split window and launch terminal at the right side of the current window
+function! VSplitTerminal() abort
+    vsplit
+    wincmd l
+    terminal
+    startinsert
+endfunction
