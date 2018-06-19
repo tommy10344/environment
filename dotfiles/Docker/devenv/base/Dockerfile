@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER Hiroaki Tomiyoshi<fomr1002@gmail.com>
+MAINTAINER Hiroaki Tomiyoshi<htomiyosi@gmail.com>
 
 ARG http_proxy
 ARG https_proxy

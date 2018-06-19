@@ -1,5 +1,5 @@
 FROM tomiyosi/base-dev
-MAINTAINER Hiroaki Tomiyoshi<fomr1002@gmail.com>
+MAINTAINER Hiroaki Tomiyoshi<htomiyosi@gmail.com>
 
 # Haskell
 RUN apt-get install -y haskell-stack

@@ -5,6 +5,7 @@ xcode-select --install
 brew update
 brew upgrade
 brew cleanup
+# brew doctor
 
 pip2 install --upgrade pip
 pip3 install --upgrade pip
@@ -13,9 +14,9 @@ pip3 install --upgrade neovim
 pip2 install --upgrade jedi
 pip3 install --upgrade jedi
 
-go get -u github.com/nsf/gocode
+npm install -g npm
 
-# brew doctor
+go get -u github.com/nsf/gocode
 
 # Update neovim
 ${HOME}/bin/update-neovim.sh
