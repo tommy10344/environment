@@ -5,6 +5,12 @@
 # Dock を自動的に隠す
 # defaults write com.apple.dock autohide -bool true
 
+# ----- AirDrop Settings -----
+
+# 有線接続でもAirDropを可能にする
+
+defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
+
 
 # ----- Mission Control -----
 
