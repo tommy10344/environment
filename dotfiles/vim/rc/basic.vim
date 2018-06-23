@@ -65,26 +65,9 @@ set relativenumber
 """"""""""""""""""""""""""""""""""""""""
 " path
 "
-
-" path にパスを追加する
-function! Add_path(path) abort
-    let full_path = escape(expand(a:path), ' ')
-    if isdirectory(full_path)
-        execute 'set path+=' . full_path
-    endif
-endfunction
-
+"
 call Add_path('/usr/local/include')
 call Add_path('~/include')
-
-
-" $PATH にパスを追加する
-function! Add_PATH(path) abort
-    let full_path = escape(expand(a:path), ' ')
-    if isdirectory(full_path)
-        let $PATH = full_path . ':' . $PATH
-    endif
-endfunction
 
 call Add_PATH('/usr/local/bin')
 call Add_PATH('~/bin')

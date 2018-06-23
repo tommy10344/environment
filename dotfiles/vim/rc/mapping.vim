@@ -64,21 +64,5 @@ else
     nnoremap T :<C-u>terminal<CR>
 endif
 
-" Split window and launch terminal under the current window
-function! SplitTerminal() abort
-    split
-    wincmd j
-    terminal
-    startinsert
-endfunction
-
-" Split window and launch terminal at the right side of the current window
-function! VSplitTerminal() abort
-    vsplit
-    wincmd l
-    terminal
-    startinsert
-endfunction
-
 " File explorer
 nnoremap F :<C-u>call OpenFileExplorer()<CR>
