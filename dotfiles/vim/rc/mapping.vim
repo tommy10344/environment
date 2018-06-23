@@ -79,3 +79,6 @@ function! VSplitTerminal() abort
     terminal
     startinsert
 endfunction
+
+" File explorer
+nnoremap F :<C-u>call OpenFileExplorer()<CR>
