@@ -152,8 +152,8 @@ brew install ideviceinstaller ios-deploy
 go get -u github.com/nsf/gocode
 
 # git config
-# git config --global user.name "Hiroaki Tomiyoshi"
-# git config --global user.email htomiyosi@icloud.com
+git config --global user.name "Hiroaki Tomiyoshi"
+git config --global user.email htomiyosi@gmail.com
 git config --global user.useConfigOnly true
 git config --global ghq.root ~/src
 
