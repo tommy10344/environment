@@ -67,10 +67,16 @@ repo = 'osyo-manga/shabadou.vim'
     # let g:syntastic_check_on_wq = 0
 # '''
 
+# [[plugins]]
+# repo = 'neomake/neomake'
+# hook_add = '''
+    # autocmd! BufWritePost,BufEnter * Neomake
+# '''
+
 [[plugins]]
-repo = 'neomake/neomake'
+repo = 'w0rp/ale'
 hook_add = '''
-    autocmd! BufWritePost,BufEnter * Neomake
+    source ~/.vim/rc/plugins/ale.vim
 '''
 
 [[plugins]]

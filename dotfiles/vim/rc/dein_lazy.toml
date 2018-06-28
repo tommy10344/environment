@@ -53,6 +53,9 @@ hook_source = '''
 repo = 'tpope/vim-endwise'
 on_event = 'InsertEnter'
 
+[[plugins]]
+repo = 'kana/vim-smartinput'
+on_event = 'InsertEnter'
 
 ##############################
 # Previewing document
