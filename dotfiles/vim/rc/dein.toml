@@ -103,6 +103,9 @@ repo = 'tpope/vim-dispatch'
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
 
+[[plugins]]
+repo = 'simeji/winresizer'
+
 ##############################
 # Unite/Denite
 ##############################
