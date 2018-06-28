@@ -131,6 +131,9 @@ repo = 'tsukkee/unite-tag'
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+hook_add = '''
+    source ~/.vim/rc/plugins/fugitive.vim
+'''
 
 ##############################
 # Colorscheme
