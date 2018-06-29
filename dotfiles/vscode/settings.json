@@ -3,14 +3,33 @@
     "editor.fontFamily": "RictyDiminished-Regular",
     "editor.fontSize": 14,
     "window.zoomLevel": 1,
-    "vim.useCtrlKeys": true,
-    "vim.useSystemClipboard": true,
-    "vim.hlsearch": true,
     "files.associations": {
         "Fastfile": "ruby"
     },
+
+    "vim.useCtrlKeys": true,
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
     "vim.smartcase": true,
+    "vim.visualstar": true,
+    "vim.leader": "<space>",
+    "vim.easymotion": true,
+    "vim.easymotionKeys": "sdfghjkl",
     "vim.enableNeovim": true,
     "vim.neovimPath": "/usr/local/bin/nvim",
-    "": ""
+    "vim.normalModeKeyBindings": [
+        { "before": [";"], "after": [":"] },
+        { "before": [":"], "after": [";"] },
+        { "before": ["<Space>","h"], "after": ["0"] },
+        { "before": ["<Space>","l"], "after": ["$"] },
+        { "before": ["<C-h>"], "after": ["g","T"] },
+        { "before": ["<C-l>"], "after": ["g","t"] },
+    ],
+    "vim.visualModeKeyBindings": [
+        { "before": ["<Space>","h"], "after": ["0"] },
+        { "before": ["<Space>","l"], "after": ["$"] },
+    ],
+    "vim.insertModeKeyBindings": [
+        { "before": ["j","j"], "after": ["<Esc>"] }
+    ]
 }
