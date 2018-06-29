@@ -16,6 +16,9 @@ pip3 install --upgrade jedi
 
 npm install -g npm
 
+gem update
+rbenv rehash
+
 go get -u github.com/nsf/gocode
 
 # Update neovim

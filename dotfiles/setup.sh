@@ -134,7 +134,10 @@ pip3 install neovim-remote
 brew install ruby
 brew install rbenv
 brew install ruby-build
+eval "$(rbenv init -)"
 gem install rcodetools  # for deoplete-rct
+gem install solargraph
+rbenv rehash
 
 # swift
 brew install sourcekitten
