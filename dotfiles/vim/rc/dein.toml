@@ -106,6 +106,12 @@ repo = 'editorconfig/editorconfig-vim'
 [[plugins]]
 repo = 'simeji/winresizer'
 
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+hook_add = '''
+    source ~/.vim/rc/plugins/easymotion.vim
+'''
+
 ##############################
 # Unite/Denite
 ##############################
