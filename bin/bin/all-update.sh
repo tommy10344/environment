@@ -20,6 +20,7 @@ go get -u github.com/nsf/gocode
 
 # Update neovim
 ${HOME}/bin/update-neovim.sh
+nvim +UpdatePlugin +UpdateRemotePlugins +qa
 
 # Update XVim
 ${HOME}/bin/XVim/update-xvim.sh
