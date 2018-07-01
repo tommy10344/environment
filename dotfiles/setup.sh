@@ -136,7 +136,8 @@ brew install rbenv
 brew install ruby-build
 eval "$(rbenv init -)"
 gem install rcodetools  # for deoplete-rct
-gem install solargraph
+gem install solargraph  # Ruby language server
+gem install mdl # markdownlint
 rbenv rehash
 
 # swift
