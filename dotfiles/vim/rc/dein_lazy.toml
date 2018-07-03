@@ -179,15 +179,15 @@ on_ft = 'javascript'
 # repo = 'nicklasos/vim-jsx-riot'
 # on_ft = 'javascript'
 
-[[plugins]]
-repo = 'carlitux/deoplete-ternjs'
-on_ft = 'javascript'
-on_event = 'InsertEnter'
-build = 'npm install -g tern'
-hook_source = '''
-    let g:tern_request_timeout = 1
-    let g:tern_show_signature_in_pum = '0'
-'''
+# [[plugins]]
+# repo = 'carlitux/deoplete-ternjs'
+# on_ft = 'javascript'
+# on_event = 'InsertEnter'
+# build = 'npm install -g tern'
+# hook_source = '''
+    # let g:tern_request_timeout = 1
+    # let g:tern_show_signature_in_pum = '0'
+# '''
 
 # Vue.js
 [[plugins]]
