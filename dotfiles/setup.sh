@@ -162,8 +162,7 @@ git config --global user.useConfigOnly true
 git config --global ghq.root ~/src
 
 # oss-src
-ghq get https://github.com/github/gitignore
-ghq get https://github.com/XVimProject/XVim
+ghq get https://github.com/XVimProject/XVim2
 ghq get https://github.com/altercation/solarized
 ghq get https://github.com/ArtSabintsev/Solarized-Dark-for-Xcode
 ghq get https://github.com/flutter/flutter
