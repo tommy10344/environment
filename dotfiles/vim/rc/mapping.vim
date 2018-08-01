@@ -44,6 +44,15 @@ inoremap jj     <Esc>
 noremap <C-@>   <Esc>
 noremap! <C-@>  <Esc>
 
+" search
+nnoremap <ESC><ESC> :<C-u>nohlsearch<CR>
+nmap n nzz
+nmap N Nzz 
+nmap * *zz 
+nmap # #zz 
+nmap g* g*zz 
+nmap g# g#zz
+
 " Command mode mapping
 cnoremap <C-a>  <Home>
 cnoremap <C-e>  <End>

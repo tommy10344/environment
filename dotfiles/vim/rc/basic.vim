@@ -6,6 +6,7 @@ endif
 set number
 set ruler
 set hlsearch
+set cursorline
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,euc-jp,iso-2022-jp,cp932,utf-16,utf-16le
 set backspace=indent,eol,start
