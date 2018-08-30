@@ -32,5 +32,9 @@
     ],
     "vim.insertModeKeyBindings": [
         { "before": ["j","j"], "after": ["<Esc>"] }
-    ]
+    ],
+
+    "eslint.enable": true,
+    "eslint.run": "onSave",
+    "eslint.autoFixOnSave": true
 }
