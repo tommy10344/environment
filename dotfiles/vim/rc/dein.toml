@@ -112,6 +112,9 @@ hook_add = '''
     source ~/.vim/rc/plugins/easymotion.vim
 '''
 
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+
 ##############################
 # Unite/Denite
 ##############################
@@ -159,7 +162,7 @@ repo = 'altercation/vim-colors-solarized'
 repo = 'tfnico/vim-gradle'
 
 ##############################
-# Graphviz, PlantUML
+# Graphviz
 ##############################
 
 [[plugins]]
@@ -167,6 +170,3 @@ repo = 'wannesm/wmgraphviz.vim'
 hook_add = '''
     let g:WMGraphviz_output = 'png'
 '''
-
-[[plugins]]
-repo = 'aklt/plantuml-syntax'

@@ -288,3 +288,15 @@ hook_source = '''
 [[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
+
+
+##############################
+# TOML
+##############################
+[[plugins]]
+repo = 'aklt/plantuml-syntax'
+on_ft = 'plantuml'
+
+[[plugins]]
+repo = 'weirongxu/plantuml-previewer.vim'
+on_ft = 'plantuml'
