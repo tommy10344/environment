@@ -144,8 +144,13 @@ on_ft = 'haskell'
 ##############################
 
 [[plugins]]
-repo = 'keith/swift.vim'
+repo = 'apple/swift'
+rtp = 'utils/vim'
 on_ft = 'swift'
+
+# [[plugins]]
+# repo = 'keith/swift.vim'
+# on_ft = 'swift'
 
 # [[plugins]]
 # repo = 'kballard/vim-swift'
