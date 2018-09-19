@@ -93,7 +93,6 @@ brew install zsh-completions
 brew install python
 brew install python3
 brew install lua
-brew install node
 brew install go
 brew install git
 brew install wget
@@ -113,8 +112,39 @@ chpass -s /usr/local/bin/zsh
 # zsh-completions
 rm -f ~/.zcompdump; compinit
 
+# git config
+git config --global user.name "Hiroaki Tomiyoshi"
+git config --global user.email htomiyosi@gmail.com
+git config --global user.useConfigOnly true
+git config --global ghq.root ~/src
+
+# haskell
+# brew install haskell-stack
+# stack install ghc-mod hlint haskell-docs
+# stack install hoogle && hoogle data
+
+# ruby
+# brew install ruby
+brew install rbenv
+brew install ruby-build
+eval "$(rbenv init -)"
+rbenv install 2.5.1
+rbenv rehash
+gem install rcodetools  # for deoplete-rct
+gem install solargraph  # Ruby language server
+gem install mdl # markdownlint
+rbenv rehash
+
+# Node.js
+brew install node
+npm install -g npm
+npm install -g jq
+npm install -g create-react-app
+npm install -g react-native-cli
+npm install -g vue-cli
+
 # vim
-brew install vim --with-lua --with-luajit --with-python3
+brew install vim
 # brew install macvim --with-lua --with-luajit --with-python3
 # brew linkapps macvim
 
@@ -124,21 +154,8 @@ brew install ninja libtool automake cmake pkg-config gettext
 pip install neovim
 pip3 install neovim
 pip3 install neovim-remote
-
-# haskell
-# brew install haskell-stack
-# stack install ghc-mod hlint haskell-docs
-# stack install hoogle && hoogle data
-
-# ruby
-brew install ruby
-brew install rbenv
-brew install ruby-build
-eval "$(rbenv init -)"
-gem install rcodetools  # for deoplete-rct
-gem install solargraph  # Ruby language server
-gem install mdl # markdownlint
-rbenv rehash
+gem install neovim
+npm install -g neovim
 
 # swift
 brew install sourcekitten
@@ -154,12 +171,6 @@ brew install ideviceinstaller ios-deploy
 
 # golang
 go get -u github.com/nsf/gocode
-
-# git config
-git config --global user.name "Hiroaki Tomiyoshi"
-git config --global user.email htomiyosi@gmail.com
-git config --global user.useConfigOnly true
-git config --global ghq.root ~/src
 
 # oss-src
 ghq get https://github.com/XVimProject/XVim2

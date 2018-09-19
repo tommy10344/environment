@@ -15,6 +15,7 @@ pip2 install --upgrade jedi
 pip3 install --upgrade jedi
 
 npm install -g npm
+npm install -g neovim
 
 gem update
 rbenv rehash
@@ -27,3 +28,6 @@ nvim +UpdatePlugin +UpdateRemotePlugins +qa
 
 # Update XVim
 ${HOME}/bin/XVim/update-xvim.sh
+
+# Update Flutter
+${HOME}/bin/update-flutter.sh
