@@ -124,7 +124,7 @@ git config --global ghq.root ~/src
 # stack install hoogle && hoogle data
 
 # ruby
-# brew install ruby
+brew install ruby && brew link ruby
 brew install rbenv
 brew install ruby-build
 eval "$(rbenv init -)"
