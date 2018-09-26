@@ -1,5 +1,8 @@
 #!/bin/sh
 
+BASE_DIR=$(cd $(dirname $0);pwd)
+${BASE_DIR}/../link.sh
+
 # ----- Dock Settings -----
 
 # Dock を自動的に隠す
@@ -150,12 +153,14 @@ brew install vim
 
 # neovim
 # brew install neovim/neovim/neovim --HEAD
+ghq get https://github.com/neovim/neovim
 brew install ninja libtool automake cmake pkg-config gettext
 pip install neovim
 pip3 install neovim
 pip3 install neovim-remote
 gem install neovim
 npm install -g neovim
+${HOME}/bin/build-neovim.sh
 
 # swift
 brew install sourcekitten
@@ -180,4 +185,6 @@ ghq get https://github.com/flutter/flutter
 
 
 # ----- Setup dotfiles -----
-./link_dotfiles.sh
+ghq get https://github.com/kurozu10344/environment
+cd $(ghq root)/github.com/kurozu10344/environment
+./link.sh

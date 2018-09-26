@@ -23,7 +23,7 @@ rbenv rehash
 go get -u github.com/nsf/gocode
 
 # Update neovim
-${HOME}/bin/update-neovim.sh
+${HOME}/bin/build-neovim.sh
 nvim +UpdatePlugin +UpdateRemotePlugins +qa
 
 # Update XVim
