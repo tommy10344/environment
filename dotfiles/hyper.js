@@ -132,7 +132,8 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hyper-solarized-dark'
+    'hyper-solarized-dark',
+    // 'hyperpower'
   ],
 
   // in development, you can create a directory under

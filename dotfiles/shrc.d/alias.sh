@@ -7,7 +7,7 @@ alias mkdirtoday="mkdir $(date +'%Y-%m-%d')"
 alias cdtoday="cd $(date +'%Y-%m-%d')"
 
 # vim
-if type nvim > /dev/null 2>&1; then
+if type ${HOME}/neovim/bin/nvim > /dev/null 2>&1; then
     alias vim="nvim"
 fi
 alias vimrc="vim ~/.vimrc"
