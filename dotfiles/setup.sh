@@ -103,7 +103,6 @@ brew install the_silver_searcher
 brew install ripgrep
 brew install ctags
 brew install tree
-brew install gibo
 brew install docker-clean
 brew install fzf
 brew install ghq
@@ -176,6 +175,10 @@ brew install ideviceinstaller ios-deploy
 
 # golang
 go get -u github.com/nsf/gocode
+
+# gibo
+brew install gibo
+gibo update
 
 # oss-src
 ghq get https://github.com/XVimProject/XVim2
