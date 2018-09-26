@@ -13,5 +13,6 @@ ln -sfn "${BASE_DIR}/blockdiagrc"                "${HOME}/.blockdiagrc"
 ln -sfn "${BASE_DIR}/vscode/settings.json"       "${HOME}/Library/Application Support/Code/User/settings.json"
 ln -sfn "${BASE_DIR}/shrc.d"                     "${HOME}/shrc.d"
 ln -sfn "${BASE_DIR}/karabiner"                  "${HOME}/.config"
+ln -sfn "${BASE_DIR}/hyper.js"                   "${HOME}/.hyper.js"
 
 ${BASE_DIR}/vim/link.sh
