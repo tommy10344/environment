@@ -1,0 +1,16 @@
+cask "appcleaner"
+cask "the-unarchiver"
+cask "avast-security"
+cask "karabiner-elements"
+cask "google-chrome"
+
+cask "hyper"
+cask "java"
+cask "fork"
+cask "visual-studio"
+cask "visual-studio-code"
+cask "wireshark"
+
+cask "yammer"
+cask "microsoft-office"
+cask "microsoft-teams"

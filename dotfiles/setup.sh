@@ -106,6 +106,7 @@ brew install tree
 brew install docker-clean
 brew install fzf
 brew install ghq
+brew install autossh
 
 # zsh (to default shell)
 sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
@@ -186,6 +187,9 @@ ghq get https://github.com/altercation/solarized
 ghq get https://github.com/ArtSabintsev/Solarized-Dark-for-Xcode
 ghq get https://github.com/flutter/flutter
 
+
+# ----- Homebrew Cask -----
+brew bundle install --file="${BASE_DIR}/Brewfile-cask"
 
 # ----- Setup dotfiles -----
 ghq get https://github.com/kurozu10344/environment
