@@ -11,6 +11,7 @@ cask "visual-studio"
 cask "visual-studio-code"
 cask "wireshark"
 
-cask "yammer"
 cask "microsoft-office"
 cask "microsoft-teams"
+cask "yammer"
+cask "onedrive"
