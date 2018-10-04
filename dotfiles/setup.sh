@@ -3,6 +3,10 @@
 BASE_DIR=$(cd $(dirname $0);pwd)
 ${BASE_DIR}/../link.sh
 
+EMAIL_ADDRESS="htomiyosi@gmail.com"
+
+ssh-keygen -t rsa -b 4096 -C "${EMAIL_ADDRESS}"
+
 # ----- Dock Settings -----
 
 # Dock を自動的に隠す
@@ -117,7 +121,7 @@ rm -f ~/.zcompdump; compinit
 
 # git config
 git config --global user.name "Hiroaki Tomiyoshi"
-git config --global user.email htomiyosi@gmail.com
+git config --global user.email "${EMAIL_ADDRESS}"
 git config --global user.useConfigOnly true
 git config --global ghq.root ~/src
 
