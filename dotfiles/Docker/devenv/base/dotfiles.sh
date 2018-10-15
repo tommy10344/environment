@@ -1,3 +1,3 @@
-git clone https://bitbucket.com/kurozu/dotfiles ${HOME}/dotfiles
-cd ${HOME}/dotfiles
-bash link_dotfiles.sh
+git clone https://github.com/tommy10344/environment ${HOME}/environment
+cd ${HOME}/environment
+bash link.sh

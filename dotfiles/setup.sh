@@ -197,6 +197,6 @@ ghq get https://github.com/flutter/flutter
 brew bundle install --file="${BASE_DIR}/Brewfile-cask"
 
 # ----- Setup dotfiles -----
-ghq get https://github.com/kurozu10344/environment
-cd $(ghq root)/github.com/kurozu10344/environment
+ghq get https://github.com/tommy10344/environment
+cd $(ghq root)/github.com/tommy10344/environment
 ./link.sh
