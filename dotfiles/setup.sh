@@ -7,6 +7,8 @@ EMAIL_ADDRESS="htomiyosi@gmail.com"
 
 ssh-keygen -t rsa -b 4096 -C "${EMAIL_ADDRESS}"
 
+ln -sfn "${HOME}/Library/Mobile Documents/com~apple~CloudDocs" "${HOME}/icloud-drive"
+
 # ----- Dock Settings -----
 
 # Dock を自動的に隠す
