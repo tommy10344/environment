@@ -36,5 +36,6 @@
 
     "eslint.enable": true,
     "eslint.run": "onSave",
-    "eslint.autoFixOnSave": true
+    "eslint.autoFixOnSave": true,
+    "explorer.confirmDragAndDrop": false
 }

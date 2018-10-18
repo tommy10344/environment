@@ -15,6 +15,7 @@ cask "wireshark"
 cask "docker"
 
 cask "discord"
+cask "boostnote"
 
 cask "microsoft-office"
 cask "microsoft-teams"
