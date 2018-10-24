@@ -142,6 +142,7 @@ rbenv rehash
 gem install rcodetools  # for deoplete-rct
 gem install solargraph  # Ruby language server
 gem install mdl # markdownlint
+gem install rubocop
 rbenv rehash
 
 # Node.js
