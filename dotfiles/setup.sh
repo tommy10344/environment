@@ -172,6 +172,7 @@ ${HOME}/bin/build-neovim.sh
 
 # swift
 brew install sourcekitten
+brew install swiftlint
 pip3 install pyyaml # for autocomplete-swift plugin (vim)
 
 # Cocoapods
