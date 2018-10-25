@@ -11,5 +11,5 @@ make uninstall
 make clean
 git checkout ${BRANCH}
 git pull
-# sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 make
