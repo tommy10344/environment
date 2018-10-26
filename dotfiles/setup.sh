@@ -12,7 +12,10 @@ ln -sfn "${HOME}/Library/Mobile Documents/com~apple~CloudDocs" "${HOME}/icloud-d
 # ----- Dock Settings -----
 
 # Dock を自動的に隠す
-# defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide -bool true
+
+# Dockの表示位置(左)
+defaults write com.apple.dock orientation -string "left"
 
 # ----- AirDrop Settings -----
 
@@ -89,6 +92,12 @@ killall Finder
 defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
 ## 並列ビルド設定 (並列数: 8)
 defaults write com.apple.dt.Xcode IDEBuildOperationMaxNumberOfConcurrentCompileTasks 8
+
+
+# ----- Date settings -----
+
+# 日付と時刻のフォーマット（24時間表示、秒表示あり、日付・曜日を表示）
+defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  H:mm:ss"
 
 
 # ----- CLI tools -----
