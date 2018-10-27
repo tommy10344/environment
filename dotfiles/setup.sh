@@ -26,6 +26,10 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
 # ----- Mission Control -----
 
+# ウインドウをアプリケーションごとにグループ化
+defaults write com.apple.dock expose-group-apps -bool true
+
+
 # Hot corners
 # Possible values:
 #  0: no-op
