@@ -13,6 +13,7 @@ cask "visual-studio"
 cask "visual-studio-code"
 cask "wireshark"
 cask "docker"
+cask "dash"
 
 cask "discord"
 cask "boostnote"
