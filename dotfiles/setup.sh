@@ -103,6 +103,11 @@ defaults write com.apple.dt.Xcode IDEBuildOperationMaxNumberOfConcurrentCompileT
 # 日付と時刻のフォーマット（24時間表示、秒表示あり、日付・曜日を表示）
 defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  H:mm:ss"
 
+# ----- Safari settings -----
+
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
+
 
 # ----- CLI tools -----
 
