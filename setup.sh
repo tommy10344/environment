@@ -1,7 +1,8 @@
 #!/bin/sh
 
 BASE_DIR=$(cd $(dirname $0);pwd)
-${BASE_DIR}/../link.sh
+DOTFILES_DIR=${BASE_DIR}/dotfiles
+BIN_DIR=${BASE_DIR}/bin
 
 EMAIL_ADDRESS="htomiyosi@gmail.com"
 
@@ -186,7 +187,7 @@ pip3 install neovim
 pip3 install neovim-remote
 gem install neovim
 npm install -g neovim
-${HOME}/bin/build-neovim.sh
+${BIN_DIR}/bin/build-neovim.sh
 
 # swift
 brew install sourcekitten
@@ -216,7 +217,7 @@ ghq get https://github.com/flutter/flutter
 
 
 # ----- Homebrew Cask -----
-brew bundle install --file="${BASE_DIR}/Brewfile-cask"
+brew bundle install --file="${DOTFILES_DIR}/Brewfile-cask"
 
 # ----- Setup dotfiles -----
 ghq get https://github.com/tommy10344/environment
