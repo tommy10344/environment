@@ -5,7 +5,7 @@ cask "karabiner-elements"
 cask "google-chrome"
 
 cask "hyper"
-cask "java"
+cask "java8"
 # cask "fork"
 cask "sourcetree"
 cask "android-studio"

@@ -114,6 +114,9 @@ defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
 
 # Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew tap caskroom/versions
+
 brew install bash
 brew install bash-completion
 brew install zsh
