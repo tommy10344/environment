@@ -91,6 +91,13 @@ defaults write com.apple.finder ShowPathbar -bool true
 killall Finder
 
 
+# ----- Input Method Settings -----
+
+# "¥"キーで入力する文字 -> バックスラッシュ
+defaults write com.apple.inputmethod.Kotoeri 'JIMPrefCharacterForYenKey' -int 1
+
+killall JapaneseIM
+
 # ----- Xcode Settings -----
 
 ## プログレスバーにビルド時間を表示
