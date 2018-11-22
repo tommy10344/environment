@@ -115,6 +115,7 @@ defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  H:mm:ss"
 
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
+defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 
 
 # ----- CLI tools -----
