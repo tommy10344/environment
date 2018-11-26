@@ -40,5 +40,8 @@
     "tslint.enable": true,
     "tslint.run": "onSave",
     "tslint.autoFixOnSave": true,
+    "markdown-pdf.styles": [
+        "~/.config/vscode-markdown-github.css"
+    ],
     "explorer.confirmDragAndDrop": false
 }
