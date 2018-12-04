@@ -16,6 +16,10 @@ augroup vimrc-filetypes
     autocmd BufWinEnter,BufNewFile SConstruct set filetype=python
     autocmd BufWinEnter,BufNewFile SConscript set filetype=python
 
+    " Kotlin
+    autocmd BufWinEnter,BufNewFile *.kt set filetype=kotlin
+    autocmd BufWinEnter,BufNewFile *.kts set filetype=kotlin
+
     " Typescript
     autocmd BufWinEnter,BufNewFile *.ts set filetype=typescript
 
