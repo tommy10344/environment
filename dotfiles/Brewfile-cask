@@ -15,6 +15,7 @@ cask "wireshark"
 cask "docker"
 cask "dash"
 cask "realm-studio"
+cask "fastlane"
 
 cask "discord"
 cask "boostnote"
