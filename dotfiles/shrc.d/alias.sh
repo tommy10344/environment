@@ -20,3 +20,6 @@ alias gdc="git diff --cached"
 
 # ruby
 alias be="bundle exec"
+
+# Android
+alias android_studio="open -a /Applications/Android\ Studio.app"
