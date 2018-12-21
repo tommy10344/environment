@@ -205,7 +205,8 @@ brew install sourcekitten
 brew install swiftlint
 pip3 install pyyaml # for autocomplete-swift plugin (vim)
 
-# Cocoapods
+# iOS
+brew install carthage
 brew install cocoapods
 pod setup
 
