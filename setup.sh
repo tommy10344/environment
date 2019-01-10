@@ -193,8 +193,8 @@ brew install vim
 # brew install neovim/neovim/neovim --HEAD
 ghq get https://github.com/neovim/neovim
 brew install ninja libtool automake cmake pkg-config gettext
-pip install neovim
-pip3 install neovim
+pip2 install pynvim
+pip3 install pynvim
 pip3 install neovim-remote
 gem install neovim
 npm install -g neovim

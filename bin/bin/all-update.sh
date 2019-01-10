@@ -10,8 +10,8 @@ brew cleanup
 
 pip2 install --upgrade pip
 pip3 install --upgrade pip
-pip2 install --upgrade neovim
-pip3 install --upgrade neovim
+pip2 install --upgrade pynvim
+pip3 install --upgrade pynvim
 pip2 install --upgrade jedi
 pip3 install --upgrade jedi
 
