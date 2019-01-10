@@ -3,6 +3,7 @@ cask "the-unarchiver"
 cask "avast-security"
 cask "karabiner-elements"
 cask "google-chrome"
+cask "alfred"
 
 cask "hyper"
 cask "java8"
