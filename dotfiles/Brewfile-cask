@@ -17,7 +17,6 @@ cask "docker"
 cask "dash"
 cask "realm-studio"
 cask "fastlane"
-cask "provisionql"
 
 cask "discord"
 cask "boostnote"
@@ -26,3 +25,7 @@ cask "microsoft-office"
 cask "microsoft-teams"
 cask "yammer"
 cask "onedrive"
+
+# QuickLook Plugins
+cask "provisionql"
+cask "quicklookapk"
