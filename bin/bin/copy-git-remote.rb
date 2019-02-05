@@ -11,7 +11,6 @@ end
 
 url = git_result.split("\n")
   .select {|line| line.start_with?("origin")}.first
-  .gsub("\t", " ")
   .split(" ")[1]
 
 `printf #{url} | pbcopy`
