@@ -143,6 +143,7 @@ brew install docker-clean
 brew install fzf
 brew install ghq
 brew install autossh
+brew install jsonlint
 
 # zsh (to default shell)
 sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
