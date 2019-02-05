@@ -144,6 +144,7 @@ brew install fzf
 brew install ghq
 brew install autossh
 brew install jsonlint
+brew install jq
 
 # zsh (to default shell)
 sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
@@ -179,7 +180,6 @@ rbenv rehash
 # Node.js
 brew install node
 npm install -g npm
-npm install -g jq
 npm install -g express-generator
 npm install -g create-react-app
 npm install -g react-native-cli
