@@ -24,15 +24,23 @@
         { "before": [":"], "after": [";"] },
         { "before": ["<Space>","h"], "after": ["0"] },
         { "before": ["<Space>","l"], "after": ["$"] },
+        { "before": ["<Space>","k"], "after": ["H"] },
+        { "before": ["<Space>","j"], "after": ["L"] },
         { "before": ["<C-h>"], "after": ["g","T"] },
         { "before": ["<C-l>"], "after": ["g","t"] }
     ],
     "vim.visualModeKeyBindings": [
         { "before": ["<Space>","h"], "after": ["0"] },
-        { "before": ["<Space>","l"], "after": ["$"] }
+        { "before": ["<Space>","l"], "after": ["$"] },
+        { "before": ["<Space>","k"], "after": ["H"] },
+        { "before": ["<Space>","j"], "after": ["L"] }
     ],
     "vim.insertModeKeyBindings": [
-        { "before": ["j","j"], "after": ["<Esc>"] }
+        { "before": ["j","j"], "after": ["<Esc>"] },
+        { "before": ["<C-j>"], "after": ["<Down>"] },
+        { "before": ["<C-k>"], "after": ["<Up>"] },
+        { "before": ["<C-h>"], "after": ["<Left>"] },
+        { "before": ["<C-l>"], "after": ["<Right>"] }
     ],
 
     "eslint.enable": true,
