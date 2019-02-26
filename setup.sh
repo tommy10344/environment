@@ -191,7 +191,7 @@ brew install vim
 # brew linkapps macvim
 
 # neovim
-# brew install neovim/neovim/neovim --HEAD
+brew install neovim
 ghq get https://github.com/neovim/neovim
 brew install ninja libtool automake cmake pkg-config gettext
 pip2 install pynvim

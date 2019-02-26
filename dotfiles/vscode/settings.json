@@ -1,9 +1,10 @@
-// 既定の設定を上書きするには、このファイル内に設定を挿入します
 {
     "editor.fontFamily": "RictyDiminished-Regular",
-    "editor.fontSize": 14,
+    "editor.fontSize": 11,
+    "terminal.integrated.fontSize": 11,
     "editor.wordWrap": "on",
     "window.zoomLevel": 1,
+    "files.trimTrailingWhitespace": true,
     "files.associations": {
         "Fastfile": "ruby"
     },
@@ -24,11 +25,11 @@
         { "before": ["<Space>","h"], "after": ["0"] },
         { "before": ["<Space>","l"], "after": ["$"] },
         { "before": ["<C-h>"], "after": ["g","T"] },
-        { "before": ["<C-l>"], "after": ["g","t"] },
+        { "before": ["<C-l>"], "after": ["g","t"] }
     ],
     "vim.visualModeKeyBindings": [
         { "before": ["<Space>","h"], "after": ["0"] },
-        { "before": ["<Space>","l"], "after": ["$"] },
+        { "before": ["<Space>","l"], "after": ["$"] }
     ],
     "vim.insertModeKeyBindings": [
         { "before": ["j","j"], "after": ["<Esc>"] }
@@ -43,5 +44,8 @@
     "markdown-pdf.styles": [
         "~/.config/vscode-markdown-github.css"
     ],
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+
+    "ruby.intellisense": "rubyLocate",
+    "ruby.useLanguageServer": true
 }
