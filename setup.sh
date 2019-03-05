@@ -88,6 +88,9 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 # パスバーを表示
 defaults write com.apple.finder ShowPathbar -bool true
 
+# 検索実行時にデフォルトで現在のフォルダを検索
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
 killall Finder
 
 
