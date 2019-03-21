@@ -174,6 +174,7 @@ brew install ruby-build
 eval "$(rbenv init -)"
 rbenv install 2.5.1
 rbenv rehash
+gem install bundler
 gem install rcodetools  # for deoplete-rct
 gem install solargraph  # Ruby language server
 gem install mdl # markdownlint
