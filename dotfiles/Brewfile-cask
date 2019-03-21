@@ -20,6 +20,7 @@ cask "fastlane"
 
 cask "discord"
 cask "boostnote"
+cask "sketch"
 
 cask "microsoft-office"
 cask "microsoft-teams"
