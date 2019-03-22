@@ -236,6 +236,9 @@ ghq get https://github.com/flutter/flutter
 # ----- Homebrew Cask -----
 brew bundle install --file="${DOTFILES_DIR}/Brewfile-cask"
 
+# ----- Setup Visual Studio Code -----
+${DOTFILES_DIR}/vscode/setup.sh
+
 # ----- Setup dotfiles -----
 ghq get https://github.com/tommy10344/environment
 cd $(ghq root)/github.com/tommy10344/environment
