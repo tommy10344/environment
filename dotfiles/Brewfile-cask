@@ -1,3 +1,7 @@
+# Fonts
+cask "font-ricty-diminished"
+cask "font-noto-sans-cjk"
+
 cask "appcleaner"
 cask "the-unarchiver"
 cask "avast-security"

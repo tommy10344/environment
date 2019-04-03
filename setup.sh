@@ -234,6 +234,7 @@ ghq get https://github.com/flutter/flutter
 
 
 # ----- Homebrew Cask -----
+brew tap homebrew/cask-fonts
 brew bundle install --file="${DOTFILES_DIR}/Brewfile-cask"
 
 # ----- Setup Visual Studio Code -----
