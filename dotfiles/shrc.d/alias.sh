@@ -10,13 +10,17 @@ alias cdtoday="cd $(date +'%Y-%m-%d')"
 if type ${HOME}/neovim/bin/nvim > /dev/null 2>&1; then
     alias vim="nvim"
 fi
-alias vimrc="vim ~/.vimrc"
 
 # git
 alias gs="git status"
-alias gf="git fetch --all"
-alias gd="git diff"
-alias gdc="git diff --cached"
+alias gstatus="git status"
+alias gdiff="git diff"
+alias gadd="git add"
+alias gcommit="git commit"
+alias gpush="git push"
+alias gpull="git pull"
+alias glog="git log"
+alias gfetch="git fetch"
 
 # ruby
 alias be="bundle exec"
