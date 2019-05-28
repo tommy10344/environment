@@ -52,6 +52,15 @@ lnoremap <C-@> <Esc>
 cnoremap <C-@> <Esc>
 tnoremap <C-@> <Esc>
 
+" Search
+nnoremap <ESC><ESC> :<C-u>nohlsearch<CR>
+nmap n nzz
+nmap N Nzz 
+nmap * *zz 
+nmap # #zz 
+nmap g* g*zz 
+nmap g# g#zz
+
 " IdeaVIM only
 set surround
 nnoremap <Space>r :<C-u>action Run<CR>

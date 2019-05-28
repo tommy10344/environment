@@ -16,7 +16,7 @@ vnoremap <Space>h 0
 nnoremap <Space>l $
 vnoremap <Space>l $
 
-" tab
+" Tab
 nnoremap <C-h> gT
 nnoremap <C-l> gt
 nnoremap <C-t> :<C-u>tabe<CR>
@@ -44,7 +44,7 @@ inoremap jj     <Esc>
 noremap <C-@>   <Esc>
 noremap! <C-@>  <Esc>
 
-" search
+" Search
 nnoremap <ESC><ESC> :<C-u>nohlsearch<CR>
 nmap n nzz
 nmap N Nzz 

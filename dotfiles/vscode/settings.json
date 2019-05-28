@@ -27,7 +27,13 @@
         { "before": ["<Space>","k"], "after": ["H"] },
         { "before": ["<Space>","j"], "after": ["L"] },
         { "before": ["<C-h>"], "after": ["g","T"] },
-        { "before": ["<C-l>"], "after": ["g","t"] }
+        { "before": ["<C-l>"], "after": ["g","t"] },
+        { "before": ["n"], "after": ["n", "z", "z"] },
+        { "before": ["N"], "after": ["N", "z", "z"] },
+        { "before": ["*"], "after": ["*", "z", "z"] },
+        { "before": ["#"], "after": ["#", "z", "z"] },
+        { "before": ["g", "*"], "after": ["g", "*", "z", "z"] },
+        { "before": ["g", "#"], "after": ["g", "#", "z", "z"] }
     ],
     "vim.visualModeKeyBindings": [
         { "before": ["<Space>","h"], "after": ["0"] },

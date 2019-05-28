@@ -49,7 +49,16 @@ lnoremap <C-@> <Esc>
 cnoremap <C-@> <Esc>
 tnoremap <C-@> <Esc>
 
+" Search
+nnoremap <ESC><ESC> :<C-u>nohlsearch<CR>
+nmap n nzz
+nmap N Nzz
+nmap * *zz
+nmap # #zz
+nmap g* g*zz 
+nmap g# g#zz
 
+" Xcode command
 nnoremap <Space>a :xccmd jumpToNextCounterpart<CR>
 nnoremap <Space>r :run<CR>
 nnoremap <Space>b :make<CR>
