@@ -2,6 +2,7 @@
 cask "font-ricty-diminished"
 cask "font-noto-sans-cjk"
 
+# Utilities
 cask "appcleaner"
 cask "the-unarchiver"
 cask "avast-security"
@@ -10,9 +11,9 @@ cask "google-chrome"
 cask "alfred"
 cask "authy"
 
+# Development Environments
 cask "hyper"
 cask "java8"
-# cask "fork"
 cask "sourcetree"
 cask "android-studio"
 cask "visual-studio"
@@ -22,15 +23,16 @@ cask "docker"
 cask "dash"
 cask "realm-studio"
 cask "fastlane"
-
-cask "discord"
-cask "boostnote"
 cask "sketch"
+cask "boostnote"
+cask "discord"
 
+# Work
 cask "microsoft-office"
 cask "microsoft-teams"
 cask "yammer"
 cask "onedrive"
+cask "google-drive-file-stream"
 
 # QuickLook Plugins
 cask "provisionql"
