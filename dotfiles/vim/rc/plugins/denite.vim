@@ -2,8 +2,8 @@
 " Denite.nvim
 "
 
-nnoremap <Space>o :<C-u>Denite file_rec file_mru<CR>
-nnoremap <C-p>    :<C-u>Denite file_rec file_mru<CR>
+nnoremap <Space>o :<C-u>Denite file/rec file_mru<CR>
+nnoremap <C-p>    :<C-u>Denite file/rec file_mru<CR>
 
 nnoremap <Space>d :<C-u>Denite directory_rec<CR>
 nnoremap cd :<C-u>Denite directory_rec<CR>
@@ -20,7 +20,7 @@ nnoremap <Space>m :<C-u>Denite file_mru<CR>
 " nnoremap <Space>y :<C-u>Denite history/yank<CR>
 nnoremap <Space>f :<C-u>Denite line<CR>
 
-" command! DeniteOpen :Denite file_rec
+" command! DeniteOpen :Denite file/rec
 " command! DeniteGrep :Denite grep
 " command! DeniteOutline :Denite outline
 " command! DeniteTag :Denite tag
@@ -30,7 +30,7 @@ nnoremap <Space>f :<C-u>Denite line<CR>
 
 " Grep
 if executable('rg')
-  call denite#custom#var('file_rec', 'command',
+  call denite#custom#var('file/rec', 'command',
         \ ['rg', '--files', '--glob', '!.git'])
   call denite#custom#var('grep', 'command', ['rg'])
   call denite#custom#var('grep', 'recursive_opts', [])
@@ -39,7 +39,7 @@ if executable('rg')
   call denite#custom#var('grep', 'default_opts',
         \ ['--vimgrep', '--no-heading', '--smart-case'])
 elseif executable('ag')
-  call denite#custom#var('file_rec', 'command',
+  call denite#custom#var('file/rec', 'command',
         \ ['ag', '--follow', '--nocolor', '--nogroup', '-g', ''])
 endif
 
