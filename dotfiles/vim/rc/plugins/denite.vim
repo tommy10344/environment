@@ -38,13 +38,11 @@ nnoremap <Space>m :<C-u>Denite file_mru<CR>
 " nnoremap <Space>y :<C-u>Denite history/yank<CR>
 nnoremap <Space>f :<C-u>Denite line<CR>
 
-" command! DeniteOpen :Denite file/rec
-" command! DeniteGrep :Denite grep
-" command! DeniteOutline :Denite outline
-" command! DeniteTag :Denite tag
-" command! DeniteBuffer :Denite buffer
-" command! DeniteRegister :Denite register
-" command! DeniteDein :Denite dein
+
+" Make filter mode default
+call denite#custom#option('_', {
+            \ 'start_filter': 1,
+            \ })
 
 " Grep
 if executable('rg')
@@ -60,9 +58,3 @@ elseif executable('ag')
   call denite#custom#var('file/rec', 'command',
         \ ['ag', '--follow', '--nocolor', '--nogroup', '-g', ''])
 endif
-
-" Move at insert mode
-call denite#custom#map('insert', '<C-j>',
-      \ '<denite:move_to_next_line>', 'noremap')
-call denite#custom#map('insert', '<C-k>',
-      \ '<denite:move_to_previous_line>', 'noremap')
