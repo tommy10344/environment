@@ -103,9 +103,11 @@ brew install sourcekitten
 brew install swiftlint
 pip3 install pyyaml # for autocomplete-swift plugin (vim)
 
-# iOS
+# iOS / Swift
 brew install carthage
 brew install cocoapods
+brew install mint
+brew install xcodegen
 pod setup
 
 # Flutter
