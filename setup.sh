@@ -29,6 +29,7 @@ brew install python3
 brew install lua
 brew install go
 brew install git
+brew install tig
 brew install wget
 brew install the_silver_searcher
 brew install ripgrep

@@ -34,16 +34,28 @@ setopt hist_ignore_all_dups
 # zsh-completionsの設定
 fpath=(/usr/local/share/zsh-completions $fpath)
 
-# git prompt
+# git prompt(vcs_info)
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats '[%b]'
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
-precmd () {
- psvar=()
- LANG=en_US.UTF-8 vcs_info
- [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
-}
 RPROMPT="%1(v|%F{green}%1v%f|)"
+
+precmd () {
+    # git prompt(vcs_info)
+    psvar=()
+    LANG=en_US.UTF-8 vcs_info
+    [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
+
+    # Tab title
+    pwd=$(pwd)
+    cwd=${pwd##*/}
+    print -Pn "\e]0;$cwd\a"
+}
+
+preexec() {
+    # Tab title
+    printf "\033]0;%s\a" "${1%% *} | $cwd"
+}
 
 
 ##############################

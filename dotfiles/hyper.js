@@ -133,8 +133,11 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     'hyper-solarized-dark',
+    "hyper-statusline",
+    "hyper-search",
+    "hyper-tab-icons"
     // 'hypercwd',
-    // 'hyperpower'
+    // 'hyper-pokemon'
   ],
 
   // in development, you can create a directory under
