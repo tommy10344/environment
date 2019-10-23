@@ -18,4 +18,10 @@ ln -sfn "${BASE_DIR}/karabiner"                  "${HOME}/.config"
 ln -sfn "${BASE_DIR}/hyper.js"                   "${HOME}/.hyper.js"
 ln -sfn "${BASE_DIR}/Xcode/CodeSnippets"         "${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
 
+# Link All Services
+find "${BASE_DIR}/Services" \
+  | grep -e ".workflow$" \
+  | xargs -I{} basename "{}" \
+  | xargs -I{} ln -s "${BASE_DIR}/Services/{}" "${HOME}/Library/Services/{}"
+
 ${BASE_DIR}/vim/link.sh
