@@ -14,12 +14,20 @@ fi
 # git
 alias gs="git status"
 alias gstatus="git status"
+
+alias gd="git diff"
 alias gdiff="git diff"
+
+alias gdc="git diff --cached"
+alias gdiffcached="gdc"
+
+alias gl="git log --graph --all --oneline"
+alias glog="gl"
+
 alias gadd="git add"
 alias gcommit="git commit"
 alias gpush="git push"
 alias gpull="git pull"
-alias glog="git log"
 alias gfetch="git fetch"
 
 # ruby
