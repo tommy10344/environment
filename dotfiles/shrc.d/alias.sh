@@ -12,23 +12,29 @@ if type ${HOME}/neovim/bin/nvim > /dev/null 2>&1; then
 fi
 
 # git
-alias gs="git status"
 alias gstatus="git status"
+alias gs="gstatus"
 
-alias gd="git diff"
 alias gdiff="git diff"
+alias gd="gdiff"
 
-alias gdc="git diff --cached"
-alias gdiffcached="gdc"
+alias gdiffcached="git diff --cached"
+alias gcd="gdc"
 
-alias gl="git log --graph --all --oneline"
-alias glog="gl"
+alias glog="git log --graph --all --oneline"
+alias gl="glog"
 
 alias gadd="git add"
+alias ga="gadd"
+
 alias gcommit="git commit"
+alias gc="gcommit"
+
 alias gpush="git push"
 alias gpull="git pull"
 alias gfetch="git fetch"
+alias gswitch="git switch"
+alias grestore="git restore"
 
 # ruby
 alias be="bundle exec"
