@@ -26,6 +26,7 @@ alias gl="glog"
 
 alias gadd="git add"
 alias ga="gadd"
+alias gap="gadd -p"
 
 alias gcommit="git commit"
 alias gc="gcommit"
