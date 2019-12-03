@@ -3,7 +3,7 @@
     "editor.fontSize": 11,
     "terminal.integrated.fontSize": 11,
     "editor.wordWrap": "on",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "files.trimTrailingWhitespace": true,
     "files.associations": {
         "Fastfile": "ruby"
@@ -61,5 +61,6 @@
     "explorer.confirmDragAndDrop": false,
 
     "ruby.intellisense": "rubyLocate",
-    "ruby.useLanguageServer": true
+    "ruby.useLanguageServer": true,
+    "python.jediEnabled": false
 }

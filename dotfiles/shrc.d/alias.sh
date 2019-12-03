@@ -15,6 +15,9 @@ fi
 alias gstatus="git status"
 alias gs="gstatus"
 
+alias gbranch="git branch"
+alias gb="gbranch"
+
 alias gdiff="git diff"
 alias gd="gdiff"
 
