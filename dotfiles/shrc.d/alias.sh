@@ -39,6 +39,7 @@ alias gpull="git pull"
 alias gfetch="git fetch"
 alias gswitch="git switch"
 alias grestore="git restore"
+alias gstash="git stash"
 
 # ruby
 alias be="bundle exec"
