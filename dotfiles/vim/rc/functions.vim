@@ -14,8 +14,14 @@ function! Add_PATH(path) abort
     endif
 endfunction
 
+" Open file explorer
 function! OpenFileExplorer() abort
     VimFilerCurrentDir -create -explorer
+endfunction
+
+" Shows current file in file explorer
+function! RevealInFileExplorer() abort
+    VimFilerExplorer -find
 endfunction
 
 " Split window and launch terminal under the current window

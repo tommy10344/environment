@@ -5,7 +5,7 @@
 command! CdCurrent lcd %:p:h
 command! Rc :e ~/.vimrc
 command! Fi :call OpenFileExplorer()
-command! RevealFileInTree :VimFilerExplorer -find
+command! RevealInFileExplorer :call RevealInFileExplorer()
 command! Sh :VimShellCreate
 command! Hex :%!xxd -g 1
 command! HexReverse :%!xxd -r
