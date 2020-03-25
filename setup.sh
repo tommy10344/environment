@@ -66,7 +66,8 @@ brew install ruby && brew link ruby
 brew install rbenv
 brew install ruby-build
 eval "$(rbenv init -)"
-rbenv install 2.5.1
+rbenv install 2.6.3
+rbenv global 2.6.3
 rbenv rehash
 gem install bundler
 gem install rcodetools  # for deoplete-rct
