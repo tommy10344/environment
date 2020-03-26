@@ -74,6 +74,7 @@ gem install rcodetools  # for deoplete-rct
 gem install solargraph  # Ruby language server
 gem install mdl # markdownlint
 gem install rubocop
+gem install jazzy # Generates documentation for Swift or Objective-C
 rbenv rehash
 
 # Node.js
