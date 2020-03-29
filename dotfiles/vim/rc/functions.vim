@@ -16,12 +16,12 @@ endfunction
 
 " Open file explorer
 function! OpenFileExplorer() abort
-    VimFilerCurrentDir -create -explorer
+    NERDTree
 endfunction
 
 " Shows current file in file explorer
 function! RevealInFileExplorer() abort
-    VimFilerExplorer -find
+    NERDTreeFind
 endfunction
 
 " Split window and launch terminal under the current window

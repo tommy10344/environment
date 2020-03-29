@@ -1,61 +1,102 @@
 [[plugins]]
-repo = 'Shougo/neocomplete.vim'
-if = 'has("lua")'
-on_event = 'InsertEnter'
-hook_source = '''
-    let g:deoplete#enable_at_startup = 1
-'''
-
-[[plugins]]
-repo = 'Shougo/deoplete.nvim'
-if = 'has("nvim")'
-on_event = 'InsertEnter'
-hook_source = '''
-    let g:deoplete#enable_at_startup = 1
-    source ~/.vim/rc/plugins/deoplete.vim
-'''
-
-[[plugins]]
-repo = 'Shougo/neosnippet'
-on_event = 'InsertEnter'
-hook_source = '''
-    imap <C-k> <Plug>(neosnippet_expand_or_jump)
-    smap <C-k> <Plug>(neosnippet_expand_or_jump)
-    xmap <C-k> <Plug>(neosnippet_expand_target)
-    let g:neosnippet#enable_snipmate_compatibility = 1
-    let g:neosnippet#enable_completed_snippet = 1
-    let g:neosnippet#expand_word_boundary = 1
-'''
-
-[[plugins]]
-repo = 'Shougo/vimshell'
-on_cmd = ['VimShell', 'VimShellCreate']
-hook_source = '''
-    let g:vimshell_prompt_expr = 'escape(fnamemodify(getcwd(), ":~").">", "\\[]()?! ")." "'
-    let g:vimshell_prompt_pattern = '^\%(\f\|\\.\)\+> '
-'''
-
-[[plugins]]
-repo = 'Shougo/vimfiler'
-depends = 'unite.vim'
-on_cmd = ['VimFiler', 'VimFilerCurrentDir']
-hook_source = '''
-    let g:vimfiler_as_default_explorer = 1
-    let g:vimfiler_safe_mode_by_default = 0
-    let g:vimfiler_ignore_pattern = []
-'''
-
-# [[plugins]]
-# repo = 'SirVer/ultisnips'
-# on_event = 'InsertEnter'
-
-[[plugins]]
 repo = 'tpope/vim-endwise'
 on_event = 'InsertEnter'
 
 [[plugins]]
 repo = 'kana/vim-smartinput'
 on_event = 'InsertEnter'
+
+# [[plugins]]
+# repo = 'Shougo/vimshell'
+# on_cmd = ['VimShell', 'VimShellCreate']
+# hook_source = '''
+    # let g:vimshell_prompt_expr = 'escape(fnamemodify(getcwd(), ":~").">", "\\[]()?! ")." "'
+    # let g:vimshell_prompt_pattern = '^\%(\f\|\\.\)\+> '
+# '''
+
+# [[plugins]]
+# repo = 'Shougo/vimfiler'
+# depends = 'unite.vim'
+# on_cmd = ['VimFiler', 'VimFilerCurrentDir']
+# hook_source = '''
+#     let g:vimfiler_as_default_explorer = 1
+#     let g:vimfiler_safe_mode_by_default = 0
+#     let g:vimfiler_ignore_pattern = []
+# '''
+
+##############################
+# Language Server Protocol
+##############################
+
+[[plugins]]
+repo = 'prabirshrestha/async.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+hook_source = '''
+    source ~/.vim/rc/plugins/asyncomplete.vim
+'''
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+depends = 'asyncomplete.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+depends = 'async.vim'
+hook_source = '''
+    source ~/.vim/rc/plugins/vim-lsp.vim
+'''
+
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'
+depends = 'vim-lsp'
+
+[[plugins]]
+repo = 'mattn/vim-lsp-icons'
+depends = 'vim-lsp'
+
+
+##############################
+# neocomplete / deoplete
+##############################
+
+# repo = 'Shougo/neocomplete.vim'
+# if = 'has("lua")'
+# on_event = 'InsertEnter'
+# hook_source = '''
+    # let g:deoplete#enable_at_startup = 1
+# '''
+
+# [[plugins]]
+# repo = 'Shougo/deoplete.nvim'
+# if = 'has("nvim")'
+# on_event = 'InsertEnter'
+# hook_source = '''
+#     source ~/.vim/rc/plugins/deoplete.vim
+# '''
+# 
+# [[plugins]]
+# repo = 'lighttiger2505/deoplete-vim-lsp'
+# if = 'has("nvim")'
+# on_event = 'InsertEnter'
+# depends = 'deoplete.nvim'
+
+# [[plugins]]
+# repo = 'Shougo/neosnippet'
+# on_event = 'InsertEnter'
+# hook_source = '''
+    # imap <C-k> <Plug>(neosnippet_expand_or_jump)
+    # smap <C-k> <Plug>(neosnippet_expand_or_jump)
+    # xmap <C-k> <Plug>(neosnippet_expand_target)
+    # let g:neosnippet#enable_snipmate_compatibility = 1
+    # let g:neosnippet#enable_completed_snippet = 1
+    # let g:neosnippet#expand_word_boundary = 1
+# '''
+
+# [[plugins]]
+# repo = 'SirVer/ultisnips'
+# on_event = 'InsertEnter'
 
 ##############################
 # Previewing document
@@ -87,57 +128,57 @@ hook_source = '''
 # C++
 ##############################
 
-[[plugins]]
-repo = 'vim-jp/vim-cpp'
-on_ft = 'cpp'
+# [[plugins]]
+# repo = 'vim-jp/vim-cpp'
+# on_ft = 'cpp'
 
-[[plugins]]
-repo = 'octol/vim-cpp-enhanced-highlight'
-on_ft = 'cpp'
+# [[plugins]]
+# repo = 'octol/vim-cpp-enhanced-highlight'
+# on_ft = 'cpp'
 
-[[plugins]]
-repo = 'osyo-manga/vim-marching'
-on_ft = ['c', 'cpp']
-on_event = 'InsertEnter'
+# [[plugins]]
+# repo = 'osyo-manga/vim-marching'
+# on_ft = ['c', 'cpp']
+# on_event = 'InsertEnter'
 
 
 ##############################
 # C#
 ##############################
 
-[[plugins]]
-repo = 'OmniSharp/omnisharp-vim'
-on_ft = 'cs'
-build = 'xbuild server/OmniSharp.sln'
+# [[plugins]]
+# repo = 'OmniSharp/omnisharp-vim'
+# on_ft = 'cs'
+# build = 'xbuild server/OmniSharp.sln'
 
 ##############################
-# haskell 
+# haskell
 ##############################
 
 # [[plugins]]
 # repo = 'dag/vim2hs'
 # on_ft = 'haskell'
 
-[[plugins]]
-repo = 'kana/vim-filetype-haskell'
-on_ft = 'haskell'
+# [[plugins]]
+# repo = 'kana/vim-filetype-haskell'
+# on_ft = 'haskell'
 
-[[plugins]]
-repo = 'itchyny/vim-haskell-indent'
-on_ft = 'haskell'
+# [[plugins]]
+# repo = 'itchyny/vim-haskell-indent'
+# on_ft = 'haskell'
 
-[[plugins]]
-repo = 'ujihisa/unite-haskellimport'
-on_ft = 'haskell'
+# [[plugins]]
+# repo = 'ujihisa/unite-haskellimport'
+# on_ft = 'haskell'
 
-[[plugins]]
-repo = 'eagletmt/neco-ghc'
-on_ft = 'haskell'
-on_event = 'InsertEnter'
+# [[plugins]]
+# repo = 'eagletmt/neco-ghc'
+# on_ft = 'haskell'
+# on_event = 'InsertEnter'
 
-[[plugins]]
-repo = 'eagletmt/ghcmod-vim'
-on_ft = 'haskell'
+# [[plugins]]
+# repo = 'eagletmt/ghcmod-vim'
+# on_ft = 'haskell'
 
 ##############################
 # swift
@@ -161,10 +202,10 @@ on_ft = 'swift'
 # on_ft = 'swift'
 # on_event = 'InsertEnter'
 
-[[plugins]]
-repo = 'mitsuse/autocomplete-swift'
-on_ft = 'swift'
-on_event = 'InsertEnter'
+# [[plugins]]
+# repo = 'mitsuse/autocomplete-swift'
+# on_ft = 'swift'
+# on_event = 'InsertEnter'
 
 ##############################
 # javascript
@@ -214,9 +255,9 @@ hook_source = '''
     autocmd QuickFixCmdPost    l* nested lwindow
 '''
 
-[[plugins]]
-repo = 'magarcia/vim-angular2-snippets'
-on_ft = 'typescript'
+# [[plugins]]
+# repo = 'magarcia/vim-angular2-snippets'
+# on_ft = 'typescript'
 
 
 ##############################
@@ -233,49 +274,49 @@ on_ft = 'typescript'
 # on_ft = ['python', 'python3']
 # depends = 'jedi-vim'
 
-[[plugins]]
-repo = 'zchee/deoplete-jedi'
-on_ft = ['python', 'python3']
-on_event = 'InsertEnter'
+# [[plugins]]
+# repo = 'zchee/deoplete-jedi'
+# on_ft = ['python', 'python3']
+# on_event = 'InsertEnter'
 
 
 ##############################
 # Ruby
 ##############################
 
-[[plugins]]
-repo = 'vim-ruby/vim-ruby'
-on_ft = 'ruby'
+# [[plugins]]
+# repo = 'vim-ruby/vim-ruby'
+# on_ft = 'ruby'
 
-[[plugins]]
-repo = 'tpope/vim-rails'
-on_ft = 'ruby'
+# [[plugins]]
+# repo = 'tpope/vim-rails'
+# on_ft = 'ruby'
 
-[[plugins]]
-repo = 'Shougo/deoplete-rct'
-on_ft = 'ruby'
-on_event = 'InsertEnter'
+# [[plugins]]
+# repo = 'Shougo/deoplete-rct'
+# on_ft = 'ruby'
+# on_event = 'InsertEnter'
 
 
 ##############################
 # golang
 ##############################
 
-[[plugins]]
-repo = 'fatih/vim-go'
-on_ft = 'go'
-hook_post_source = '''
-    GoInstallBinaries
-'''
+# [[plugins]]
+# repo = 'fatih/vim-go'
+# on_ft = 'go'
+# hook_post_source = '''
+    # GoInstallBinaries
+# '''
 
-[[plugins]]
-repo = 'zchee/deoplete-go'
-build = 'make'
-on_ft = 'go'
-depends = ['deoplete.nvim']
-hook_source = '''
-    let g:deoplete#sources#go#gocode_binary = $GOPATH . '/bin/gocode'
-'''
+# [[plugins]]
+# repo = 'zchee/deoplete-go'
+# build = 'make'
+# on_ft = 'go'
+# depends = ['deoplete.nvim']
+# hook_source = '''
+    # let g:deoplete#sources#go#gocode_binary = $GOPATH . '/bin/gocode'
+# '''
 
 
 ##############################

@@ -1,15 +1,21 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
-[[plugins]]
-repo = 'Shougo/vimproc.vim'
-build = 'make'
+# [[plugins]]
+# repo = 'Shougo/defx.nvim'
+
+# [[plugins]]
+# repo = 'Shougo/vimproc.vim'
+# build = 'make'
+
+# [[plugins]]
+# repo = 'Shougo/neosnippet-snippets'
 
 [[plugins]]
-repo = 'Shougo/neosnippet-snippets'
+repo = 'preservim/nerdtree'
 
 [[plugins]]
-repo = 'scrooloose/nerdcommenter'
+repo = 'preservim/nerdcommenter'
 hook_add = '''
     let g:NERDSpaceDelims = 1
     nmap <Space>c <Plug>NERDCommenterToggle
@@ -17,16 +23,13 @@ hook_add = '''
 '''
 
 # [[plugins]]
-# repo = 'scrooloose/nerdtree'
-
-[[plugins]]
-repo = 'thinca/vim-ref'
-
-[[plugins]]
-repo = 'kana/vim-altr'
-hook_add = '''
-    nmap <Space>a <Plug>(altr-forward)
-'''
+# repo = 'thinca/vim-ref'
+# 
+# [[plugins]]
+# repo = 'kana/vim-altr'
+# hook_add = '''
+#     nmap <Space>a <Plug>(altr-forward)
+# '''
 
 [[plugins]]
 repo = 'tpope/vim-surround'
@@ -38,8 +41,8 @@ hook_add = '''
     source ~/.vim/rc/plugins/quickrun.vim
 '''
 
-[[plugins]]
-repo = 'osyo-manga/shabadou.vim'
+# [[plugins]]
+# repo = 'osyo-manga/shabadou.vim'
 # depends = 'vim-quickrun'
 
 # [[plugins]]
@@ -79,8 +82,8 @@ hook_add = '''
     source ~/.vim/rc/plugins/ale.vim
 '''
 
-[[plugins]]
-repo = 'jceb/vim-hier'
+# [[plugins]]
+# repo = 'jceb/vim-hier'
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
@@ -90,8 +93,8 @@ hook_add = '''
                 \ }
 '''
 
-[[plugins]]
-repo = 'tpope/vim-dispatch'
+# [[plugins]]
+# repo = 'tpope/vim-dispatch'
 
 
 # [[plugins]]
@@ -103,14 +106,14 @@ repo = 'tpope/vim-dispatch'
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
 
-[[plugins]]
-repo = 'simeji/winresizer'
+# [[plugins]]
+# repo = 'simeji/winresizer'
 
-[[plugins]]
-repo = 'easymotion/vim-easymotion'
-hook_add = '''
-    source ~/.vim/rc/plugins/easymotion.vim
-'''
+# [[plugins]]
+# repo = 'easymotion/vim-easymotion'
+# hook_add = '''
+#     source ~/.vim/rc/plugins/easymotion.vim
+# '''
 
 [[plugins]]
 repo = 'tyru/open-browser.vim'
@@ -119,8 +122,8 @@ repo = 'tyru/open-browser.vim'
 # Unite/Denite
 ##############################
 
-[[plugins]]
-repo = 'Shougo/unite.vim'
+# [[plugins]]
+# repo = 'Shougo/unite.vim'
 
 [[plugins]]
 repo = 'Shougo/denite.nvim'
@@ -131,11 +134,11 @@ hook_add = '''
 [[plugins]]
 repo = 'Shougo/neomru.vim'
 
-[[plugins]]
-repo = 'Shougo/unite-outline'
+# [[plugins]]
+# repo = 'Shougo/unite-outline'
 
-[[plugins]]
-repo = 'tsukkee/unite-tag'
+# [[plugins]]
+# repo = 'tsukkee/unite-tag'
 
 ##############################
 # Git
