@@ -1,9 +1,17 @@
 {
     "editor.fontFamily": "RictyDiminished-Regular",
     "editor.fontSize": 14,
-    "terminal.integrated.fontSize": 11,
     "editor.wordWrap": "on",
+    "editor.fontLigatures": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.tslint": true
+    },
+
+    "terminal.integrated.fontSize": 11,
+
     "window.zoomLevel": 0,
+
     "files.trimTrailingWhitespace": true,
     "files.associations": {
         "Fastfile": "ruby"
@@ -51,7 +59,6 @@
 
     "eslint.enable": true,
     "eslint.run": "onSave",
-    "eslint.autoFixOnSave": true,
     "tslint.enable": true,
     "tslint.run": "onSave",
     "tslint.autoFixOnSave": true,
@@ -62,5 +69,6 @@
 
     "ruby.intellisense": "rubyLocate",
     "ruby.useLanguageServer": true,
-    "python.jediEnabled": false
+    "python.jediEnabled": false,
+    "javascript.updateImportsOnFileMove.enabled": "always"
 }

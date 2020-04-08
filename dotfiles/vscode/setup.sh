@@ -14,7 +14,8 @@ code --install-extension castwide.solargraph
 # Python
 code --install-extension ms-python.python
 
-# JavaScript / Node.js
+# JavaScript / Node.js / TypeScript
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension ms-vscode.vscode-typescript-tslint-plugin
 code --install-extension eg2.vscode-npm-script
 code --install-extension christian-kohler.npm-intellisense
-code --install-extension dbaeumer.vscode-eslint
