@@ -13,6 +13,9 @@ repo = 'Shougo/dein.vim'
 
 [[plugins]]
 repo = 'preservim/nerdtree'
+hook_add = '''
+    source ~/.vim/rc/plugins/nerdtree.vim
+'''
 
 [[plugins]]
 repo = 'preservim/nerdcommenter'
