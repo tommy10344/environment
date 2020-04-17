@@ -1,5 +1,6 @@
 # Fonts
 cask "font-ricty-diminished"
+cask "font-hackgen"
 cask "font-noto-sans-cjk"
 
 # Utilities
