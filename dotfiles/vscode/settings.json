@@ -70,5 +70,6 @@
     "ruby.intellisense": "rubyLocate",
     "ruby.useLanguageServer": true,
     "python.jediEnabled": false,
-    "javascript.updateImportsOnFileMove.enabled": "always"
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "gitlens.hovers.currentLine.over": "line"
 }

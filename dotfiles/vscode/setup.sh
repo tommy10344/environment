@@ -2,6 +2,7 @@
 
 code --install-extension vscodevim.vim
 code --install-extension editorconfig.editorconfig
+code --install-extension eamodio.gitlens
 
 # Flutter
 code --install-extension dart-code.flutter
