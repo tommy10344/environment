@@ -121,6 +121,12 @@ repo = 'editorconfig/editorconfig-vim'
 [[plugins]]
 repo = 'tyru/open-browser.vim'
 
+[[plugins]]
+repo = 'mhinz/vim-grepper'
+hook_add = '''
+    source ~/.vim/rc/plugins/vim-grepper.vim
+'''
+
 ##############################
 # Unite/Denite
 ##############################

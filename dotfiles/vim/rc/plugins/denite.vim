@@ -26,8 +26,8 @@ nnoremap <C-p>    :<C-u>Denite file/rec file_mru<CR>
 nnoremap <Space>d :<C-u>Denite directory_rec<CR>
 nnoremap cd :<C-u>Denite directory_rec<CR>
 
-nnoremap <Space>g :<C-u>Denite grep<CR>
-nnoremap <C-g>    :<C-u>Denite grep<CR>
+" nnoremap <Space>g :<C-u>Denite grep<CR>
+" nnoremap <C-g>    :<C-u>Denite grep<CR>
 
 nnoremap <Space>: :<C-u>Denite command mapping<CR>
 nnoremap <Space>t :<C-u>Denite tag<CR>
