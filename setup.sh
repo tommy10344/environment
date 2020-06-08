@@ -75,6 +75,7 @@ gem install solargraph  # Ruby language server
 gem install mdl # markdownlint
 gem install rubocop
 gem install jazzy # Generates documentation for Swift or Objective-C
+gem install xcprofiler  # Xcode build time profiler
 rbenv rehash
 
 # Node.js

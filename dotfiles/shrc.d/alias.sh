@@ -39,6 +39,7 @@ alias gfetchprune="git fetch --prune"
 alias gf="gfetch"
 alias gfp="gfetchprune"
 
+alias grebase="git rebase"
 alias gpush="git push"
 alias gpull="git pull"
 alias gswitch="git switch"

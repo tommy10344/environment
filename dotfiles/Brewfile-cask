@@ -6,8 +6,9 @@ cask "font-noto-sans-cjk"
 # Utilities
 cask "appcleaner"
 cask "the-unarchiver"
+cask "macwinzipper"
 # cask "avast-security"
-cask "avira-antivirus"
+# cask "avira-antivirus"
 cask "karabiner-elements"
 cask "google-chrome"
 # cask "alfred"
@@ -33,6 +34,7 @@ cask "postman"
 cask "sketch"
 cask "boostnote"
 cask "discord"
+cask "sf-symbols"
 
 # Work
 cask "microsoft-office"
