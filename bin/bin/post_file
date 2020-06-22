@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'optparse'
+
+params = ARGV.getopts(nil, 'url:', 'filepath:')
+url = params['url']
+file_path = params['filepath']
+ext = File.extname(file_path)
+
+headerOption = ''
+headerOption = '--header "Content-Type: application/json"' if ext == '.json'
+
+`curl --request POST #{headerOption} --data @#{file_path} #{url}`
