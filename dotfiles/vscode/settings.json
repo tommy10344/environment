@@ -17,6 +17,8 @@
         "Fastfile": "ruby"
     },
 
+    "workbench.editor.enablePreview": false,
+
     "vim.useCtrlKeys": true,
     "vim.useSystemClipboard": true,
     "vim.hlsearch": true,
