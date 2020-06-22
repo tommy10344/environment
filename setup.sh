@@ -53,6 +53,7 @@ rm -f ~/.zcompdump; compinit
 git config --global user.name "Hiroaki Tomiyoshi"
 git config --global user.email "${EMAIL_ADDRESS}"
 git config --global user.useConfigOnly true
+git config --global pager.branch false
 git config --global ghq.root ~/src
 git config --global alias.unstage "restore --staged"
 
