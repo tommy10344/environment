@@ -159,6 +159,9 @@ hook_add = '''
     source ~/.vim/rc/plugins/fugitive.vim
 '''
 
+[[plugins]]
+repo = "airblade/vim-gitgutter"
+
 ##############################
 # Colorscheme
 ##############################
