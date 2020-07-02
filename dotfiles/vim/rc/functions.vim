@@ -14,15 +14,15 @@ function! Add_PATH(path) abort
     endif
 endfunction
 
-" Open file explorer
-function! OpenFileExplorer() abort
-    NERDTree
-endfunction
-
-" Shows current file in file explorer
-function! RevealInFileExplorer() abort
-    NERDTreeFind
-endfunction
+" " Open file explorer
+" function! OpenFileExplorer() abort
+"     NERDTree
+" endfunction
+" 
+" " Shows current file in file explorer
+" function! RevealInFileExplorer() abort
+"     NERDTreeFind
+" endfunction
 
 " Split window and launch terminal under the current window
 function! SplitTerminal() abort

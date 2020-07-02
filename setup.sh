@@ -100,6 +100,7 @@ brew install ninja libtool automake cmake pkg-config gettext
 pip2 install pynvim
 pip3 install pynvim
 pip3 install neovim-remote
+pip3 install Send2Trash
 gem install neovim
 npm install -g neovim
 ${BIN_DIR}/bin/build-neovim.sh
