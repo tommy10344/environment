@@ -8,6 +8,12 @@
         "source.fixAll.tslint": true
     },
 
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
     "terminal.integrated.fontSize": 11,
 
     "window.zoomLevel": 0,
