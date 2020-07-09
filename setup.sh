@@ -4,7 +4,8 @@ BASE_DIR=$(cd $(dirname $0);pwd)
 DOTFILES_DIR=${BASE_DIR}/dotfiles
 BIN_DIR=${BASE_DIR}/bin
 
-EMAIL_ADDRESS="htomiyosi@gmail.com"
+/bin/echo -n "Email Address?: "
+read EMAIL_ADDRESS
 
 ssh-keygen -t rsa -b 4096 -C "${EMAIL_ADDRESS}"
 
