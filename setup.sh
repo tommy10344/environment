@@ -98,10 +98,9 @@ brew install vim
 brew install neovim
 ghq get https://github.com/neovim/neovim
 brew install ninja libtool automake cmake pkg-config gettext
-pip2 install pynvim
-pip3 install pynvim
-pip3 install neovim-remote
-pip3 install Send2Trash
+pip3 install --user pynvim
+pip3 install --user neovim-remote
+pip3 install --user Send2Trash
 gem install neovim
 npm install -g neovim
 ${BIN_DIR}/bin/build-neovim.sh
@@ -109,7 +108,7 @@ ${BIN_DIR}/bin/build-neovim.sh
 # swift
 brew install sourcekitten
 brew install swiftlint
-pip3 install pyyaml # for autocomplete-swift plugin (vim)
+pip3 install -- user pyyaml # for autocomplete-swift plugin (vim)
 
 # iOS / Swift
 brew install carthage
