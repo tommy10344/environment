@@ -39,10 +39,13 @@ alias gfetchprune="git fetch --prune"
 alias gf="gfetch"
 alias gfp="gfetchprune"
 
+alias gswitch="git switch"
+alias gswitch-fzf="git branch | fzf | xargs git switch"
+alias gswf="gswitch-fzf"
+
 alias grebase="git rebase"
 alias gpush="git push"
 alias gpull="git pull"
-alias gswitch="git switch"
 alias grestore="git restore"
 alias gstash="git stash"
 
