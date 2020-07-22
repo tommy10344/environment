@@ -50,6 +50,7 @@ alias gpush="git push"
 alias gpull="git pull"
 alias grestore="git restore"
 alias gstash="git stash"
+alias gsubmodule="git submodule"
 
 # ruby
 alias be="bundle exec"
