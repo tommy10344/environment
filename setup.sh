@@ -42,6 +42,7 @@ brew install ghq
 brew install autossh
 brew install jsonlint
 brew install jq
+brew install fastlane
 
 # zsh (to default shell)
 sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
