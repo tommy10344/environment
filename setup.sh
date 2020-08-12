@@ -74,6 +74,7 @@ rbenv install 2.6.3
 rbenv global 2.6.3
 rbenv rehash
 gem install bundler
+gem install iStats
 gem install rcodetools  # for deoplete-rct
 gem install solargraph  # Ruby language server
 gem install mdl # markdownlint

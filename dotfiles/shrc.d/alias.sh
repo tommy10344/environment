@@ -14,6 +14,8 @@ if type ${HOME}/neovim/bin/nvim > /dev/null 2>&1; then
 fi
 
 # git
+alias g="git"
+
 alias gstatus="git status"
 alias gs="gstatus"
 
