@@ -11,7 +11,7 @@ cask "macwinzipper"
 # cask "avira-antivirus"
 # cask "karabiner-elements"
 cask "google-chrome"
-# cask "alfred"
+cask "alfred"
 cask "authy"
 
 # Development Environments
