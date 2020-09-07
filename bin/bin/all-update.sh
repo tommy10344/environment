@@ -17,6 +17,9 @@ pip3 install --upgrade jedi
 
 npm install -g npm
 npm install -g neovim
+npm install -g express-generator
+npm install -g npm-check-updates
+npm install -g firebase-tools
 
 gem update
 rbenv rehash

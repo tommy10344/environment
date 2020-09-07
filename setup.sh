@@ -86,11 +86,8 @@ rbenv rehash
 # Node.js
 brew install node
 npm install -g npm
-npm install -g npm-check-updates
 npm install -g express-generator
-npm install -g create-react-app
-npm install -g react-native-cli
-npm install -g vue-cli
+npm install -g npm-check-updates
 npm install -g firebase-tools
 
 # vim
