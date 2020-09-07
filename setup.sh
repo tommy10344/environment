@@ -91,6 +91,7 @@ npm install -g express-generator
 npm install -g create-react-app
 npm install -g react-native-cli
 npm install -g vue-cli
+npm install -g firebase-tools
 
 # vim
 brew install vim
