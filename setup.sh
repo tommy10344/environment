@@ -89,6 +89,7 @@ npm install -g npm
 npm install -g express-generator
 npm install -g npm-check-updates
 npm install -g firebase-tools
+npm install -g gatsby-cli
 
 # vim
 brew install vim
