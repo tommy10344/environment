@@ -9,5 +9,4 @@ command! RevealInFileExplorer :call RevealInFileExplorer()
 command! Sh :VimShellCreate
 command! Hex :%!xxd -g 1
 command! HexReverse :%!xxd -r
-command! Grep :Unite grep
 command! UpdatePlugin :call dein#update()

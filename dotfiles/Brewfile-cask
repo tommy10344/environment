@@ -13,6 +13,7 @@ cask "macwinzipper"
 cask "google-chrome"
 cask "alfred"
 cask "authy"
+cask "deepl"
 
 # Development Environments
 cask "hyper"
