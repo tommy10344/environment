@@ -149,4 +149,5 @@ ${DOTFILES_DIR}/vscode/setup.sh
 # ----- Setup dotfiles -----
 ghq get https://github.com/tommy10344/environment
 cd $(ghq root)/github.com/tommy10344/environment
+git remote set-url origin git@github.com:tommy10344/environment.git
 ./link.sh
