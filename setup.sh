@@ -50,6 +50,8 @@ chpass -s /usr/local/bin/zsh
 
 # zsh-completions
 rm -f ~/.zcompdump; compinit
+sudo chmod -R 755 /usr/local/share/zsh
+sudo chmod -R 755 /usr/local/share/zsh/site-functions
 
 # git config
 git config --global user.name "Hiroaki Tomiyoshi"
