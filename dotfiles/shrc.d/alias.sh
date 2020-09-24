@@ -54,6 +54,7 @@ alias gpull="git pull"
 alias grestore="git restore"
 alias gstash="git stash"
 alias gsubmodule="git submodule"
+alias gremote="git remote"
 
 # ruby
 alias be="bundle exec"
