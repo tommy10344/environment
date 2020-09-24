@@ -42,6 +42,7 @@ cask "microsoft-teams"
 cask "yammer"
 cask "onedrive"
 cask "google-drive-file-stream"
+cask "zoomus"
 
 # QuickLook Plugins
 cask "provisionql"
