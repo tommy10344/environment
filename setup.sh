@@ -137,6 +137,7 @@ ghq get https://github.com/XVimProject/XVim2
 ghq get https://github.com/altercation/solarized
 ghq get https://github.com/ArtSabintsev/Solarized-Dark-for-Xcode
 ghq get https://github.com/flutter/flutter
+ghq get https://github.com/filsv/iPhoneOSDeviceSupport
 
 
 # ----- Homebrew Cask -----
