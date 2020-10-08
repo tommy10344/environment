@@ -17,7 +17,7 @@ cask "deepl"
 
 # Development Environments
 cask "hyper"
-cask "java8"
+cask "oracle-jdk"
 cask "sourcetree"
 cask "android-studio"
 cask "visual-studio"
