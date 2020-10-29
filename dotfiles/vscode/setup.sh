@@ -21,3 +21,6 @@ code --install-extension dbaeumer.vscode-eslint
 code --install-extension ms-vscode.vscode-typescript-tslint-plugin
 code --install-extension eg2.vscode-npm-script
 code --install-extension christian-kohler.npm-intellisense
+
+# Golang
+code --install-extension golang.go

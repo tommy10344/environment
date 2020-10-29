@@ -8,13 +8,8 @@
         "source.fixAll.tslint": true
     },
 
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-
     "terminal.integrated.fontSize": 11,
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
 
     "window.zoomLevel": 0,
 
@@ -24,6 +19,8 @@
     },
 
     "workbench.editor.enablePreview": false,
+
+    "gitlens.hovers.currentLine.over": "line",
 
     "vim.useCtrlKeys": true,
     "vim.useSystemClipboard": true,
@@ -65,11 +62,6 @@
         { "before": ["<C-l>"], "after": ["<Right>"] }
     ],
 
-    "eslint.enable": true,
-    "eslint.run": "onSave",
-    "tslint.enable": true,
-    "tslint.run": "onSave",
-    "tslint.autoFixOnSave": true,
     "markdown-pdf.styles": [
         "~/.config/vscode-markdown-github.css"
     ],
@@ -77,7 +69,24 @@
 
     "ruby.intellisense": "rubyLocate",
     "ruby.useLanguageServer": true,
+
     "python.jediEnabled": false,
+    "python.languageServer": "Microsoft",
+
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "gitlens.hovers.currentLine.over": "line"
+    "eslint.enable": true,
+    "eslint.run": "onSave",
+    "tslint.enable": true,
+    "tslint.run": "onSave",
+    "tslint.autoFixOnSave": true,
+
+    "[go]": {
+      "editor.defaultFormatter": "golang.go",
+      "editor.formatOnSave": true
+    },
+    "go.useLanguageServer": true
 }
