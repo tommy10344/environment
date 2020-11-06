@@ -126,9 +126,6 @@ pod setup
 brew install --HEAD libimobiledevice
 brew install ideviceinstaller ios-deploy
 
-# golang
-go get -u github.com/nsf/gocode
-
 # gibo
 brew install gibo
 gibo update
