@@ -31,6 +31,8 @@ brew install lua
 brew install go
 brew install git
 brew install tig
+brew install openssl
+brew install curl
 brew install wget
 brew install the_silver_searcher
 brew install ripgrep

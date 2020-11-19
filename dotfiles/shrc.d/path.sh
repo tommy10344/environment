@@ -31,6 +31,12 @@ fi
 #     export INFOPATH="${HOME}/.linuxbrew/share/info:${INFOPATH}"
 # fi
 
+# OpenSSL(HomeBrew)
+export PATH=/usr/local/opt/openssl/bin:$PATH
+
+# curl
+export PATH=/usr/local/opt/curl/bin:$PATH
+
 # NeoVim
 export PATH=$HOME/neovim/bin:$PATH
 
