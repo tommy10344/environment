@@ -91,6 +91,7 @@ rbenv rehash
 brew install node
 npm install -g npm
 npm install -g yarn
+npm install -g http-server
 npm install -g express-generator
 npm install -g npm-check-updates
 npm install -g firebase-tools
