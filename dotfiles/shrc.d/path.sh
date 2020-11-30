@@ -1,3 +1,4 @@
+# PATH
 export PATH=/usr/local/bin:${PATH}
 export PATH=${HOME}/bin:${PATH}
 if [ -d "${HOME}/.local/bin" ]; then
@@ -24,12 +25,11 @@ if [ -d "${HOME}/lib" ]; then
     export LD_LIBRARY_PATH=${HOME}/lib:${LD_LIBRARY_PATH}
 fi
 
-# Linuxbrew
-# if [ -d "${HOME}/.linuxbrew" ]; then
-#     export PATH="${HOME}/.linuxbrew/bin:${PATH}"
-#     export MANPATH="${HOME}/.linuxbrew/share/man:${MANPATH}"
-#     export INFOPATH="${HOME}/.linuxbrew/share/info:${INFOPATH}"
-# fi
+# Ruby
+export PATH=/usr/local/opt/ruby/bin:$PATH
+
+# Python
+export PATH=/usr/local/opt/python/bin:$PATH
 
 # OpenSSL(HomeBrew)
 export PATH=/usr/local/opt/openssl/bin:$PATH

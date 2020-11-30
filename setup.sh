@@ -70,7 +70,7 @@ git config --global alias.unstage "restore --staged"
 # stack install hoogle && hoogle data
 
 # ruby
-brew install ruby && brew link ruby
+brew install ruby
 brew install rbenv
 brew install ruby-build
 eval "$(rbenv init -)"
