@@ -124,6 +124,10 @@ brew install cocoapods
 brew install mint
 brew install xcodegen
 pod setup
+# Install Quick Template
+ghq get https://github.com/Quick/Quick
+cd $(ghq root)/github.com/Quick/Quick
+rake templates:install
 
 # Flutter
 brew install --HEAD libimobiledevice
