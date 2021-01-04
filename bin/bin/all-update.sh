@@ -4,7 +4,7 @@ xcode-select --install
 
 brew update
 brew upgrade
-brew cask upgrade
+brew upgrade --cask
 brew cleanup
 # brew doctor
 
