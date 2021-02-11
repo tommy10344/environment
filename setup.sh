@@ -63,6 +63,8 @@ git config --global pull.ff only
 git config --global pager.branch false
 git config --global ghq.root ~/src
 git config --global alias.unstage "restore --staged"
+git config --global alias.name "config user.name"
+git config --global alias.email "config user.email"
 
 # haskell
 # brew install haskell-stack

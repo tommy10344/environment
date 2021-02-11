@@ -29,13 +29,10 @@ fi
 export PATH=/usr/local/opt/ruby/bin:$PATH
 
 # Python
-export PATH=/usr/local/opt/python/bin:$PATH
+export PATH=/usr/local/opt/python@3/bin:$PATH
 
 # OpenSSL(HomeBrew)
 export PATH=/usr/local/opt/openssl/bin:$PATH
-
-# curl
-export PATH=/usr/local/opt/curl/bin:$PATH
 
 # NeoVim
 export PATH=$HOME/neovim/bin:$PATH
