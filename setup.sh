@@ -90,14 +90,15 @@ gem install xcprofiler  # Xcode build time profiler
 rbenv rehash
 
 # Node.js
-brew install node
+curl https://get.volta.sh | bash
+volta install node
 npm install -g npm
 npm install -g yarn
 npm install -g http-server
-npm install -g express-generator
 npm install -g npm-check-updates
 npm install -g firebase-tools
-npm install -g gatsby-cli
+# npm install -g express-generator
+# npm install -g gatsby-cli
 
 # vim
 brew install vim
