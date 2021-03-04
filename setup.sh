@@ -4,6 +4,9 @@ BASE_DIR=$(cd $(dirname $0);pwd)
 DOTFILES_DIR=${BASE_DIR}/dotfiles
 BIN_DIR=${BASE_DIR}/bin
 
+/bin/echo -n "Your Name?: "
+read NAME
+
 /bin/echo -n "Email Address?: "
 read EMAIL_ADDRESS
 
@@ -56,7 +59,7 @@ sudo chmod -R 755 /usr/local/share/zsh
 sudo chmod -R 755 /usr/local/share/zsh/site-functions
 
 # git config
-git config --global user.name "Hiroaki Tomiyoshi"
+git config --global user.name "${NAME}"
 git config --global user.email "${EMAIL_ADDRESS}"
 git config --global user.useConfigOnly true
 git config --global pull.ff only
