@@ -17,6 +17,15 @@ function fzf-ghq-cd () {
 zle -N fzf-ghq-cd
 bindkey '^f' fzf-ghq-cd
 
+# history
+function fzf-history-selection () {
+    BUFFER=$(history -n 1 | awk '!a[$0]++' | fzf --reverse -i +m)
+    CURSOR=$#BUFFER
+    zle reset-prompt
+}
+zle -N fzf-history-selection
+bindkey '^R' fzf-history-selection
+
 # Platform specific
 case ${OSTYPE} in
     darwin*)
