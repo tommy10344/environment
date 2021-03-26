@@ -3,14 +3,12 @@
     "editor.fontSize": 14,
     "editor.wordWrap": "on",
     "editor.fontLigatures": false,
-    "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
-        "source.fixAll.tslint": true
+        "source.fixAll.eslint": true
     },
 
-    "terminal.integrated.fontSize": 11,
+    "terminal.integrated.fontSize": 14,
     "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
 
     "window.zoomLevel": 0,
@@ -80,11 +78,9 @@
       "editor.formatOnSave": true
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
     "eslint.enable": true,
     "eslint.run": "onSave",
-    "tslint.enable": true,
-    "tslint.run": "onSave",
-    "tslint.autoFixOnSave": true,
 
     "go.useLanguageServer": true,
     "[go]": {
@@ -94,5 +90,6 @@
       "editor.codeActionsOnSave": {
         "source.organizeImports": true
       }
-    }
+    },
+    "editor.formatOnSave": true
 }
