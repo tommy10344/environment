@@ -4,6 +4,7 @@
     "editor.wordWrap": "on",
     "editor.fontLigatures": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
@@ -83,6 +84,7 @@
     "eslint.run": "onSave",
 
     "go.useLanguageServer": true,
+    "go.toolsManagement.autoUpdate": true,
     "[go]": {
       "editor.snippetSuggestions": "none",
       "editor.defaultFormatter": "golang.go",
@@ -90,6 +92,5 @@
       "editor.codeActionsOnSave": {
         "source.organizeImports": true
       }
-    },
-    "editor.formatOnSave": true
+    }
 }
