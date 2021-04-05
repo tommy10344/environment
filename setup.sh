@@ -109,15 +109,15 @@ brew install vim
 # brew linkapps macvim
 
 # neovim
-brew install neovim
-ghq get https://github.com/neovim/neovim
-brew install ninja libtool automake cmake pkg-config gettext
+brew install neovim --HEAD
+# ghq get https://github.com/neovim/neovim
+# brew install ninja libtool automake cmake pkg-config gettext
 pip3 install --user pynvim
 pip3 install --user neovim-remote
 pip3 install --user Send2Trash
 gem install neovim
 npm install -g neovim
-${BIN_DIR}/bin/build-neovim.sh
+# ${BIN_DIR}/bin/build-neovim.sh
 
 # swift
 brew install sourcekitten
