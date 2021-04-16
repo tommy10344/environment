@@ -1,97 +1,96 @@
 {
-    "editor.fontFamily": "HackGen",
-    "editor.fontSize": 14,
-    "editor.wordWrap": "on",
-    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?、。　",
-    "editor.fontLigatures": false,
+  "editor.fontFamily": "HackGen",
+  "editor.fontSize": 14,
+  "editor.wordWrap": "on",
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?、。　",
+  "editor.fontLigatures": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+
+  "window.zoomLevel": 0,
+
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "Fastfile": "ruby"
+  },
+
+  "workbench.editor.enablePreview": false,
+
+  "git.autofetch": true,
+  "gitlens.hovers.currentLine.over": "line",
+
+  "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.smartcase": true,
+  "vim.visualstar": true,
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.easymotionKeys": "sdfghjkl",
+  "vim.enableNeovim": true,
+  "vim.neovimPath": "/usr/local/bin/nvim",
+  "vim.normalModeKeyBindings": [
+    { "before": [";"], "after": [":"] },
+    { "before": [":"], "after": [";"] },
+    { "before": ["<Space>", "h"], "after": ["0"] },
+    { "before": ["<Space>", "l"], "after": ["$"] },
+    { "before": ["<Space>", "k"], "after": ["H"] },
+    { "before": ["<Space>", "j"], "after": ["L"] },
+    { "before": ["<C-h>"], "after": ["g", "T"] },
+    { "before": ["<C-l>"], "after": ["g", "t"] },
+    { "before": ["n"], "after": ["n", "z", "z"] },
+    { "before": ["N"], "after": ["N", "z", "z"] },
+    { "before": ["*"], "after": ["*", "z", "z"] },
+    { "before": ["#"], "after": ["#", "z", "z"] },
+    { "before": ["g", "*"], "after": ["g", "*", "z", "z"] },
+    { "before": ["g", "#"], "after": ["g", "#", "z", "z"] }
+  ],
+  "vim.visualModeKeyBindings": [
+    { "before": ["<Space>", "h"], "after": ["0"] },
+    { "before": ["<Space>", "l"], "after": ["$"] },
+    { "before": ["<Space>", "k"], "after": ["H"] },
+    { "before": ["<Space>", "j"], "after": ["L"] }
+  ],
+  "vim.insertModeKeyBindings": [
+    { "before": ["j", "j"], "after": ["<Esc>"] },
+    { "before": ["<C-j>"], "after": ["<Down>"] },
+    { "before": ["<C-k>"], "after": ["<Up>"] },
+    { "before": ["<C-h>"], "after": ["<Left>"] },
+    { "before": ["<C-l>"], "after": ["<Right>"] }
+  ],
+
+  "markdown-pdf.styles": ["~/.config/vscode-markdown-github.css"],
+  "explorer.confirmDragAndDrop": false,
+
+  "ruby.intellisense": "rubyLocate",
+  "ruby.useLanguageServer": true,
+
+  "python.jediEnabled": false,
+  "python.languageServer": "Microsoft",
+
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "eslint.enable": true,
+  "eslint.run": "onSave",
+
+  "go.useLanguageServer": true,
+  "go.toolsManagement.autoUpdate": true,
+  "[go]": {
+    "editor.snippetSuggestions": "none",
+    "editor.defaultFormatter": "golang.go",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
-
-    "window.zoomLevel": 0,
-
-    "files.trimTrailingWhitespace": true,
-    "files.associations": {
-        "Fastfile": "ruby"
-    },
-
-    "workbench.editor.enablePreview": false,
-
-    "gitlens.hovers.currentLine.over": "line",
-
-    "vim.useCtrlKeys": true,
-    "vim.useSystemClipboard": true,
-    "vim.hlsearch": true,
-    "vim.smartcase": true,
-    "vim.visualstar": true,
-    "vim.leader": "<space>",
-    "vim.easymotion": true,
-    "vim.easymotionKeys": "sdfghjkl",
-    "vim.enableNeovim": true,
-    "vim.neovimPath": "/usr/local/bin/nvim",
-    "vim.normalModeKeyBindings": [
-        { "before": [";"], "after": [":"] },
-        { "before": [":"], "after": [";"] },
-        { "before": ["<Space>","h"], "after": ["0"] },
-        { "before": ["<Space>","l"], "after": ["$"] },
-        { "before": ["<Space>","k"], "after": ["H"] },
-        { "before": ["<Space>","j"], "after": ["L"] },
-        { "before": ["<C-h>"], "after": ["g","T"] },
-        { "before": ["<C-l>"], "after": ["g","t"] },
-        { "before": ["n"], "after": ["n", "z", "z"] },
-        { "before": ["N"], "after": ["N", "z", "z"] },
-        { "before": ["*"], "after": ["*", "z", "z"] },
-        { "before": ["#"], "after": ["#", "z", "z"] },
-        { "before": ["g", "*"], "after": ["g", "*", "z", "z"] },
-        { "before": ["g", "#"], "after": ["g", "#", "z", "z"] }
-    ],
-    "vim.visualModeKeyBindings": [
-        { "before": ["<Space>","h"], "after": ["0"] },
-        { "before": ["<Space>","l"], "after": ["$"] },
-        { "before": ["<Space>","k"], "after": ["H"] },
-        { "before": ["<Space>","j"], "after": ["L"] }
-    ],
-    "vim.insertModeKeyBindings": [
-        { "before": ["j","j"], "after": ["<Esc>"] },
-        { "before": ["<C-j>"], "after": ["<Down>"] },
-        { "before": ["<C-k>"], "after": ["<Up>"] },
-        { "before": ["<C-h>"], "after": ["<Left>"] },
-        { "before": ["<C-l>"], "after": ["<Right>"] }
-    ],
-
-    "markdown-pdf.styles": [
-        "~/.config/vscode-markdown-github.css"
-    ],
-    "explorer.confirmDragAndDrop": false,
-
-    "ruby.intellisense": "rubyLocate",
-    "ruby.useLanguageServer": true,
-
-    "python.jediEnabled": false,
-    "python.languageServer": "Microsoft",
-
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode",
-      "editor.formatOnSave": true
-    },
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "eslint.enable": true,
-    "eslint.run": "onSave",
-
-    "go.useLanguageServer": true,
-    "go.toolsManagement.autoUpdate": true,
-    "[go]": {
-      "editor.snippetSuggestions": "none",
-      "editor.defaultFormatter": "golang.go",
-      "editor.formatOnSave": true,
-      "editor.codeActionsOnSave": {
-        "source.organizeImports": true
-      }
+      "source.organizeImports": true
     }
+  }
 }
