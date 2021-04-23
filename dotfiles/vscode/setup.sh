@@ -4,6 +4,7 @@ code --install-extension vscodevim.vim
 code --install-extension editorconfig.editorconfig
 code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
+code --install-extension coenraads.bracket-pair-colorizer
 
 # Flutter
 code --install-extension dart-code.flutter
