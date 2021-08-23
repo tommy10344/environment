@@ -61,6 +61,4 @@ preexec() {
 ##############################
 # Import external rc
 ##############################
-for f in ${HOME}/shrc.d/*; do
-   source $f
-done
+source ${HOME}/.shrc

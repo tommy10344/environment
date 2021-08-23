@@ -93,7 +93,7 @@ gem install xcprofiler  # Xcode build time profiler
 rbenv rehash
 
 # Node.js
-curl https://get.volta.sh | bash
+brew install volta  # https://volta.sh/
 volta install node
 npm install -g npm
 npm install -g yarn

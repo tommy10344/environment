@@ -1,0 +1,17 @@
+# Common rc (bash / zsh, etc.)
+
+source ${HOME}/shrc.d/alias.sh
+source ${HOME}/shrc.d/path.sh
+source ${HOME}/shrc.d/mac.sh
+source ${HOME}/shrc.d/other.sh
+source ${HOME}/shrc.d/neovim-autocd.zsh
+source ${HOME}/shrc.d/neovim-remote.sh
+source ${HOME}/shrc.d/fzf.zsh
+source ${HOME}/shrc.d/less.sh
+source ${HOME}/shrc.d/android.sh
+source ${HOME}/shrc.d/dotnet.sh
+source ${HOME}/shrc.d/golang.sh
+source ${HOME}/shrc.d/nodejs.sh
+source ${HOME}/shrc.d/python.sh
+source ${HOME}/shrc.d/ruby.sh
+source ${HOME}/shrc.d/swift.sh
