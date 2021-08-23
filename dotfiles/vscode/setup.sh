@@ -11,6 +11,9 @@ code --install-extension davidanson.vscode-markdownlint
 # Flutter
 code --install-extension dart-code.flutter
 
+# Firebase
+code --install-extension chflick.firecode
+
 # Ruby
 code --install-extension rebornix.ruby
 code --install-extension kaiwood.endwise

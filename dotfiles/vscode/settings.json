@@ -1,8 +1,8 @@
 {
   "editor.fontFamily": "HackGen",
   "editor.fontSize": 14,
-  "editor.wordWrap": "on",
-  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?、。　",
+  "editor.wordWrap": "off",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.fontLigatures": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
@@ -31,6 +31,7 @@
   "vim.smartcase": true,
   "vim.visualstar": true,
   "vim.leader": "<space>",
+  "vim.surround": true,
   "vim.easymotion": true,
   "vim.easymotionKeys": "sdfghjkl",
   "vim.enableNeovim": true,
@@ -103,5 +104,11 @@
 		"editor.suggestSelection": "first",
 		"editor.tabCompletion": "onlySnippets",
 		"editor.wordBasedSuggestions": false
-  }
+  },
+  "dart.debugExternalLibraries": true,
+  "dart.debugSdkLibraries": false,
+  "editor.tabSize": 8,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.lineNumbers": "on"
 }
