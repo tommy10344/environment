@@ -1,4 +1,8 @@
 {
+  "editor.tabSize": 8,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.lineNumbers": "on",
   "editor.fontFamily": "HackGen",
   "editor.fontSize": 14,
   "editor.wordWrap": "off",
@@ -107,8 +111,6 @@
   },
   "dart.debugExternalLibraries": true,
   "dart.debugSdkLibraries": false,
-  "editor.tabSize": 8,
-  "editor.cursorStyle": "line",
-  "editor.insertSpaces": false,
-  "editor.lineNumbers": "on"
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
 }
