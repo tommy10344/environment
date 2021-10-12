@@ -19,6 +19,7 @@
 
   "window.zoomLevel": 0,
 
+  "files.autoGuessEncoding": true,
   "files.trimTrailingWhitespace": true,
   "files.associations": {
     "Fastfile": "ruby"
