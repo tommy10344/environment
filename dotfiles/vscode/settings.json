@@ -1,7 +1,8 @@
 {
-  "editor.tabSize": 8,
+  "editor.tabSize": 2,
   "editor.cursorStyle": "line",
-  "editor.insertSpaces": false,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
   "editor.lineNumbers": "on",
   "editor.fontFamily": "HackGen",
   "editor.fontSize": 14,
@@ -15,7 +16,14 @@
   },
 
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+  // "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "zsh",
+      "icon": "star"
+    }
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
 
   "window.zoomLevel": 0,
 
@@ -101,17 +109,44 @@
   },
 
   "[dart]": {
-		"editor.formatOnSave": true,
-		"editor.formatOnType": true,
-		"editor.rulers": [80],
-		"editor.selectionHighlight": false,
-		"editor.suggest.snippetsPreventQuickSuggestions": false,
-		"editor.suggestSelection": "first",
-		"editor.tabCompletion": "onlySnippets",
-		"editor.wordBasedSuggestions": false
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
   },
   "dart.debugExternalLibraries": true,
   "dart.debugSdkLibraries": false,
   "dart.previewFlutterUiGuides": true,
   "dart.previewFlutterUiGuidesCustomTracking": true,
+
+  "plantuml.render": "PlantUMLServer",
+  "plantuml.server": "http://localhost:8080",
+
+  "vsnotes.defaultNotePath": "~/work/vsnote",
+  "vsnotes.noteTitleConvertSpaces": " ",
+  "vsnotes.defaultNoteTitle": "{dt}_{title}.{ext}",
+  "vsnotes.tokens": [
+    {
+      "type": "datetime",
+      "token": "{dt}",
+      "format": "YYYY-MM-DD",
+      "description": "Insert formatted datetime."
+    },
+    {
+      "type": "title",
+      "token": "{title}",
+      "description": "Insert note title from input box.",
+      "format": "Untitled"
+    },
+    {
+      "type": "extension",
+      "token": "{ext}",
+      "description": "Insert file extension.",
+      "format": "md"
+    }
+  ]
 }

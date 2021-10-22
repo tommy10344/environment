@@ -7,6 +7,8 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension coenraads.bracket-pair-colorizer
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension davidanson.vscode-markdownlint
+code --install-extension patricklee.vsnotes
+code --install-extension jebbs.plantuml
 
 # Flutter
 code --install-extension dart-code.flutter

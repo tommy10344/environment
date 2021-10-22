@@ -15,3 +15,4 @@ source ${HOME}/shrc.d/nodejs.sh
 source ${HOME}/shrc.d/python.sh
 source ${HOME}/shrc.d/ruby.sh
 source ${HOME}/shrc.d/swift.sh
+source ${HOME}/shrc.d/plantuml.sh
