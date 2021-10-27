@@ -10,7 +10,9 @@ read NAME
 /bin/echo -n "Email Address?: "
 read EMAIL_ADDRESS
 
-ssh-keygen -t rsa -b 4096 -C "${EMAIL_ADDRESS}"
+if [ ! -f "${HOME}/.ssh/id_rsa" ]; then
+  ssh-keygen -t rsa -b 4096 -C "${EMAIL_ADDRESS}"
+fi
 
 ln -sfn "${HOME}/Library/Mobile Documents/com~apple~CloudDocs" "${HOME}/icloud-drive"
 
