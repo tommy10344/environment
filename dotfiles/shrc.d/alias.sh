@@ -61,3 +61,7 @@ alias be="bundle exec"
 
 # Android
 alias android_studio="open -a /Applications/Android\ Studio.app"
+
+# Proxy Settings
+alias set_proxy="source ${HOME}/.set_proxy"
+alias unset_proxy="source ${HOME}/.unset_proxy"
