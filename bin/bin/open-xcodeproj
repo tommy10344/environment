@@ -10,4 +10,6 @@ if xcworkspace
 elsif xcodeproj
   puts "open #{xcodeproj}"
   `open #{xcodeproj}`
+else
+  puts "xcworkspace or xcodeproj not found."
 end
