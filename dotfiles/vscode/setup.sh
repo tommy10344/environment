@@ -9,6 +9,8 @@ code --install-extension yzhang.markdown-all-in-one
 code --install-extension davidanson.vscode-markdownlint
 code --install-extension patricklee.vsnotes
 code --install-extension jebbs.plantuml
+code --install-extension humao.rest-client
+code --install-extension slevesque.vscode-hexdump
 
 # Flutter
 code --install-extension dart-code.flutter
@@ -20,9 +22,11 @@ code --install-extension chflick.firecode
 code --install-extension rebornix.ruby
 code --install-extension kaiwood.endwise
 code --install-extension castwide.solargraph
+code --install-extension wingrunr21.vscode-ruby
 
 # Python
-code --install-extension ms-python.python
+# code --install-extension ms-python.python
+# code --install-extension ms-python.vscode-pylance
 
 # JavaScript / Node.js / TypeScript
 code --install-extension dbaeumer.vscode-eslint
