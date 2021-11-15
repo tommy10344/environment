@@ -86,7 +86,7 @@
   "ruby.useLanguageServer": true,
 
   "python.jediEnabled": false,
-  "python.languageServer": "Microsoft",
+  "python.languageServer": "Default",
 
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
