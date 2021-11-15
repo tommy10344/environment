@@ -17,7 +17,7 @@ cask "deepl"
 cask "clipy"
 
 # Development Environments
-cask "hyper"
+# cask "hyper"
 cask "oracle-jdk"
 cask "sourcetree"
 # cask "android-studio"
@@ -34,7 +34,7 @@ cask "docker"
 cask "mongodb-realm-studio"
 # cask "postman"
 # cask "sketch"
-cask "boostnote"
+# cask "boostnote"
 cask "discord"
 cask "sf-symbols"
 
