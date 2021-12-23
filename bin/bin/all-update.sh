@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -x
+
 xcode-select --install
 
 brew update
