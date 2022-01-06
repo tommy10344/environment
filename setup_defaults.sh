@@ -2,6 +2,9 @@
 
 # ----- Dock -----
 
+# Dockからすべてのアプリを消す
+defaults write com.apple.dock persistent-apps -array
+
 # Dock を自動的に隠す
 defaults write com.apple.dock autohide -bool true
 
@@ -39,7 +42,7 @@ defaults write com.apple.dock wvous-tl-corner -int 3
 defaults write com.apple.dock wvous-tl-modifier -int 0
 
 # Top right
-defaults write com.apple.dock wvous-tr-corner -int 11
+defaults write com.apple.dock wvous-tr-corner -int 2
 defaults write com.apple.dock wvous-tr-modifier -int 0
 
 # Bottom left
