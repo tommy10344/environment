@@ -50,6 +50,7 @@ brew install autossh
 brew install jsonlint
 brew install jq
 brew install fastlane
+brew install cloc
 
 # zsh (to default shell)
 sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
