@@ -14,6 +14,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "editor.unicodeHighlight.nonBasicASCII": false,
 
   "terminal.integrated.fontSize": 14,
   // "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
