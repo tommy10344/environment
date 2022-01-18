@@ -4,7 +4,6 @@ code --install-extension vscodevim.vim
 code --install-extension editorconfig.editorconfig
 code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
-code --install-extension coenraads.bracket-pair-colorizer
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension davidanson.vscode-markdownlint
 code --install-extension patricklee.vsnotes
