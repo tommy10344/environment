@@ -1,6 +1,12 @@
 # PATH
 export PATH=/usr/local/bin:${PATH}
+
+if [ -d "/opt/homebrew/bin" ]; then
+    export PATH=/opt/homebrew/bin:${PATH}
+fi
+
 export PATH=${HOME}/bin:${PATH}
+
 if [ -d "${HOME}/.local/bin" ]; then
     export PATH=${HOME}/.local/bin:${PATH}
 fi

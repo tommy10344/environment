@@ -37,6 +37,7 @@
   },
 
   "workbench.editor.enablePreview": false,
+  "workbench.colorTheme": "Dracula",
 
   "git.autofetch": true,
   "gitlens.hovers.currentLine.over": "line",
@@ -51,7 +52,7 @@
   "vim.easymotion": true,
   "vim.easymotionKeys": "sdfghjkl",
   "vim.enableNeovim": true,
-  "vim.neovimPath": "/usr/local/bin/nvim",
+  // "vim.neovimPath": "/usr/local/bin/nvim",
   "vim.normalModeKeyBindings": [
     { "before": [";"], "after": [":"] },
     { "before": [":"], "after": [";"] },
@@ -84,6 +85,8 @@
 
   "markdown-pdf.styles": ["~/.config/vscode-markdown-github.css"],
   "explorer.confirmDragAndDrop": false,
+
+  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
 
   "ruby.intellisense": "rubyLocate",
   "ruby.useLanguageServer": true,

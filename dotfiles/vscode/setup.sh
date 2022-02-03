@@ -10,6 +10,13 @@ code --install-extension patricklee.vsnotes
 code --install-extension jebbs.plantuml
 code --install-extension humao.rest-client
 code --install-extension slevesque.vscode-hexdump
+code --install-extension dracula-theme.theme-dracula
+
+# Azure DevOps
+code --install-extension ms-azure-devops.azure-pipelines
+
+# Swift
+code --install-extension sswg.swift-lang
 
 # Flutter
 code --install-extension dart-code.flutter
