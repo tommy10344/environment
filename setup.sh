@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -x
+
 BASE_DIR=$(cd $(dirname $0);pwd)
 DOTFILES_DIR=${BASE_DIR}/dotfiles
 BIN_DIR=${BASE_DIR}/bin
