@@ -38,7 +38,7 @@ let g:fern_git_status#disable_untracked = 1
 let g:fern_git_status#disable_submodules = 1
 let g:fern_git_status#disable_directories = 1
 " Open file explorer
-nnoremap F :<C-u>Fern . -drawer<CR>
+nnoremap B :<C-u>Fern . -drawer<CR>
 " Shows current file in file explorer
 nnoremap J :<C-u>:Fern . -drawer -reveal=%<CR>
 
@@ -47,6 +47,7 @@ nnoremap J :<C-u>:Fern . -drawer -reveal=%<CR>
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 nnoremap P :<C-u>Files<CR>
+nnoremap F :<C-u>Ag<CR>
 
 
 call plug#end()
