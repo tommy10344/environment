@@ -72,7 +72,3 @@ if has('nvim')
 else
     nnoremap T :<C-u>terminal<CR>
 endif
-
-" File explorer
-" nnoremap F :<C-u>call OpenFileExplorer()<CR>
-" nnoremap <C-j> :<C-u>call RevealInFileExplorer()<CR>
