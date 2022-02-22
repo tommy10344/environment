@@ -50,4 +50,8 @@ nnoremap P :<C-u>Files<CR>
 nnoremap F :<C-u>Ag<CR>
 
 
+" ----- Swift -----
+Plug 'keith/swift.vim'
+
+
 call plug#end()

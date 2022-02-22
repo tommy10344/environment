@@ -19,9 +19,7 @@ vnoremap <Space>l $
 " Tab
 nnoremap <C-h> gT
 nnoremap <C-l> gt
-nnoremap <C-t> :<C-u>tabe<CR>
-vnoremap <C-t> :<C-u>tabe<CR>
-cnoremap <C-t> :<C-u>tabe<CR>
+nnoremap T :<C-u>tabe<CR>
 
 " 画面上の最初の行、最後の行に移動
 nnoremap <Space>k H
@@ -64,11 +62,10 @@ cnoremap <C-p>  <C-r>*
 
 " Terminal
 if has('nvim')
-    nnoremap T :<C-u>call SplitTerminal()<CR>
-    nnoremap VT :<C-u>call VSplitTerminal()<CR>
+    nnoremap ` :<C-u>call SplitTerminal()<CR>
     tnoremap <Esc>  <C-\><C-n>
     tnoremap <C-@>  <C-\><C-n>
     tnoremap <C-t> <C-\><C-n>:<C-u>tabe<CR>
 else
-    nnoremap T :<C-u>terminal<CR>
+    nnoremap ` :<C-u>terminal<CR>
 endif
