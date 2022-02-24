@@ -7,14 +7,14 @@ Plug 'editorconfig/editorconfig-vim'
 
 " ----- vim-easymotion -----
 Plug 'easymotion/vim-easymotion'
-map <Space><Space> <Plug>(easymotion-prefix)
+map <Leader><Leader> <Plug>(easymotion-prefix)
 
 
 " ----- nerdcommenter -----
 Plug 'preservim/nerdcommenter'
 let g:NERDSpaceDelims = 1
-nmap <Space>c <Plug>NERDCommenterToggle
-vmap <Space>c <Plug>NERDCommenterToggle
+nmap <Leader>c <Plug>NERDCommenterToggle
+vmap <Leader>c <Plug>NERDCommenterToggle
 
 
 " ----- lightline.vim -----
@@ -38,20 +38,27 @@ let g:fern_git_status#disable_untracked = 1
 let g:fern_git_status#disable_submodules = 1
 let g:fern_git_status#disable_directories = 1
 " Open file explorer
-nnoremap B :<C-u>Fern . -drawer<CR>
+nnoremap <Leader>b :<C-u>Fern . -drawer<CR>
 " Shows current file in file explorer
-nnoremap J :<C-u>:Fern . -drawer -reveal=%<CR>
+nnoremap <Leader><Leader>j :<C-u>:Fern . -drawer -reveal=%<CR>
 
 
 " ----- fzf.vim -----
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-nnoremap P :<C-u>Files<CR>
-nnoremap F :<C-u>Ag<CR>
+nnoremap <Leader>p :call FzfFiles()<CR>
+nnoremap <Leader>g :<C-u>Ag<CR>
+
+function! FzfFiles() abort
+    if isdirectory('.git')
+        GFiles
+    else
+        Files
+    endif
+endfunction
 
 
 " ----- Swift -----
 Plug 'keith/swift.vim'
-
 
 call plug#end()
