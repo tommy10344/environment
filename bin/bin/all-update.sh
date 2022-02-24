@@ -18,11 +18,10 @@ pip2 install --upgrade jedi
 pip3 install --upgrade jedi
 
 npm install -g npm
-npm install -g neovim
-npm install -g express-generator
+npm install -g yarn
+npm install -g http-server
 npm install -g npm-check-updates
 npm install -g firebase-tools
-npm install -g gatsby-cli
 
 gem update
 rbenv rehash

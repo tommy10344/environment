@@ -105,13 +105,9 @@ npm install -g yarn
 npm install -g http-server
 npm install -g npm-check-updates
 npm install -g firebase-tools
-# npm install -g express-generator
-# npm install -g gatsby-cli
 
 # vim
 brew install vim
-# brew install macvim --with-lua --with-luajit --with-python3
-# brew linkapps macvim
 
 # neovim
 brew install neovim --HEAD
