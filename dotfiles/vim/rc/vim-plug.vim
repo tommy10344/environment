@@ -37,17 +37,20 @@ let g:fern_git_status#disable_ignored = 1
 let g:fern_git_status#disable_untracked = 1
 let g:fern_git_status#disable_submodules = 1
 let g:fern_git_status#disable_directories = 1
+
 " Open file explorer
-nnoremap <Leader>b :<C-u>Fern . -drawer<CR>
+nnoremap <Leader><Leader>b :<C-u>Fern . -drawer<CR>
+
 " Shows current file in file explorer
 nnoremap <Leader><Leader>j :<C-u>:Fern . -drawer -reveal=%<CR>
+command! Reveal Fern . -drawer -reveal=%
 
 
 " ----- fzf.vim -----
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-nnoremap <Leader>p :call FzfFiles()<CR>
-nnoremap <Leader>g :<C-u>Ag<CR>
+nnoremap <Leader><Leader>p :call FzfFiles()<CR>
+nnoremap <Leader><Leader>f :<C-u>Ag<CR>
 
 function! FzfFiles() abort
     if isdirectory('.git')
