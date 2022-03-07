@@ -16,6 +16,10 @@ if [ -d "/usr/local/include" ]; then
     export C_INCLUDE_PATH=/usr/local/include:${C_INCLUDE_PATH}
     export CPLUS_INCLUDE_PATH=/usr/local/include:${CPLUS_INCLUDE_PATH}
 fi
+if [ -d "/opt/homebrew/include" ]; then
+    export C_INCLUDE_PATH=/opt/homebrew/include:${C_INCLUDE_PATH}
+    export CPLUS_INCLUDE_PATH=/opt/homebrew/include:${CPLUS_INCLUDE_PATH}
+fi
 if [ -d "${HOME}/include" ]; then
     export C_INCLUDE_PATH=${HOME}/include:${C_INCLUDE_PATH}
     export CPLUS_INCLUDE_PATH=${HOME}/include:${CPLUS_INCLUDE_PATH}
@@ -25,6 +29,10 @@ fi
 if [ -d "/usr/local/lib" ]; then
     export LIBRARY_PATH=/usr/local/lib:${LIBRARY_PATH}
     export LD_LIBRARY_PATH=/usr/local/lib:${LD_LIBRARY_PATH}
+fi
+if [ -d "/opt/homebrew/lib" ]; then
+    export LIBRARY_PATH=/opt/homebrew/lib:${LIBRARY_PATH}
+    export LD_LIBRARY_PATH=/opt/homebrew/lib:${LD_LIBRARY_PATH}
 fi
 if [ -d "${HOME}/lib" ]; then
     export LIBRARY_PATH=${HOME}/lib:${LIBRARY_PATH}
@@ -38,7 +46,20 @@ export PATH=/usr/local/opt/ruby/bin:$PATH
 export PATH=/usr/local/opt/python@3/bin:$PATH
 
 # OpenSSL(HomeBrew)
-export PATH=/usr/local/opt/openssl/bin:$PATH
+if [ -d "/usr/local/opt/openssl" ]; then
+    export PATH=/usr/local/opt/openssl/bin:$PATH
+fi
+if [ -d "/opt/homebrew/opt/openssl" ]; then
+    export PATH=/opt/homebrew/opt/openssl/bin:$PATH
+fi
+
+# curl
+if [ -d "/usr/local/opt/curl" ]; then
+    export PATH=/usr/local/opt/curl/bin:$PATH
+fi
+if [ -d "/opt/homebrew/opt/curl" ]; then
+    export PATH=/opt/homebrew/opt/curl/bin:$PATH
+fi
 
 # NeoVim
 export PATH=$HOME/neovim/bin:$PATH
