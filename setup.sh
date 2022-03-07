@@ -41,6 +41,7 @@ brew install tig
 brew install openssl
 brew install curl
 brew install wget
+brew install bat
 brew install the_silver_searcher
 brew install ripgrep
 brew install ctags
