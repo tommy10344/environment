@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'tpope/vim-endwise'
 Plug 'kana/vim-smartinput'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'airblade/vim-gitgutter'
 
 
 " ----- vim-easymotion -----
