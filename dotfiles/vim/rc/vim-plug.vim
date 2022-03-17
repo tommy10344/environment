@@ -25,9 +25,9 @@ let g:lightline = { 'colorscheme': 'solarized' }
 
 " ----- vim-fugitive -----
 Plug 'tpope/vim-fugitive'
-nnoremap gs :<C-u>Gstatus<CR>
-nnoremap gd :<C-u>Gdiff<CR>
-nnoremap gb :<C-u>Gblame<CR>
+nnoremap gs :<C-u>Git status<CR>
+nnoremap gd :<C-u>Git diff<CR>
+nnoremap gb :<C-u>Git blame<CR>
 
 
 " ----- fern.vim -----
@@ -50,8 +50,7 @@ command! Reveal Fern . -drawer -reveal=%
 " ----- fzf.vim -----
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-nnoremap <Leader><Leader>p :call FzfFiles()<CR>
-nnoremap <Leader><Leader>f :<C-u>Ag<CR>
+nnoremap <Leader><Leader>o :call FzfFiles()<CR>
 
 function! FzfFiles() abort
     if isdirectory('.git')

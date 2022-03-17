@@ -63,10 +63,10 @@ cnoremap <C-p>  <C-r>*
 
 " Terminal
 if has('nvim')
-    nnoremap <Leader>` :<C-u>call SplitTerminal()<CR>
+    nnoremap <Leader><Leader>` :<C-u>call SplitTerminal()<CR>
     tnoremap <Esc>  <C-\><C-n>
     tnoremap <C-@>  <C-\><C-n>
     tnoremap <C-t> <C-\><C-n>:<C-u>tabe<CR>
 else
-    nnoremap <Leader>` :<C-u>terminal<CR>
+    nnoremap <Leader><Leader>` :<C-u>terminal<CR>
 endif
