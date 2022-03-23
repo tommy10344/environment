@@ -4,6 +4,7 @@ Plug 'tpope/vim-endwise'
 Plug 'kana/vim-smartinput'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'unblevable/quick-scope'
 
 
 " ----- vim-easymotion -----
@@ -16,6 +17,11 @@ Plug 'preservim/nerdcommenter'
 let g:NERDSpaceDelims = 1
 nmap <Leader>c <Plug>NERDCommenterToggle
 vmap <Leader>c <Plug>NERDCommenterToggle
+
+
+" ----- vim-grepper -----
+Plug 'mhinz/vim-grepper'
+command! Grep Grepper
 
 
 " ----- lightline.vim -----
