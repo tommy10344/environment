@@ -5,7 +5,11 @@ Plug 'kana/vim-smartinput'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'unblevable/quick-scope'
+Plug 'itchyny/lightline.vim'
 
+
+" ----- coc.nvim -----
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " ----- vim-easymotion -----
 Plug 'easymotion/vim-easymotion'
@@ -22,11 +26,6 @@ vmap <Leader>c <Plug>NERDCommenterToggle
 " ----- vim-grepper -----
 Plug 'mhinz/vim-grepper'
 command! Grep Grepper
-
-
-" ----- lightline.vim -----
-Plug 'itchyny/lightline.vim'
-let g:lightline = { 'colorscheme': 'solarized' }
 
 
 " ----- vim-fugitive -----
