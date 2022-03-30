@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'tpope/vim-endwise'
 Plug 'kana/vim-smartinput'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'unblevable/quick-scope'
 Plug 'itchyny/lightline.vim'
@@ -10,6 +11,7 @@ Plug 'itchyny/lightline.vim'
 
 " ----- coc.nvim -----
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+source ~/.vim/rc/plugins/coc.vim
 
 " ----- vim-easymotion -----
 Plug 'easymotion/vim-easymotion'
@@ -26,30 +28,6 @@ vmap <Leader>c <Plug>NERDCommenterToggle
 " ----- vim-grepper -----
 Plug 'mhinz/vim-grepper'
 command! Grep Grepper
-
-
-" ----- vim-fugitive -----
-Plug 'tpope/vim-fugitive'
-nnoremap gs :<C-u>Git status<CR>
-nnoremap gd :<C-u>Git diff<CR>
-nnoremap gb :<C-u>Git blame<CR>
-
-
-" ----- fern.vim -----
-Plug 'lambdalisue/fern.vim'
-  Plug 'lambdalisue/fern-git-status.vim'
-let g:fern#default_hidden=1
-let g:fern_git_status#disable_ignored = 1
-let g:fern_git_status#disable_untracked = 1
-let g:fern_git_status#disable_submodules = 1
-let g:fern_git_status#disable_directories = 1
-
-" Open file explorer
-nnoremap <Leader><Leader>b :<C-u>Fern . -drawer<CR>
-
-" Shows current file in file explorer
-nnoremap <Leader><Leader>j :<C-u>:Fern . -drawer -reveal=%<CR>
-command! Reveal Fern . -drawer -reveal=%
 
 
 " ----- fzf.vim -----
