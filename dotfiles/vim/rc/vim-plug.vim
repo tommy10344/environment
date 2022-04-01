@@ -21,8 +21,8 @@ map <Leader><Leader> <Plug>(easymotion-prefix)
 " ----- nerdcommenter -----
 Plug 'preservim/nerdcommenter'
 let g:NERDSpaceDelims = 1
-nmap <Leader>c <Plug>NERDCommenterToggle
-vmap <Leader>c <Plug>NERDCommenterToggle
+nmap <Leader>/ <Plug>NERDCommenterToggle
+vmap <Leader>/ <Plug>NERDCommenterToggle
 
 
 " ----- vim-grepper -----

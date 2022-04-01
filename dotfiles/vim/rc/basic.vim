@@ -17,6 +17,9 @@ syntax on
 " 長い行は折り返し表示
 set wrap
 
+" 編集中ファイルを保存せずにバッファを切り替えられるようにする
+set hidden
+
 " Indent
 set autoindent
 set cindent

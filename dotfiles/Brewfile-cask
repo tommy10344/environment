@@ -12,6 +12,7 @@ cask "alfred"
 cask "authy"
 cask "deepl"
 cask "clipy"
+cask "cloudflare-warp"
 
 # Development Environments
 cask "oracle-jdk"

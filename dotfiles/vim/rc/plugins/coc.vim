@@ -1,17 +1,3 @@
-" Set internal encoding of vim, not needed on neovim, since coc.nvim using some
-" unicode characters in the file autoload/float.vim
-set encoding=utf-8
-
-" TextEdit might fail if hidden is not set.
-set hidden
-
-" Some servers have issues with backup files, see #649.
-set nobackup
-set nowritebackup
-
-" Give more space for displaying messages.
-set cmdheight=2
-
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
 set updatetime=300
@@ -52,7 +38,7 @@ endfunction
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
 " inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-                              " \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+"             \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
@@ -132,8 +118,8 @@ endif
 
 " Use CTRL-S for selections ranges.
 " Requires 'textDocument/selectionRange' support of language server.
-nmap <silent> <C-s> <Plug>(coc-range-select)
-xmap <silent> <C-s> <Plug>(coc-range-select)
+" nmap <silent> <C-s> <Plug>(coc-range-select)
+" xmap <silent> <C-s> <Plug>(coc-range-select)
 
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocActionAsync('format')
@@ -199,16 +185,24 @@ let g:lightline = {
 
 " extensions
 let g:coc_global_extensions = [
+            \ 'coc-lists',
             \ 'coc-json',
             \ 'coc-yaml',
-            \ 'coc-git',
             \ 'coc-explorer',
-            \ 'coc-snippets'
+            \ 'coc-snippets',
+            \ 'coc-pairs',
+            \ 'coc-sh',
+            \ 'coc-html',
+            \ 'coc-css',
+            \ 'coc-tsserver',
+            \ 'coc-deno',
             \ ]
 
 " coc-explorer
-nnoremap <Leader><Leader>1 :<C-u>CocCommand explorer<CR>
-nnoremap <Leader><Leader>j :<C-u>:call RevealCurrentFile()<CR>
+nnoremap <silent> <Leader><Leader>1 :<C-u>CocCommand explorer<CR>
+command! Filer :CocCommand explorer
+
+nnoremap <silent> <Leader><Leader>j :<C-u>:call RevealCurrentFile()<CR>
 command! Reveal :call RevealCurrentFile()
 
 function! RevealCurrentFile() abort
