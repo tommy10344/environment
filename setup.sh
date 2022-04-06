@@ -155,6 +155,7 @@ ghq get https://github.com/altercation/solarized
 ghq get https://github.com/ArtSabintsev/Solarized-Dark-for-Xcode
 ghq get https://github.com/flutter/flutter
 ghq get https://github.com/filsv/iPhoneOSDeviceSupport
+ghq get https://github.com/dracula/terminal-app.git
 
 
 # ----- Homebrew Cask -----
