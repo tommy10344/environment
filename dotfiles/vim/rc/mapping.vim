@@ -24,6 +24,10 @@ nnoremap <C-l> gt
 nnoremap <C-t> :<C-u>tabe<CR>
 nnoremap <Leader>t :<C-u>tabe<CR>
 
+" Buffer
+nnoremap <C-k> :<C-u>bprevious<CR>
+nnoremap <C-j> :<C-u>bnext<CR>
+
 " 画面上の最初の行、最後の行に移動
 nnoremap <Leader>k H
 vnoremap <Leader>k H

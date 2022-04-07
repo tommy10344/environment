@@ -177,6 +177,9 @@ let g:lightline = {
        \   'left': [ [ 'mode', 'paste' ],
        \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
        \ },
+       \ 'component': {
+       \   'filename': '%n:%t'
+       \ },
        \ 'component_function': {
        \   'cocstatus': 'coc#status'
        \ },
