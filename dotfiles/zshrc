@@ -62,3 +62,7 @@ preexec() {
 # Import external rc
 ##############################
 source ${HOME}/.shrc
+
+
+# zsh-autosuggestion
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
