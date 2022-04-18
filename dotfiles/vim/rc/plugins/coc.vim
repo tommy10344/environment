@@ -202,12 +202,14 @@ let g:coc_global_extensions = [
             \ ]
 
 " coc-explorer
-nnoremap <silent> <Leader><Leader>1 :<C-u>CocCommand explorer<CR>
-command! Filer :CocCommand explorer
-
-nnoremap <silent> <Leader><Leader>j :<C-u>:call RevealCurrentFile()<CR>
-command! Reveal :call RevealCurrentFile()
+function! OpenExplorer() abort
+    CocCommand explorer --toggle --sources=buffer+,file+
+endfunction
+nnoremap <silent> <Leader><Leader>1 :<C-u>call OpenExplorer()<CR>
+command! Filer :call OpenExplorer()
 
 function! RevealCurrentFile() abort
     call CocAction('runCommand', 'explorer.doAction', 'closest', ['reveal:0'], [['relative', 0, 'file']])
 endfunction
+nnoremap <silent> <Leader><Leader>j :<C-u>call RevealCurrentFile()<CR>
+command! Reveal :call RevealCurrentFile()
