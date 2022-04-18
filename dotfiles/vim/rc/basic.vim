@@ -34,6 +34,9 @@ set noswapfile
 set noundofile
 " set viminfo=
 
+" Tabを常に表示
+set showtabline=2
+
 " 小文字のみで入力の場合 -> 大文字小文字を区別しない
 " 大文字混在で入力の場合 -> 大文字小文字を区別する
 set ignorecase
