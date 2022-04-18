@@ -8,8 +8,9 @@ defaults write com.apple.dock persistent-apps -array
 # Dock を自動的に隠す
 defaults write com.apple.dock autohide -bool true
 
-# Dockの表示位置(左)
-defaults write com.apple.dock orientation -string "left"
+# Dockの表示位置
+# defaults write com.apple.dock orientation -string "left"
+defaults write com.apple.dock orientation -string "bottom"
 
 # ----- AirDrop -----
 
