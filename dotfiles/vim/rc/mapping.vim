@@ -12,6 +12,15 @@ inoremap <C-k> <Up>
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 
+" 表示行単位で上下移動
+nnoremap j gj
+nnoremap k gk
+nnoremap <Down> gj
+nnoremap <Up> gk
+" 逆パターン
+nnoremap gj j
+nnoremap gk k
+
 " 行頭・行末に移動
 nnoremap <Leader>h 0
 vnoremap <Leader>h 0
