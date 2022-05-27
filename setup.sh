@@ -76,12 +76,12 @@ git config --global alias.unstage "restore --staged"
 git config --global alias.name "config user.name"
 git config --global alias.email "config user.email"
 
-# haskell
+# Haskell
 # brew install haskell-stack
 # stack install ghc-mod hlint haskell-docs
 # stack install hoogle && hoogle data
 
-# ruby
+# Ruby
 brew install ruby
 brew install rbenv
 brew install ruby-build
@@ -108,10 +108,10 @@ npm install -g http-server
 npm install -g npm-check-updates
 npm install -g firebase-tools
 
-# vim
+# Vim
 brew install vim
 
-# neovim
+# NeoVim
 brew install neovim --HEAD
 # ghq get https://github.com/neovim/neovim
 # brew install ninja libtool automake cmake pkg-config gettext
@@ -126,12 +126,12 @@ npm install -g neovim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
-# swift
+# Swift
 brew install sourcekitten
 brew install swiftlint
 pip3 install -- user pyyaml # for autocomplete-swift plugin (vim)
 
-# iOS / Swift
+# iOS
 brew install carthage
 brew install cocoapods
 brew install mint
@@ -151,7 +151,7 @@ brew install gibo
 gibo update
 
 # oss-src
-ghq get https://github.com/XVimProject/XVim2
+# ghq get https://github.com/XVimProject/XVim2
 ghq get https://github.com/altercation/solarized
 ghq get https://github.com/ArtSabintsev/Solarized-Dark-for-Xcode
 ghq get https://github.com/flutter/flutter
