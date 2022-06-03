@@ -71,3 +71,8 @@ export PATH=$HOME/.fastlane/bin:$PATH
 if [ -d "`ghq root`/github.com/flutter/flutter" ]; then
   export PATH=`ghq root`/github.com/flutter/flutter/bin:$PATH
 fi
+
+# Dart
+if [ -d "$HOME/.pub-cache" ]; then
+  export PATH=$HOME/.pub-cache/bin:$PATH
+fi
