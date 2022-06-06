@@ -26,6 +26,7 @@ npm install -g yarn
 npm install -g http-server
 npm install -g npm-check-updates
 npm install -g firebase-tools
+volta setup
 
 # Ruby
 gem update
