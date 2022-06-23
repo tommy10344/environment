@@ -8,7 +8,7 @@
 autoload -U compinit
 compinit
 
-PROMPT='%F{cyan}[%~]%f# '
+PROMPT='%F{cyan}[%~]%f$ '
 # RPROMPT='[%d]'
 
 # bindkey -v
