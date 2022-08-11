@@ -7,6 +7,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'unblevable/quick-scope'
 Plug 'itchyny/lightline.vim'
+Plug 'vim-jp/vimdoc-ja'
 
 
 " ----- coc.nvim -----
