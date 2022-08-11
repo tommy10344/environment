@@ -28,8 +28,6 @@
   },
   "terminal.integrated.defaultProfile.osx": "zsh",
 
-  "window.zoomLevel": 0,
-
   "files.autoGuessEncoding": true,
   "files.trimTrailingWhitespace": true,
   "files.associations": {
