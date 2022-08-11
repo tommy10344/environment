@@ -213,3 +213,7 @@ function! RevealCurrentFile() abort
 endfunction
 nnoremap <silent> <Leader><Leader>j :<C-u>call RevealCurrentFile()<CR>
 command! Reveal :call RevealCurrentFile()
+
+
+" coc-deno
+command! DenoInit :CocCommand deno.initializeWorkspace
