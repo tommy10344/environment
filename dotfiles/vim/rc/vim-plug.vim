@@ -8,7 +8,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'unblevable/quick-scope'
 Plug 'itchyny/lightline.vim'
 Plug 'vim-jp/vimdoc-ja'
-Plug 'cocopon/iceberg.vim'
+Plug 'dracula/vim'
 
 
 " ----- coc.nvim -----
@@ -53,4 +53,4 @@ call plug#end()
 
 
 " Color Scheme
-colorscheme iceberg
+colorscheme dracula
