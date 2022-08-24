@@ -175,13 +175,14 @@ let g:lightline = {
        \ 'colorscheme': 'solarized',
        \ 'active': {
        \   'left': [ [ 'mode', 'paste' ],
-       \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+       \             [ 'gitbranch', 'cocstatus', 'readonly', 'filename', 'modified' ] ]
        \ },
        \ 'component': {
        \   'filename': '%n:%t'
        \ },
        \ 'component_function': {
-       \   'cocstatus': 'coc#status'
+       \   'cocstatus': 'coc#status',
+       \   'gitbranch': 'FugitiveHead'
        \ },
        \ }
 
