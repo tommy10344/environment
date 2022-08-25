@@ -1,6 +1,7 @@
 call plug#begin()
 
 Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-surround'
 Plug 'kana/vim-smartinput'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-fugitive'
