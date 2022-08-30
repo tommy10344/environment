@@ -175,10 +175,11 @@ let g:lightline = {
        \ 'colorscheme': 'solarized',
        \ 'active': {
        \   'left': [ [ 'mode', 'paste' ],
-       \             [ 'gitbranch', 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+       \             [ 'gitbranch', 'cocstatus', 'readonly', 'filename', 'modified', 'charvaluehex' ] ]
        \ },
        \ 'component': {
-       \   'filename': '%n:%t'
+       \   'filename': '%n:%t',
+       \   'charvaluehex': '0x%B'
        \ },
        \ 'component_function': {
        \   'cocstatus': 'coc#status',
