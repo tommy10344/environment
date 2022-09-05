@@ -12,6 +12,8 @@ code --install-extension jebbs.plantuml
 code --install-extension humao.rest-client
 code --install-extension slevesque.vscode-hexdump
 code --install-extension dracula-theme.theme-dracula
+code --install-extension vscode-icons-team.vscode-icons
+code --install-extension oderwat.indent-rainbow
 
 # Azure DevOps
 code --install-extension ms-azure-devops.azure-pipelines
