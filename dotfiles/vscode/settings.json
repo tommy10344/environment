@@ -36,6 +36,7 @@
 
   "workbench.editor.enablePreview": false,
   "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "vscode-icons",
 
   "git.autofetch": true,
   "gitlens.hovers.currentLine.over": "line",
