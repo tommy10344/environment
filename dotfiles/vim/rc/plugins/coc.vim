@@ -203,6 +203,7 @@ let g:coc_global_extensions = [
             \ 'coc-prettier',
             \ 'coc-eslint',
             \ 'coc-deno',
+            \ '@yaegassy/coc-tailwindcss3'
             \ ]
 
 " coc-explorer
