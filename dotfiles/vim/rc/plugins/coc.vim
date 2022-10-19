@@ -222,7 +222,3 @@ command! Reveal :call RevealCurrentFile()
 
 " coc-deno
 command! DenoInit :CocCommand deno.initializeWorkspace
-
-" CocSearch alias
-command! -nargs=* F :CocSearch <args>
-command! -nargs=* Find :CocSearch <args>

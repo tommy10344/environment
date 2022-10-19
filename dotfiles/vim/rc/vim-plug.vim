@@ -30,7 +30,8 @@ vmap <Leader>/ <Plug>NERDCommenterToggle
 
 " ----- vim-grepper -----
 Plug 'mhinz/vim-grepper'
-command! Grep Grepper
+command! -nargs=+ F :GrepperRg <args>
+command! -nargs=+ Find :GrepperRg <args>
 
 
 " ----- fzf.vim -----
