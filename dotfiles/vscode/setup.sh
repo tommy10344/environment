@@ -10,7 +10,7 @@ code --install-extension shd101wyy.markdown-preview-enhanced
 code --install-extension patricklee.vsnotes
 code --install-extension jebbs.plantuml
 code --install-extension humao.rest-client
-code --install-extension slevesque.vscode-hexdump
+code --install-extension ms-vscode.hexeditor
 code --install-extension dracula-theme.theme-dracula
 code --install-extension vscode-icons-team.vscode-icons
 code --install-extension oderwat.indent-rainbow
@@ -39,7 +39,6 @@ code --install-extension wingrunr21.vscode-ruby
 
 # JavaScript / Node.js / TypeScript
 code --install-extension dbaeumer.vscode-eslint
-code --install-extension eg2.vscode-npm-script
 code --install-extension christian-kohler.npm-intellisense
 
 # Golang
