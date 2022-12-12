@@ -38,7 +38,7 @@ alias gd="gdiff"
 alias gdiffcached="git diff --cached"
 alias gdc="gdiffcached"
 
-alias glog="git log --graph --all --oneline"
+alias glog="git log --all --pretty=full --graph"
 alias gl="glog"
 
 alias gadd="git add"
