@@ -27,7 +27,7 @@ cask "sf-symbols"
 
 # Work
 cask "microsoft-office"
-cask "microsoft-teams"
+# cask "microsoft-teams"
 cask "onedrive"
 cask "google-drive-file-stream"
 cask "zoomus"
