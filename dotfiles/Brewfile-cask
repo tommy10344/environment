@@ -21,7 +21,7 @@ cask "google-cloud-sdk"
 cask "wireshark"
 cask "docker"
 cask "mongodb-realm-studio"
-cask "discord"
+# cask "discord"
 cask "sf-symbols"
 
 # Work
