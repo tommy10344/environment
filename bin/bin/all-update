@@ -43,4 +43,4 @@ nvim +UpdatePlugin +UpdateRemotePlugins +qa
 # ${HOME}/bin/XVim/update-xvim.sh
 
 # Flutter
-${HOME}/bin/update-flutter.sh
+${HOME}/bin/update-flutter
