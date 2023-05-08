@@ -38,7 +38,6 @@ brew install python3
 brew install lua
 brew install go
 brew install git
-brew install tig
 brew install openssl
 brew install curl
 brew install wget
@@ -48,7 +47,6 @@ brew install the_silver_searcher
 brew install ripgrep
 brew install ctags
 brew install tree
-brew install docker-clean
 brew install fzf
 brew install ghq
 brew install autossh
@@ -130,7 +128,6 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 # Swift
 brew install sourcekitten
 brew install swiftlint
-pip3 install -- user pyyaml # for autocomplete-swift plugin (vim)
 
 # iOS
 brew install carthage
@@ -138,14 +135,10 @@ brew install cocoapods
 brew install mint
 brew install xcodegen
 pod setup
-# Install Quick Template
+# Install Quick Template (https://github.com/Quick/Quick/blob/main/Documentation/ja/InstallingFileTemplates.md)
 ghq get https://github.com/Quick/Quick
 cd $(ghq root)/github.com/Quick/Quick
 rake templates:install
-
-# Flutter
-brew install --HEAD libimobiledevice
-brew install ideviceinstaller ios-deploy
 
 # gibo
 brew install gibo
@@ -155,7 +148,6 @@ gibo update
 # ghq get https://github.com/XVimProject/XVim2
 ghq get https://github.com/altercation/solarized
 ghq get https://github.com/ArtSabintsev/Solarized-Dark-for-Xcode
-ghq get https://github.com/flutter/flutter
 ghq get https://github.com/filsv/iPhoneOSDeviceSupport
 ghq get https://github.com/dracula/terminal-app.git
 
