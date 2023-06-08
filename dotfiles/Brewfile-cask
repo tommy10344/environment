@@ -9,29 +9,24 @@ cask "the-unarchiver"
 cask "macwinzipper"
 cask "google-chrome"
 cask "raycast"
-cask "authy"
 cask "deepl"
-# cask "cloudflare-warp"
 
 # Development Environments
 cask "oracle-jdk"
 cask "sourcetree"
 cask "visual-studio-code"
-cask "google-cloud-sdk"
 cask "wireshark"
 cask "docker"
 cask "mongodb-realm-studio"
-# cask "discord"
 cask "sf-symbols"
 
 # Work
-cask "microsoft-office"
+# cask "microsoft-office"
 # cask "microsoft-teams"
-cask "onedrive"
+# cask "onedrive"
 # cask "google-drive-file-stream"
 cask "zoomus"
 cask "obsidian"
 
 # QuickLook Plugins
 cask "provisionql"
-cask "quicklookapk"
