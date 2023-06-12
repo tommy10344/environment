@@ -64,6 +64,10 @@ fi
 # NeoVim
 export PATH=$HOME/neovim/bin:$PATH
 
+# Add Visual Studio Code (code)
+# https://code.visualstudio.com/docs/setup/mac
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin":$PATH
+
 # fastlane
 export PATH=$HOME/.fastlane/bin:$PATH
 
