@@ -32,10 +32,6 @@ code --install-extension kaiwood.endwise
 code --install-extension castwide.solargraph
 code --install-extension wingrunr21.vscode-ruby
 
-# Python
-# code --install-extension ms-python.python
-# code --install-extension ms-python.vscode-pylance
-
 # JavaScript / Node.js / TypeScript
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension christian-kohler.npm-intellisense

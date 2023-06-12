@@ -2,8 +2,8 @@
 
 # ----- Dock -----
 
-# Dockからすべてのアプリを消す
-defaults write com.apple.dock persistent-apps -array
+# Dockに起動中のアプリのみを表示する
+defaults write com.apple.dock static-only -boolean true
 
 # Dock を自動的に隠す
 defaults write com.apple.dock autohide -bool true
@@ -11,6 +11,8 @@ defaults write com.apple.dock autohide -bool true
 # Dockの表示位置
 # defaults write com.apple.dock orientation -string "left"
 defaults write com.apple.dock orientation -string "bottom"
+
+killall Dock
 
 # ----- AirDrop -----
 
@@ -99,8 +101,8 @@ killall JapaneseIM
 
 ## プログレスバーにビルド時間を表示
 defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
-## 並列ビルド設定 (並列数: 8)
-# defaults write com.apple.dt.Xcode IDEBuildOperationMaxNumberOfConcurrentCompileTasks 8
+## Navigation Style: Open in Place
+defaults write com.apple.dt.Xcode IDEEditorNavigationStyle_DefaultsKey -string "IDEEditorNavigationStyle_OpenInPlace"
 
 
 # ----- Date -----

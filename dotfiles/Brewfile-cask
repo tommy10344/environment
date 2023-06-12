@@ -4,29 +4,27 @@ cask "font-hackgen"
 cask "font-noto-sans-cjk"
 
 # Utilities
-cask "appcleaner"
-cask "the-unarchiver"
 cask "macwinzipper"
-cask "google-chrome"
 cask "raycast"
 cask "deepl"
 
 # Development Environments
-cask "oracle-jdk"
-cask "sourcetree"
-cask "visual-studio-code"
-cask "wireshark"
-cask "docker"
+# cask "oracle-jdk"
 cask "mongodb-realm-studio"
 cask "sf-symbols"
 
-# Work
-# cask "microsoft-office"
-# cask "microsoft-teams"
-# cask "onedrive"
-# cask "google-drive-file-stream"
-cask "zoomus"
+# Notes
 cask "obsidian"
 
 # QuickLook Plugins
 cask "provisionql"
+
+# cask "appcleaner"
+# cask "the-unarchiver"
+# cask "google-chrome"
+# cask "sourcetree"
+# cask "visual-studio-code"
+# cask "wireshark"
+# cask "docker"
+# cask "zoomus"
+# cask "microsoft-office"

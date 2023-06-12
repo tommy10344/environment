@@ -18,6 +18,13 @@ fi
 
 ln -sfn "${HOME}/Library/Mobile Documents/com~apple~CloudDocs" "${HOME}/icloud-drive"
 
+
+# ----- Setup dotfiles (Create symbolic links) -----
+./link.sh
+
+## For subsequent commands
+source ~/shrc.d/path.sh
+
 # ----- macOS defaults -----
 ${BASE_DIR}/setup_defaults.sh
 
@@ -26,7 +33,7 @@ ${BASE_DIR}/setup_defaults.sh
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-brew tap caskroom/versions
+brew tap homebrew/cask-versions
 
 brew install bash
 brew install bash-completion
@@ -56,8 +63,15 @@ brew install fastlane
 brew install cloc
 
 # zsh (to default shell)
-sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
-chpass -s /usr/local/bin/zsh
+if [ -d "/usr/local/bin/zsh" ]; then
+    sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
+    chpass -s /usr/local/bin/zsh
+fi
+if [ -d "/opt/homebrew/bin/zsh" ]; then
+    sudo sh -c "echo '/opt/homebrew/bin/zsh' >> /etc/shells"
+    chpass -s /opt/homebrew/bin/zsh
+fi
+
 
 # zsh-completions
 rm -f ~/.zcompdump; compinit
@@ -130,26 +144,19 @@ brew install sourcekitten
 brew install swiftlint
 
 # iOS
-brew install carthage
-brew install cocoapods
 brew install mint
-brew install xcodegen
-pod setup
-# Install Quick Template (https://github.com/Quick/Quick/blob/main/Documentation/ja/InstallingFileTemplates.md)
+
+## Install Quick Template (https://github.com/Quick/Quick/blob/main/Documentation/ja/InstallingFileTemplates.md)
 ghq get https://github.com/Quick/Quick
 cd $(ghq root)/github.com/Quick/Quick
 rake templates:install
 
+## Device Support files
+ghq get https://github.com/filsv/iPhoneOSDeviceSupport
+
 # gibo
 brew install gibo
 gibo update
-
-# oss-src
-# ghq get https://github.com/XVimProject/XVim2
-ghq get https://github.com/altercation/solarized
-ghq get https://github.com/ArtSabintsev/Solarized-Dark-for-Xcode
-ghq get https://github.com/filsv/iPhoneOSDeviceSupport
-ghq get https://github.com/dracula/terminal-app.git
 
 
 # ----- Homebrew Cask -----
@@ -158,9 +165,3 @@ brew bundle install --file="${DOTFILES_DIR}/Brewfile-cask"
 
 # ----- Setup Visual Studio Code -----
 ${DOTFILES_DIR}/vscode/setup.sh
-
-# ----- Setup dotfiles -----
-ghq get https://github.com/tommy10344/environment
-cd $(ghq root)/github.com/tommy10344/environment
-git remote set-url origin git@github.com:tommy10344/environment.git
-./link.sh
