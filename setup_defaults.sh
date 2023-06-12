@@ -101,8 +101,12 @@ killall JapaneseIM
 
 ## プログレスバーにビルド時間を表示
 defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
+
 ## Navigation Style: Open in Place
 defaults write com.apple.dt.Xcode IDEEditorNavigationStyle_DefaultsKey -string "IDEEditorNavigationStyle_OpenInPlace"
+
+## Vim Mode
+defaults write com.apple.dt.Xcode KeyBindingsMode -string "Vi"
 
 
 # ----- Date -----
