@@ -158,6 +158,9 @@ ghq get https://github.com/filsv/iPhoneOSDeviceSupport
 brew install gibo
 gibo update
 
+# Flutter
+# https://docs.flutter.dev/get-started/install/macos#downloading-straight-from-github-instead-of-using-an-archive
+ghq get -b stable https://github.com/flutter/flutter
 
 # ----- Homebrew Cask -----
 brew tap homebrew/cask-fonts
