@@ -44,6 +44,7 @@ brew install python
 brew install python3
 brew install lua
 brew install go
+brew install deno
 brew install git
 brew install openssl
 brew install curl
