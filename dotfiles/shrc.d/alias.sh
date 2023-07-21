@@ -47,6 +47,8 @@ alias gap="gadd -p"
 
 alias gcommit="git commit"
 alias gc="gcommit"
+alias gca="gcommit --amend"
+alias gce="gcommit --amend --no-edit"
 
 alias gfetch="git fetch"
 alias gfetchprune="git fetch --prune"
