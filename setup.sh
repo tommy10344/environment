@@ -62,6 +62,7 @@ brew install jsonlint
 brew install jq
 brew install fastlane
 brew install cloc
+brew install walk
 
 # zsh (to default shell)
 if [ -d "/usr/local/bin/zsh" ]; then
