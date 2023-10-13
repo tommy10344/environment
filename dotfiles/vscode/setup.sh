@@ -27,10 +27,9 @@ code --install-extension dart-code.flutter
 code --install-extension chflick.firecode
 
 # Ruby
-code --install-extension rebornix.ruby
 code --install-extension kaiwood.endwise
 code --install-extension castwide.solargraph
-code --install-extension wingrunr21.vscode-ruby
+code --install-extension shopify.ruby-lsp
 
 # JavaScript / Node.js / TypeScript
 code --install-extension dbaeumer.vscode-eslint
