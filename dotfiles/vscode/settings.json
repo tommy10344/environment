@@ -129,29 +129,5 @@
   "dart.previewFlutterUiGuidesCustomTracking": true,
 
   "plantuml.render": "PlantUMLServer",
-  "plantuml.server": "http://localhost:8080",
-
-  "vsnotes.defaultNotePath": "~/work/vsnote",
-  "vsnotes.noteTitleConvertSpaces": " ",
-  "vsnotes.defaultNoteTitle": "{dt}_{title}.{ext}",
-  "vsnotes.tokens": [
-    {
-      "type": "datetime",
-      "token": "{dt}",
-      "format": "YYYY-MM-DD",
-      "description": "Insert formatted datetime."
-    },
-    {
-      "type": "title",
-      "token": "{title}",
-      "description": "Insert note title from input box.",
-      "format": "Untitled"
-    },
-    {
-      "type": "extension",
-      "token": "{ext}",
-      "description": "Insert file extension.",
-      "format": "md"
-    }
-  ]
+  "plantuml.server": "http://localhost:8080"
 }
