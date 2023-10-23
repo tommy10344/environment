@@ -8,6 +8,7 @@
   "editor.fontSize": 14,
   "editor.wordWrap": "off",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.renderWhitespace": "all",
   "editor.fontLigatures": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
@@ -30,6 +31,7 @@
 
   "files.autoGuessEncoding": true,
   "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
   "files.associations": {
     "Fastfile": "ruby"
   },
@@ -127,6 +129,13 @@
   "dart.debugSdkLibraries": false,
   "dart.previewFlutterUiGuides": true,
   "dart.previewFlutterUiGuidesCustomTracking": true,
+
+  "[csharp]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-dotnettools.csharp",
+    "editor.formatOnSave": true
+  },
+  "omnisharp.enableEditorConfigSupport": true,
 
   "plantuml.render": "PlantUMLServer",
   "plantuml.server": "http://localhost:8080"
