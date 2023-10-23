@@ -85,6 +85,7 @@ git config --global user.name "${NAME}"
 git config --global user.email "${EMAIL_ADDRESS}"
 git config --global user.useConfigOnly true
 git config --global pull.ff only
+git config --global diff.wsErrorHighlight all
 git config --global pager.branch false
 git config --global ghq.root ~/src
 git config --global alias.unstage "restore --staged"
