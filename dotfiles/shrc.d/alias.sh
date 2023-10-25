@@ -1,15 +1,7 @@
-if type exa > /dev/null 2>&1; then
-  alias ls="exa"
-else
-  alias ls="ls -G"
-fi
+alias ls="ls -G"
 alias ll="ls -lh"
 alias la="ls -a"
 alias lla="ll -a"
-
-if type bat > /dev/null 2>&1; then
-  alias cat="bat"
-fi
 
 alias grep="grep --color"
 alias cl="clear"
