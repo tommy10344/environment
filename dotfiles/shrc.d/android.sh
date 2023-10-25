@@ -9,6 +9,7 @@ if [ -d "${SDKPATH_ANDROID}" ]; then
   export ANDROID_SDK_PLATFORM_TOOLS=${ANDROID_HOME}/platform-tools
   export PATH=${ANDROID_SDK_TOOLS}/bin:$PATH
   export PATH=${ANDROID_SDK_PLATFORM_TOOLS}:$PATH
+  export PATH=${ANDROID_HOME}/emulator:$PATH
 elif [ -d "${SDKPATH_XAMARIN}" ]; then
   export PATH=${SDKPATH_XAMARIN}/platform-tools:$PATH
 fi
