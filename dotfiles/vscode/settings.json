@@ -40,6 +40,8 @@
   "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "vscode-icons",
 
+  "debug.onTaskErrors": "abort",
+
   "git.autofetch": true,
   "gitlens.hovers.currentLine.over": "line",
 
