@@ -5,7 +5,6 @@ BASE_DIR=$(cd $(dirname $0);pwd)
 ln -sfn "${BASE_DIR}/bash_profile"               "${HOME}/.bash_profile"
 ln -sfn "${BASE_DIR}/bashrc"                     "${HOME}/.bashrc"
 ln -sfn "${BASE_DIR}/tmux.conf"                  "${HOME}/.tmux.conf"
-ln -sfn "${BASE_DIR}/vimshrc"                    "${HOME}/.vimshrc"
 ln -sfn "${BASE_DIR}/xvimrc"                     "${HOME}/.xvimrc"
 ln -sfn "${BASE_DIR}/IntelliJ_IDEA/ideavimrc"    "${HOME}/.ideavimrc"
 ln -sfn "${BASE_DIR}/zshrc"                      "${HOME}/.zshrc"

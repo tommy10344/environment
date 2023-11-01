@@ -1,8 +1,0 @@
-set visualbell t_vb=
-set background=dark
-" set guifont=RictyDiminished-Regular:h14
-set guifont=HackGen:h14
-
-colorscheme solarized
-" colorscheme slate
-" colorscheme molokai

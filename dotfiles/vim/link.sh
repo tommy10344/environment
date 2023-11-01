@@ -3,8 +3,6 @@
 BASE_DIR=$(cd $(dirname $0);pwd)
 
 ln -sfn "${BASE_DIR}/vimrc"      "${HOME}/.vimrc"
-ln -sfn "${BASE_DIR}/gvimrc"     "${HOME}/.gvimrc"
-# ln -sfn "${BASE_DIR}/vimshrc"    "${HOME}/.vimshrc"
 
 # vim
 mkdir -p "${HOME}/.vim"
