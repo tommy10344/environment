@@ -29,7 +29,7 @@ code --install-extension chflick.firecode
 # Ruby
 code --install-extension kaiwood.endwise
 code --install-extension castwide.solargraph
-code --install-extension shopify.ruby-lsp
+code --install-extension shopify.ruby-extensions-pack
 
 # JavaScript / Node.js / TypeScript
 code --install-extension dbaeumer.vscode-eslint
