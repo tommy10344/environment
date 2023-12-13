@@ -53,7 +53,6 @@
   "vim.leader": "<space>",
   "vim.surround": true,
   "vim.easymotion": true,
-  "vim.easymotionKeys": "sdfghjkl",
   "vim.enableNeovim": true,
   // "vim.neovimPath": "/usr/local/bin/nvim",
   "vim.normalModeKeyBindings": [
