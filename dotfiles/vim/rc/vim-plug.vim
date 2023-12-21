@@ -9,7 +9,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'unblevable/quick-scope'
 Plug 'itchyny/lightline.vim'
 Plug 'vim-jp/vimdoc-ja'
-Plug 'dracula/vim'
 
 
 " ----- coc.nvim -----
@@ -52,7 +51,3 @@ endfunction
 Plug 'keith/swift.vim'
 
 call plug#end()
-
-
-" Color Scheme
-colorscheme dracula

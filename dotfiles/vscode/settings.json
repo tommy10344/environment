@@ -36,8 +36,11 @@
     "Fastfile": "ruby"
   },
 
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
+  "workbench.preferredLightColorTheme": "Default Light Modern",
+
   "workbench.editor.enablePreview": false,
-  "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "vscode-icons",
 
   "debug.onTaskErrors": "abort",
