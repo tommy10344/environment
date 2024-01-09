@@ -13,7 +13,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "editor.unicodeHighlight.nonBasicASCII": false,
   "editor.bracketPairColorization.enabled": true,
@@ -39,7 +39,7 @@
   "window.autoDetectColorScheme": true,
   "workbench.preferredDarkColorTheme": "Default Dark Modern",
   "workbench.preferredLightColorTheme": "Default Light Modern",
-
+  "workbench.colorTheme": "Default Light Modern",
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "vscode-icons",
 
@@ -127,7 +127,7 @@
     "editor.defaultFormatter": "golang.go",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     }
   },
 
@@ -139,7 +139,7 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": "off"
   },
   "dart.debugExternalLibraries": true,
   "dart.debugSdkLibraries": false,
