@@ -92,6 +92,7 @@
   "explorer.confirmDragAndDrop": false,
 
   "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+  "lldb.launch.expressions": "native",
 
   "ruby.intellisense": "rubyLocate",
   "ruby.useLanguageServer": true,
