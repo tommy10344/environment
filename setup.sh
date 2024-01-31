@@ -167,5 +167,10 @@ ghq get -b stable https://github.com/flutter/flutter
 brew tap homebrew/cask-fonts
 brew bundle install --file="${DOTFILES_DIR}/Brewfile-cask"
 
+# ----- sdkman -----
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk install java 17.0.10-ms
+
 # ----- Setup Visual Studio Code -----
 ${DOTFILES_DIR}/vscode/setup.sh

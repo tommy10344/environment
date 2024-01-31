@@ -9,7 +9,6 @@ cask "raycast"
 cask "deepl"
 
 # Development Environments
-# cask "oracle-jdk"
 cask "mongodb-realm-studio"
 cask "sf-symbols"
 
