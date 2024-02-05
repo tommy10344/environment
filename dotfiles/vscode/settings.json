@@ -31,7 +31,6 @@
 
   "files.autoGuessEncoding": true,
   "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
   "files.associations": {
     "Fastfile": "ruby"
   },
