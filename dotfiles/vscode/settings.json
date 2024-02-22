@@ -20,7 +20,6 @@
   "editor.guides.bracketPairs": true,
 
   "terminal.integrated.fontSize": 14,
-  // "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
   "terminal.integrated.profiles.osx": {
     "bash": {
       "path": "zsh",
@@ -56,7 +55,6 @@
   "vim.surround": true,
   "vim.easymotion": true,
   "vim.enableNeovim": true,
-  // "vim.neovimPath": "/usr/local/bin/nvim",
   "vim.normalModeKeyBindings": [
     { "before": [";"], "after": [":"] },
     { "before": [":"], "after": [";"] },
@@ -97,7 +95,6 @@
   "ruby.useLanguageServer": true,
   "[ruby]": {
     "editor.defaultFormatter": "Shopify.ruby-lsp",
-    "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.tabSize": 2,
     "editor.insertSpaces": true,
@@ -112,8 +109,7 @@
   "python.languageServer": "Default",
 
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -125,14 +121,12 @@
   "[go]": {
     "editor.snippetSuggestions": "none",
     "editor.defaultFormatter": "golang.go",
-    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit"
     }
   },
 
   "[dart]": {
-    "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.rulers": [80],
     "editor.selectionHighlight": false,
@@ -148,8 +142,7 @@
 
   "[csharp]": {
     "editor.tabSize": 4,
-    "editor.defaultFormatter": "ms-dotnettools.csharp",
-    "editor.formatOnSave": true
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
   },
   "omnisharp.enableEditorConfigSupport": true,
 
