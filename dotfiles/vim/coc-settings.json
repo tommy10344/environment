@@ -8,5 +8,6 @@
     "typescript",
     "typescriptreact"
   ],
-  "explorer.file.showHiddenFiles": true
+  "explorer.file.showHiddenFiles": true,
+  "snippets.ultisnips.pythonPrompt": false
 }

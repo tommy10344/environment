@@ -12,14 +12,6 @@ brew upgrade --cask
 brew cleanup
 # brew doctor
 
-# Python
-pip2 install --upgrade pip
-pip3 install --upgrade pip
-pip2 install --upgrade pynvim
-pip3 install --upgrade pynvim
-pip2 install --upgrade jedi
-pip3 install --upgrade jedi
-
 # Node.js
 npm install -g npm
 npm install -g yarn

@@ -147,5 +147,6 @@
   "omnisharp.enableEditorConfigSupport": true,
 
   "plantuml.render": "PlantUMLServer",
-  "plantuml.server": "http://localhost:8080"
+  "plantuml.server": "http://localhost:8080",
+  "redhat.telemetry.enabled": true
 }

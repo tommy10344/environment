@@ -41,7 +41,6 @@ brew install zsh
 brew install zsh-completions
 brew install zsh-autosuggestions
 brew install python
-brew install python3
 brew install lua
 brew install go
 brew install deno
@@ -129,9 +128,6 @@ brew install vim
 brew install neovim --HEAD
 # ghq get https://github.com/neovim/neovim
 # brew install ninja libtool automake cmake pkg-config gettext
-pip3 install --user pynvim
-pip3 install --user neovim-remote
-pip3 install --user Send2Trash
 gem install neovim
 npm install -g neovim
 # ${BIN_DIR}/bin/build-neovim.sh
