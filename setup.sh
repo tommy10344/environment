@@ -125,9 +125,7 @@ npm install -g firebase-tools
 brew install vim
 
 # NeoVim
-brew install neovim --HEAD
-# ghq get https://github.com/neovim/neovim
-# brew install ninja libtool automake cmake pkg-config gettext
+brew install neovim
 gem install neovim
 npm install -g neovim
 # ${BIN_DIR}/bin/build-neovim.sh
