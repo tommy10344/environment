@@ -2,11 +2,9 @@ call plug#begin()
 
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-surround'
-Plug 'kana/vim-smartinput'
-Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-fugitive'
+Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'unblevable/quick-scope'
 Plug 'itchyny/lightline.vim'
 Plug 'vim-jp/vimdoc-ja'
 
@@ -45,9 +43,5 @@ function! FzfFiles() abort
         Files
     endif
 endfunction
-
-
-" ----- Swift -----
-Plug 'keith/swift.vim'
 
 call plug#end()
