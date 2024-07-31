@@ -80,3 +80,10 @@ fi
 if [ -d "$HOME/.pub-cache" ]; then
   export PATH=$HOME/.pub-cache/bin:$PATH
 fi
+
+# .NET
+# Global tools path
+# https://learn.microsoft.com/ja-jp/dotnet/core/tools/global-tools#install-a-global-tool
+if [ -d "$HOME/.dotnet/tools" ]; then
+  export PATH=$HOME/.dotnet/tools:$PATH
+fi
