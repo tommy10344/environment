@@ -33,7 +33,7 @@ alias gdc="gdiffcached"
 alias glog="git log"
 alias gl="glog"
 
-alias ggraph="git log --all --graph --pretty=format:'%x09% C(auto) %h %Creset|%Cgreen %ad %Creset|%Cblue %an %Creset| %s'"
+alias ggraph="git log --graph --branches --remotes --pretty=format:'%x09% C(auto) %h %Creset|%Cgreen %ad %Creset|%Cblue %an %Creset|%C(auto) %d %s'"
 alias gg="ggraph"
 
 alias gadd="git add"
