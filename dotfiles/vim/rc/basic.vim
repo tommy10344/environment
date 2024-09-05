@@ -66,9 +66,6 @@ endif
 " yankしたテキストをクリップボードに入れる
 set clipboard+=unnamed
 
-" 行番号相対表示
-set relativenumber
-
 """"""""""""""""""""""""""""""""""""""""
 " path
 "
