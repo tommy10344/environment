@@ -66,7 +66,8 @@ alias gremote="git remote"
 alias be="bundle exec"
 
 # Android
-alias android_studio="open -a /Applications/Android\ Studio.app"
+alias android-studio="open -a /Applications/Android\ Studio.app"
+alias adb-restart="adb kill-server && adb start-server"
 
 # Proxy Settings
 alias set_proxy="source ${HOME}/.set_proxy"
