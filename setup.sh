@@ -33,8 +33,6 @@ ${BASE_DIR}/setup_defaults.sh
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-brew tap homebrew/cask-versions
-
 brew install bash
 brew install bash-completion
 brew install zsh
@@ -164,7 +162,7 @@ brew bundle install --file="${DOTFILES_DIR}/Brewfile-cask"
 # ----- sdkman -----
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
-sdk install java 17.0.10-ms
+sdk install java 17.0.14-ms
 
 # ----- Setup Visual Studio Code -----
 ${DOTFILES_DIR}/vscode/setup.sh

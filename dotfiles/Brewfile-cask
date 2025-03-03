@@ -1,3 +1,8 @@
+# Work
+cask "microsoft-office"
+cask "zoom"
+cask "google-chrome"
+
 # Fonts
 cask "font-ricty-diminished"
 cask "font-hackgen"
@@ -7,8 +12,14 @@ cask "font-noto-sans-cjk"
 cask "macwinzipper"
 cask "raycast"
 cask "deepl"
+cask "appcleaner"
+cask "the-unarchiver"
 
 # Development Environments
+cask "sourcetree"
+cask "wireshark"
+cask "visual-studio-code"
+cask "docker"
 cask "mongodb-realm-studio"
 cask "sf-symbols"
 
@@ -17,13 +28,3 @@ cask "obsidian"
 
 # QuickLook Plugins
 cask "provisionql"
-
-# cask "appcleaner"
-# cask "the-unarchiver"
-# cask "google-chrome"
-# cask "sourcetree"
-# cask "visual-studio-code"
-# cask "wireshark"
-# cask "docker"
-# cask "zoomus"
-# cask "microsoft-office"
