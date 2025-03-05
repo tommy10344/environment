@@ -97,8 +97,8 @@ brew install ruby
 brew install rbenv
 brew install ruby-build
 eval "$(rbenv init -)"
-rbenv install 3.1.3
-rbenv global 3.1.3
+rbenv install 3.4.1
+rbenv global 3.4.1
 rbenv rehash
 gem install bundler
 gem install iStats
