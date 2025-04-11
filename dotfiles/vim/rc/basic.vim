@@ -78,10 +78,6 @@ call Add_PATH('~/bin')
 call Add_PATH('~/.local/bin')
 " call Add_PATH('~/.pyenv/shims')
 
-" '%'拡張プラグイン
-source $VIMRUNTIME/macros/matchit.vim
-
-
 " :vimgrep xxx ** と同様
 " command! -nargs=1 Grep call s:grep_recursive(<f-args>)
 " function! s:grep_recursive(pattern)
