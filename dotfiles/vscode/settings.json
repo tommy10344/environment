@@ -40,6 +40,7 @@
   "workbench.colorTheme": "Default Light Modern",
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "newUntitledFile",
 
   "debug.onTaskErrors": "abort",
 
@@ -91,8 +92,6 @@
   "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
   "lldb.launch.expressions": "native",
 
-  "ruby.intellisense": "rubyLocate",
-  "ruby.useLanguageServer": true,
   "[ruby]": {
     "editor.defaultFormatter": "Shopify.ruby-lsp",
     "editor.formatOnType": true,
@@ -104,9 +103,6 @@
     "editor.rulers": [120],
     "editor.semanticHighlighting.enabled": true
   },
-
-  "python.jediEnabled": false,
-  "python.languageServer": "Default",
 
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -135,10 +131,6 @@
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": "off"
   },
-  "dart.debugExternalLibraries": true,
-  "dart.debugSdkLibraries": false,
-  "dart.previewFlutterUiGuides": true,
-  "dart.previewFlutterUiGuidesCustomTracking": true,
 
   "[csharp]": {
     "editor.tabSize": 4,
