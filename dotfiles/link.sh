@@ -16,7 +16,10 @@ ln -sfn "${BASE_DIR}/vscode/markdown-github.css" "${HOME}/.config/vscode-markdow
 ln -sfn "${BASE_DIR}/shrc.d"                     "${HOME}/shrc.d"
 ln -sfn "${BASE_DIR}/hyper.js"                   "${HOME}/.hyper.js"
 ln -sfn "${BASE_DIR}/Xcode/CodeSnippets"         "${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
+
+mkdir -p "${HOME}/.claude"
 ln -sfn "${BASE_DIR}/ClaudeCode/settings.json"   "${HOME}/.claude/settings.json"
+ln -sfn "${BASE_DIR}/ClaudeCode/commands"   "${HOME}/.claude/commands"
 
 # Link All Services
 find "${BASE_DIR}/Services" \
