@@ -9,6 +9,7 @@ if [ -d "${SDKPATH_ANDROID}" ]; then
   export PATH=${ANDROID_HOME}/tools:$PATH
   export PATH=${ANDROID_HOME}/tools/bin:$PATH
   export PATH=${ANDROID_HOME}/platform-tools:$PATH
+  export PATH=${ANDROID_HOME}/cmdline-tools/latest/bin:$PATH
 elif [ -d "${SDKPATH_XAMARIN}" ]; then
   export PATH=${SDKPATH_XAMARIN}/platform-tools:$PATH
 fi
