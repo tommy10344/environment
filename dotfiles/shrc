@@ -18,5 +18,5 @@ source ${HOME}/shrc.d/swift.sh
 source ${HOME}/shrc.d/plantuml.sh
 source ${HOME}/shrc.d/google-cloud-sdk.sh
 source ${HOME}/shrc.d/walk.sh
-
 source ${HOME}/shrc.d/sdkman.sh
+source ${HOME}/shrc.d/safe-chain.sh

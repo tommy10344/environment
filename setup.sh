@@ -164,5 +164,9 @@ curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk install java 17.0.14-ms
 
+# ----- AikidoSec safe-chain -----
+# @see https://github.com/AikidoSec/safe-chain
+curl -fsSL https://github.com/AikidoSec/safe-chain/releases/latest/download/install-safe-chain.sh | sh
+
 # ----- Setup Visual Studio Code -----
 ${DOTFILES_DIR}/vscode/setup.sh
