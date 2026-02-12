@@ -7,7 +7,7 @@ set ignorecase
 set smartcase
 
 " 行番号相対表示
-set relativenumber
+" set relativenumber
 
 " for US keyboard
 nnoremap ; :
