@@ -1,5 +1,14 @@
 {
   "permissions": {
+    "allow": [
+      "Bash(xcodebuild:*)",
+      "Bash(xcrun simctl:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(ls:*)",
+      "Bash(cd:*)",
+      "Bash(git log:*)"
+    ],
     "deny": [
       "Bash(sudo:*)",
       "Bash(rm:*)",
