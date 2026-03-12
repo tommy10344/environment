@@ -60,6 +60,7 @@ brew install jq
 brew install fastlane
 brew install cloc
 brew install walk
+brew install zellij
 
 # zsh (to default shell)
 if [ -d "/usr/local/bin/zsh" ]; then
