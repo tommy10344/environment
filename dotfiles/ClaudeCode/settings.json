@@ -39,13 +39,15 @@
       "Read(.env.*)",
       "Read(id_rsa)",
       "Read(id_ed25519)",
-      "Read(**/*token*)",
-      "Read(**/*key*)",
       "Write(.env*)",
       "Write(**/secrets/**)"
     ]
   },
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
   "enabledPlugins": {
     "swift-lsp@claude-plugins-official": true
-  }
+  },
+  "effortLevel": "high"
 }
