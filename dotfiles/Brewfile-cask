@@ -7,6 +7,7 @@ cask "google-chrome"
 cask "font-ricty-diminished"
 cask "font-hackgen"
 cask "font-noto-sans-cjk"
+cask "font-symbols-only-nerd-font"
 
 # Utilities
 cask "macwinzipper"
@@ -14,6 +15,9 @@ cask "raycast"
 cask "deepl"
 cask "appcleaner"
 cask "the-unarchiver"
+
+# Terminal
+cask "wezterm"
 
 # Development Environments
 cask "sourcetree"

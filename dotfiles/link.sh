@@ -16,6 +16,7 @@ ln -sfn "${BASE_DIR}/vscode/settings.json"       "${HOME}/Library/Application Su
 ln -sfn "${BASE_DIR}/vscode/markdown-github.css" "${HOME}/.config/vscode-markdown-github.css"
 ln -sfn "${BASE_DIR}/shrc.d"                     "${HOME}/shrc.d"
 ln -sfn "${BASE_DIR}/hyper.js"                   "${HOME}/.hyper.js"
+ln -sfn "${BASE_DIR}/wezterm.lua"                "${HOME}/.wezterm.lua"
 ln -sfn "${BASE_DIR}/Xcode/CodeSnippets"         "${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
 
 mkdir -p "${HOME}/.claude"
