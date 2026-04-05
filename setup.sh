@@ -12,10 +12,16 @@ read NAME
 /bin/echo -n "Email Address?: "
 read EMAIL_ADDRESS
 
-SSH_PRIVATE_KEY=${HOME}/.ssh/id_ed25519
-if [ ! -f "${SSH_PRIVATE_KEY}" ]; then
+SSH_PRIVATE_KEY_ED25519=${HOME}/.ssh/id_ed25519
+if [ ! -f "${SSH_PRIVATE_KEY_ED25519}" ]; then
   ssh-keygen -t ed25519 -C "${EMAIL_ADDRESS}"
-  ssh-add --apple-use-keychain ${SSH_PRIVATE_KEY}
+  ssh-add --apple-use-keychain ${SSH_PRIVATE_KEY_ED25519}
+fi
+
+SSH_PRIVATE_KEY_RSA=${HOME}/.ssh/id_rsa
+if [ ! -f "${SSH_PRIVATE_KEY_RSA}" ]; then
+  ssh-keygen -t rsa -b 4096 -C "${EMAIL_ADDRESS}"
+  ssh-add --apple-use-keychain ${SSH_PRIVATE_KEY_RSA}
 fi
 
 ln -sfn "${HOME}/Library/Mobile Documents/com~apple~CloudDocs" "${HOME}/icloud-drive"
