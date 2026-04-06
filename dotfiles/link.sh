@@ -4,7 +4,6 @@ BASE_DIR=$(cd $(dirname $0);pwd)
 
 ln -sfn "${BASE_DIR}/bash_profile"               "${HOME}/.bash_profile"
 ln -sfn "${BASE_DIR}/bashrc"                     "${HOME}/.bashrc"
-ln -sfn "${BASE_DIR}/tmux.conf"                  "${HOME}/.tmux.conf"
 ln -sfn "${BASE_DIR}/xvimrc"                     "${HOME}/.xvimrc"
 ln -sfn "${BASE_DIR}/IntelliJ_IDEA/ideavimrc"    "${HOME}/.ideavimrc"
 ln -sfn "${BASE_DIR}/zshrc"                      "${HOME}/.zshrc"
@@ -16,12 +15,14 @@ ln -sfn "${BASE_DIR}/vscode/settings.json"       "${HOME}/Library/Application Su
 ln -sfn "${BASE_DIR}/vscode/markdown-github.css" "${HOME}/.config/vscode-markdown-github.css"
 ln -sfn "${BASE_DIR}/shrc.d"                     "${HOME}/shrc.d"
 ln -sfn "${BASE_DIR}/hyper.js"                   "${HOME}/.hyper.js"
-ln -sfn "${BASE_DIR}/wezterm.lua"                "${HOME}/.wezterm.lua"
 ln -sfn "${BASE_DIR}/Xcode/CodeSnippets"         "${HOME}/Library/Developer/Xcode/UserData/CodeSnippets"
 
 mkdir -p "${HOME}/.claude"
 ln -sfn "${BASE_DIR}/ClaudeCode/settings.json"   "${HOME}/.claude/settings.json"
 ln -sfn "${BASE_DIR}/ClaudeCode/commands"   "${HOME}/.claude/commands"
+
+mkdir -p "${HOME}/Library/Application Support/iTerm2/DynamicProfiles"
+ln -sfn "${BASE_DIR}/iterm2/DynamicProfiles.json" "${HOME}/Library/Application Support/iTerm2/DynamicProfiles/DynamicProfiles.json"
 
 # Link All Services
 find "${BASE_DIR}/Services" \

@@ -1,0 +1,12 @@
+{
+  "Profiles": [
+    {
+      "Name": "Default",
+      "Guid": "D3B3D3B3-0001-4000-A000-000000000001",
+      "Dynamic Profile Parent Name": "Default",
+      "Normal Font": "HackGen-Regular 14",
+      "Use Non-ASCII Font": true,
+      "Non Ascii Font": "SymbolsNFM 14"
+    }
+  ]
+}

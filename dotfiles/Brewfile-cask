@@ -17,7 +17,7 @@ cask "appcleaner"
 cask "the-unarchiver"
 
 # Terminal
-cask "wezterm"
+cask "iterm2"
 
 # Development Environments
 cask "sourcetree"
