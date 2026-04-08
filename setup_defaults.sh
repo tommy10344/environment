@@ -3,7 +3,7 @@
 # ----- Dock -----
 
 # Dockに起動中のアプリのみを表示する
-defaults write com.apple.dock static-only -boolean true
+defaults write com.apple.dock static-only -bool true
 
 # Dock を自動的に隠す
 defaults write com.apple.dock autohide -bool true
@@ -11,8 +11,6 @@ defaults write com.apple.dock autohide -bool true
 # Dockの表示位置
 # defaults write com.apple.dock orientation -string "left"
 defaults write com.apple.dock orientation -string "bottom"
-
-killall Dock
 
 # ----- AirDrop -----
 
@@ -56,6 +54,8 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 # defaults write com.apple.dock wvous-br-corner -int 0
 # defaults write com.apple.dock wvous-br-modifier -int 0
 
+killall Dock
+
 
 # ----- Key repeat -----
 
@@ -76,10 +76,10 @@ defaults write -g InitialKeyRepeat -int 15
 # ----- Finder -----
 
 # 隠しファイルを表示
-defaults write com.apple.finder AppleShowAllFiles -bool YES
+defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # ネットワーク共有フォルダにDS_Storeを作らない
-defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # パスバーを表示
 defaults write com.apple.finder ShowPathbar -bool true
@@ -95,12 +95,12 @@ killall Finder
 # "¥"キーで入力する文字 -> バックスラッシュ
 defaults write com.apple.inputmethod.Kotoeri 'JIMPrefCharacterForYenKey' -int 1
 
-killall JapaneseIM
+killall JapaneseIM 2>/dev/null || true
 
 # ----- Xcode -----
 
 ## プログレスバーにビルド時間を表示
-defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
+defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool true
 
 ## Navigation Style: Open in Place
 defaults write com.apple.dt.Xcode IDEEditorNavigationStyle_DefaultsKey -string "IDEEditorNavigationStyle_OpenInPlace"

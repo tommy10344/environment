@@ -2,7 +2,7 @@
 
 set -x
 
-BASE_DIR=$(cd $(dirname $0);pwd)
+BASE_DIR=$(cd "$(dirname "$0")" && pwd)
 DOTFILES_DIR=${BASE_DIR}/dotfiles
 BIN_DIR=${BASE_DIR}/bin
 
@@ -28,7 +28,7 @@ ln -sfn "${HOME}/Library/Mobile Documents/com~apple~CloudDocs" "${HOME}/icloud-d
 
 
 # ----- Setup dotfiles (Create symbolic links) -----
-./link.sh
+${BASE_DIR}/dotfiles/link.sh
 
 ## For subsequent commands
 source ~/shrc.d/path.sh
@@ -39,7 +39,7 @@ ${BASE_DIR}/setup_defaults.sh
 # ----- CLI tools -----
 
 # Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 brew install bash
 brew install bash-completion
@@ -69,20 +69,26 @@ brew install walk
 brew install yazi ffmpeg sevenzip poppler fd zoxide resvg imagemagick
 
 # zsh (to default shell)
-if [ -d "/usr/local/bin/zsh" ]; then
-    sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
+if [ -f "/usr/local/bin/zsh" ]; then
+    grep -qxF '/usr/local/bin/zsh' /etc/shells || sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
     chpass -s /usr/local/bin/zsh
 fi
-if [ -d "/opt/homebrew/bin/zsh" ]; then
-    sudo sh -c "echo '/opt/homebrew/bin/zsh' >> /etc/shells"
+if [ -f "/opt/homebrew/bin/zsh" ]; then
+    grep -qxF '/opt/homebrew/bin/zsh' /etc/shells || sudo sh -c "echo '/opt/homebrew/bin/zsh' >> /etc/shells"
     chpass -s /opt/homebrew/bin/zsh
 fi
 
 
 # zsh-completions
 rm -f ~/.zcompdump; compinit
-sudo chmod -R 755 /usr/local/share/zsh
-sudo chmod -R 755 /usr/local/share/zsh/site-functions
+if [ -d "/usr/local/share/zsh" ]; then
+    sudo chmod -R 755 /usr/local/share/zsh
+    sudo chmod -R 755 /usr/local/share/zsh/site-functions
+fi
+if [ -d "/opt/homebrew/share/zsh" ]; then
+    sudo chmod -R 755 /opt/homebrew/share/zsh
+    sudo chmod -R 755 /opt/homebrew/share/zsh/site-functions
+fi
 
 # git config
 git config --global user.name "${NAME}"
@@ -150,8 +156,7 @@ brew install mint
 
 ## Install Quick Template (https://github.com/Quick/Quick/blob/main/Documentation/ja/InstallingFileTemplates.md)
 ghq get https://github.com/Quick/Quick
-cd $(ghq root)/github.com/Quick/Quick
-rake templates:install
+(cd "$(ghq root)/github.com/Quick/Quick" && rake templates:install)
 
 ## Device Support files
 ghq get https://github.com/filsv/iPhoneOSDeviceSupport
@@ -171,7 +176,6 @@ brew install pipx
 pipx install it2
 
 # ----- Homebrew Cask -----
-brew tap homebrew/cask-fonts
 brew bundle install --file="${DOTFILES_DIR}/Brewfile-cask"
 
 # ----- sdkman -----
