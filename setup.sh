@@ -164,6 +164,12 @@ gibo update
 # https://docs.flutter.dev/get-started/install/macos#downloading-straight-from-github-instead-of-using-an-archive
 ghq get -b stable https://github.com/flutter/flutter
 
+# pipx
+brew install pipx
+
+# it2 (Claude Code Agent Teams の Split Panes で必要)
+pipx install it2
+
 # ----- Homebrew Cask -----
 brew tap homebrew/cask-fonts
 brew bundle install --file="${DOTFILES_DIR}/Brewfile-cask"

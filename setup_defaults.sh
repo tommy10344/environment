@@ -119,3 +119,9 @@ defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  H:mm:ss"
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
+
+
+# ----- iTerm2 -----
+
+# Python APIを有効化（Claude Code Agent Teams の Split Panes で必要）
+defaults write com.googlecode.iterm2 EnableAPIServer -bool true
