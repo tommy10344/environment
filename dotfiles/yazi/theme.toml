@@ -1,0 +1,8 @@
+"$schema" = "https://yazi-rs.github.io/schemas/theme.json"
+
+[indicator]
+# デフォルトの reversed ではアイコンの色が背景と同化して見えづらくなるため、
+# 明示的な背景色を使用してアイコンの色を保持する
+parent  = { bg = "#888888", bold = true }
+current = { bg = "#888888", bold = true }
+padding = { open = " ", close = "" }
