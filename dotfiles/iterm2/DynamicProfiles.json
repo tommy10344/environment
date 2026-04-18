@@ -6,7 +6,8 @@
       "Dynamic Profile Parent Name": "Default",
       "Normal Font": "HackGen-Regular 14",
       "Use Non-ASCII Font": true,
-      "Non Ascii Font": "SymbolsNFM 14"
+      "Non Ascii Font": "SymbolsNFM 14",
+      "Custom Directory": "Recycle"
     }
   ]
 }
