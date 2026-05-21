@@ -22,7 +22,8 @@ ln -sfn "${BASE_DIR}/yazi/theme.toml"            "${HOME}/.config/yazi/theme.tom
 
 mkdir -p "${HOME}/.claude"
 ln -sfn "${BASE_DIR}/ClaudeCode/settings.json"   "${HOME}/.claude/settings.json"
-ln -sfn "${BASE_DIR}/ClaudeCode/commands"   "${HOME}/.claude/commands"
+ln -sfn "${BASE_DIR}/ClaudeCode/commands"        "${HOME}/.claude/commands"
+ln -sfn "${BASE_DIR}/ClaudeCode/CLAUDE.md"       "${HOME}/.claude/CLAUDE.md"
 
 mkdir -p "${HOME}/Library/Application Support/iTerm2/DynamicProfiles"
 ln -sfn "${BASE_DIR}/iterm2/DynamicProfiles.json" "${HOME}/Library/Application Support/iTerm2/DynamicProfiles/DynamicProfiles.json"
