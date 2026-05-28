@@ -75,3 +75,6 @@ alias unset_proxy="source ${HOME}/.unset_proxy"
 # mitmproxy(mitmproxy.org) with docker
 alias mitmproxy="docker run --rm -it -p 58080:8080 mitmproxy/mitmproxy mitmproxy"
 alias mitmweb="docker run --rm -it -p 58080:8080 -p 127.0.0.1:58081:8081 mitmproxy/mitmproxy mitmweb --web-host 0.0.0.0"
+
+# Claude Code: always start with effort=max
+alias claude="claude --effort=max"

@@ -44,11 +44,15 @@
       "Read(id_ed25519)",
       "Write(.env*)",
       "Write(**/secrets/**)"
-    ]
+    ],
+    "defaultMode": "auto"
   },
   "enabledPlugins": {
     "swift-lsp@claude-plugins-official": true
   },
-  "effortLevel": "high",
-  "skipDangerousModePermissionPrompt": true
+  "effortLevel": "xhigh",
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "light",
+  "agentPushNotifEnabled": true,
+  "skipAutoPermissionPrompt": true
 }
