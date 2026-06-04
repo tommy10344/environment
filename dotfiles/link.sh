@@ -29,9 +29,8 @@ mkdir -p "${HOME}/Library/Application Support/iTerm2/DynamicProfiles"
 ln -sfn "${BASE_DIR}/iterm2/DynamicProfiles.json" "${HOME}/Library/Application Support/iTerm2/DynamicProfiles/DynamicProfiles.json"
 
 # Link All Services
-find "${BASE_DIR}/Services" \
-  | grep -e ".workflow$" \
+find "${BASE_DIR}/Services" -maxdepth 1 -name '*.workflow' \
   | xargs -I{} basename "{}" \
-  | xargs -I{} ln -s "${BASE_DIR}/Services/{}" "${HOME}/Library/Services/{}"
+  | xargs -I{} ln -sfn "${BASE_DIR}/Services/{}" "${HOME}/Library/Services/{}"
 
 ${BASE_DIR}/vim/link.sh
