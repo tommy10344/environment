@@ -67,6 +67,7 @@ brew install fastlane
 brew install cloc
 brew install walk
 brew install yazi ffmpeg sevenzip poppler fd zoxide resvg imagemagick
+brew install ccusage  # Claude Code のトークン使用量を集計
 
 # zsh (to default shell)
 if [ -f "/usr/local/bin/zsh" ]; then
