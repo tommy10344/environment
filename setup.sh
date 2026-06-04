@@ -170,6 +170,16 @@ gibo update
 # https://docs.flutter.dev/get-started/install/macos#downloading-straight-from-github-instead-of-using-an-archive
 ghq get -b stable https://github.com/flutter/flutter
 
+# ----- Claude Code -----
+# 本体（ネイティブインストーラ。~/.local/bin/claude に入る）
+curl -fsSL https://claude.ai/install.sh | bash
+# プラグイン
+# marketplace(claude-plugins-official) と有効化は settings.json の
+# extraKnownMarketplaces / enabledPlugins で宣言済み。
+# ただし enabledPlugins だけでは本体がダウンロードされないため install が必要。
+"${HOME}/.local/bin/claude" plugin install swift-lsp@claude-plugins-official --scope user
+"${HOME}/.local/bin/claude" plugin install security-guidance@claude-plugins-official --scope user
+
 # pipx
 brew install pipx
 
