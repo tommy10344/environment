@@ -51,11 +51,6 @@
     "swift-lsp@claude-plugins-official": true,
     "security-guidance@claude-plugins-official": true
   },
-  "effortLevel": "xhigh",
-  "skipDangerousModePermissionPrompt": true,
-  "theme": "light",
-  "agentPushNotifEnabled": true,
-  "skipAutoPermissionPrompt": true,
   "extraKnownMarketplaces": {
     "claude-plugins-official": {
       "source": {
@@ -63,5 +58,12 @@
         "repo": "anthropics/claude-plugins-official"
       }
     }
-  }
+  },
+  "effortLevel": "xhigh",
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "light",
+  "agentPushNotifEnabled": true,
+  "remoteControlAtStartup": true,
+  "skipAutoPermissionPrompt": true,
+  "skipWorkflowUsageWarning": true
 }
