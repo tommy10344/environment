@@ -62,7 +62,6 @@
   "effortLevel": "xhigh",
   "skipDangerousModePermissionPrompt": true,
   "theme": "light",
-  "editorMode": "vim",
   "agentPushNotifEnabled": true,
   "remoteControlAtStartup": true,
   "skipAutoPermissionPrompt": true,
