@@ -1,4 +1,6 @@
-"$schema" = "https://yazi-rs.github.io/schemas/theme.json"
+# NOTE: yazi 26.5.6 には `$schema` キーを kebab-case でないと拒否する不具合があるため
+# コメントアウトしている (https://github.com/sxyazi/yazi/issues/3938)。修正版が出たら復活させる
+# "$schema" = "https://yazi-rs.github.io/schemas/theme.json"
 
 [indicator]
 # デフォルトの reversed ではアイコンの色が背景と同化して見えづらくなるため、
