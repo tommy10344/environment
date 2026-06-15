@@ -45,4 +45,13 @@ function! FzfFiles() abort
     endif
 endfunction
 
+
+" ----- markdown-preview.nvim -----
+" Markdown をブラウザでライブプレビュー (node 必須)
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+let g:mkdp_filetypes = ['markdown']
+" :PreviewMarkdown でプレビューをトグル、:PreviewMarkdownStop で停止
+command! PreviewMarkdown     MarkdownPreviewToggle
+command! PreviewMarkdownStop MarkdownPreviewStop
+
 call plug#end()
