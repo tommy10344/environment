@@ -68,6 +68,11 @@ export PATH=$HOME/neovim/bin:$PATH
 # https://code.visualstudio.com/docs/setup/mac
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin":$PATH
 
+# Obsidian
+if [ -x "/Applications/Obsidian.app/Contents/MacOS/Obsidian" ]; then
+    export PATH=/Applications/Obsidian.app/Contents/MacOS:$PATH
+fi
+
 # fastlane
 export PATH=$HOME/.fastlane/bin:$PATH
 
