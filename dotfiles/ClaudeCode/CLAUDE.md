@@ -1,3 +1,5 @@
+Think in English, interact with the user in Japanese.
+
 # Git commit
 
 - コミットメッセージに `Co-Authored-By: Claude ...` の行を**絶対に含めないこと**。
