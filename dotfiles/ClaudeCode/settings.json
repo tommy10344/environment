@@ -47,9 +47,11 @@
     ],
     "defaultMode": "auto"
   },
+  "model": "claude-fable-5",
   "enabledPlugins": {
     "swift-lsp@claude-plugins-official": true,
-    "security-guidance@claude-plugins-official": true
+    "security-guidance@claude-plugins-official": true,
+    "ruby-lsp@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "claude-plugins-official": {
@@ -60,10 +62,11 @@
     }
   },
   "effortLevel": "xhigh",
+  "tui": "fullscreen",
   "skipDangerousModePermissionPrompt": true,
+  "skipWorkflowUsageWarning": true,
   "theme": "light",
-  "agentPushNotifEnabled": true,
   "remoteControlAtStartup": true,
-  "skipAutoPermissionPrompt": true,
-  "skipWorkflowUsageWarning": true
+  "agentPushNotifEnabled": true,
+  "skipAutoPermissionPrompt": true
 }
