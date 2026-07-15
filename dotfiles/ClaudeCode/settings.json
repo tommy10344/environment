@@ -48,7 +48,7 @@
     ],
     "defaultMode": "auto"
   },
-  "model": "claude-fable-5",
+  "model": "opus[1m]",
   "enabledPlugins": {
     "swift-lsp@claude-plugins-official": true,
     "security-guidance@claude-plugins-official": true,
@@ -69,5 +69,7 @@
   "theme": "light",
   "remoteControlAtStartup": true,
   "agentPushNotifEnabled": true,
-  "skipAutoPermissionPrompt": true
+  "skipAutoPermissionPrompt": true,
+  "advisorModel": "fable",
+  "cleanupPeriodDays": 14
 }
