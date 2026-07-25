@@ -69,6 +69,6 @@
   "remoteControlAtStartup": true,
   "agentPushNotifEnabled": true,
   "skipAutoPermissionPrompt": true,
-  "advisorModel": "fable",
+  "advisorModel": "opus",
   "cleanupPeriodDays": 14
 }
