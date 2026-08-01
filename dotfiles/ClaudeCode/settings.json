@@ -68,6 +68,10 @@
     "defaultMode": "auto"
   },
   "model": "opus[1m]",
+  "subagentStatusLine": {
+    "type": "command",
+    "command": "$HOME/.claude/subagent-statusline.sh"
+  },
   "enabledPlugins": {
     "swift-lsp@claude-plugins-official": true,
     "security-guidance@claude-plugins-official": true,
