@@ -69,6 +69,7 @@
     "defaultMode": "auto"
   },
   "model": "opus[1m]",
+  "outputStyle": "Concise",
   "subagentStatusLine": {
     "type": "command",
     "command": "$HOME/.claude/subagent-statusline.sh"
