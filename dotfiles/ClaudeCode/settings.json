@@ -69,11 +69,6 @@
     "defaultMode": "auto"
   },
   "model": "opus[1m]",
-  "outputStyle": "Concise",
-  "subagentStatusLine": {
-    "type": "command",
-    "command": "$HOME/.claude/subagent-statusline.sh"
-  },
   "enabledPlugins": {
     "swift-lsp@claude-plugins-official": true,
     "security-guidance@claude-plugins-official": true,
@@ -86,8 +81,15 @@
         "source": "github",
         "repo": "anthropics/claude-plugins-official"
       }
+    },
+    "claude-community": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-community"
+      }
     }
   },
+  "outputStyle": "Concise",
   "effortLevel": "xhigh",
   "advisorModel": "opus",
   "tui": "fullscreen",
