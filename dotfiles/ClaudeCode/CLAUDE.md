@@ -1,4 +1,4 @@
-Think in English, interact with the user in Japanese.
+Interact with the user in Japanese.
 
 # 説明・報告の書き方
 
