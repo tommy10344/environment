@@ -25,6 +25,10 @@ ln -sfn "${BASE_DIR}/ClaudeCode/settings.json"   "${HOME}/.claude/settings.json"
 ln -sfn "${BASE_DIR}/ClaudeCode/agents"          "${HOME}/.claude/agents"
 ln -sfn "${BASE_DIR}/ClaudeCode/CLAUDE.md"       "${HOME}/.claude/CLAUDE.md"
 
+mkdir -p "${HOME}/.codex"
+ln -sfn "${BASE_DIR}/Codex/config.toml"          "${HOME}/.codex/config.toml"
+ln -sfn "${BASE_DIR}/Codex/AGENTS.md"            "${HOME}/.codex/AGENTS.md"
+
 mkdir -p "${HOME}/Library/Application Support/iTerm2/DynamicProfiles"
 ln -sfn "${BASE_DIR}/iterm2/DynamicProfiles.json" "${HOME}/Library/Application Support/iTerm2/DynamicProfiles/DynamicProfiles.json"
 
