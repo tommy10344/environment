@@ -1,0 +1,8 @@
+{
+  "name": "my-theme",
+  "base": "light",
+  "overrides": {
+    "userMessageBackground": "rgb(100, 200, 100)",
+    "userMessageBackgroundHover": "rgb(100, 200, 100)"
+  }
+}
