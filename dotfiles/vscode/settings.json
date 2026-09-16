@@ -140,5 +140,17 @@
 
   "plantuml.render": "PlantUMLServer",
   "plantuml.server": "http://localhost:8080",
-  "redhat.telemetry.enabled": true
+  "redhat.telemetry.enabled": true,
+  "yaml.disableSchemaDetection": [
+    "**/docker-compose.yml",
+    "**/docker-compose.yaml",
+    "**/docker-compose.*.yml",
+    "**/docker-compose.*.yaml",
+    "**/compose.yml",
+    "**/compose.yaml",
+    "**/compose.*.yml",
+    "**/compose.*.yaml",
+    "azure-pipelines.yml",
+    "azure-pipelines.yaml"
+  ]
 }
