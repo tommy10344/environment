@@ -25,6 +25,7 @@ ln -sfn "${BASE_DIR}/ClaudeCode/settings.json"   "${HOME}/.claude/settings.json"
 ln -sfn "${BASE_DIR}/ClaudeCode/agents"          "${HOME}/.claude/agents"
 ln -sfn "${BASE_DIR}/ClaudeCode/CLAUDE.md"       "${HOME}/.claude/CLAUDE.md"
 ln -sfn "${BASE_DIR}/ClaudeCode/themes"          "${HOME}/.claude/themes"
+ln -sfn "${BASE_DIR}/ClaudeCode/hooks"           "${HOME}/.claude/hooks"
 
 mkdir -p "${HOME}/.codex"
 ln -sfn "${BASE_DIR}/Codex/config.toml"          "${HOME}/.codex/config.toml"
