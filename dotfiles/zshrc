@@ -31,9 +31,6 @@ setopt nolistbeep
 # 同じコマンドをヒストリに残さない
 setopt hist_ignore_all_dups
 
-# zsh-completionsの設定
-fpath=(/usr/local/share/zsh-completions $fpath)
-
 # git prompt(vcs_info)
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats '[%b]'

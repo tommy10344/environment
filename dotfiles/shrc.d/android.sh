@@ -6,8 +6,6 @@ SDKPATH_XAMARIN=${HOME}/Library/Developer/Xamarin/android-sdk-macosx
 
 if [ -d "${SDKPATH_ANDROID}" ]; then
   export ANDROID_HOME=${SDKPATH_ANDROID}
-  export PATH=${ANDROID_HOME}/tools:$PATH
-  export PATH=${ANDROID_HOME}/tools/bin:$PATH
   export PATH=${ANDROID_HOME}/platform-tools:$PATH
   export PATH=${ANDROID_HOME}/cmdline-tools/latest/bin:$PATH
 

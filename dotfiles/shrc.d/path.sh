@@ -39,12 +39,6 @@ if [ -d "${HOME}/lib" ]; then
     export LD_LIBRARY_PATH=${HOME}/lib:${LD_LIBRARY_PATH}
 fi
 
-# Ruby
-export PATH=/usr/local/opt/ruby/bin:$PATH
-
-# Python
-export PATH=/usr/local/opt/python@3/bin:$PATH
-
 # OpenSSL(HomeBrew)
 if [ -d "/usr/local/opt/openssl" ]; then
     export PATH=/usr/local/opt/openssl/bin:$PATH
@@ -61,9 +55,6 @@ if [ -d "/opt/homebrew/opt/curl" ]; then
     export PATH=/opt/homebrew/opt/curl/bin:$PATH
 fi
 
-# NeoVim
-export PATH=$HOME/neovim/bin:$PATH
-
 # Add Visual Studio Code (code)
 # https://code.visualstudio.com/docs/setup/mac
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin":$PATH
@@ -72,9 +63,6 @@ export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin":$P
 if [ -x "/Applications/Obsidian.app/Contents/MacOS/Obsidian" ]; then
     export PATH=/Applications/Obsidian.app/Contents/MacOS:$PATH
 fi
-
-# fastlane
-export PATH=$HOME/.fastlane/bin:$PATH
 
 # Flutter
 if [ -d "`ghq root`/github.com/flutter/flutter" ]; then

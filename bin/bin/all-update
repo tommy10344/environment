@@ -28,11 +28,7 @@ rbenv rehash
 go get -u github.com/nsf/gocode
 
 # Neovim
-# ${HOME}/bin/build-neovim.sh
 nvim +UpdatePlugin +UpdateRemotePlugins +qa
-
-# XVim
-# ${HOME}/bin/XVim/update-xvim.sh
 
 # Flutter
 flutter upgrade
