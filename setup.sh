@@ -65,7 +65,6 @@ brew install jsonlint
 brew install jq
 brew install fastlane
 brew install cloc
-brew install walk
 brew install yazi ffmpeg sevenzip poppler fd zoxide resvg
 # 全部入り版。どちらも keg-only。ffmpeg は通常版を PATH に出したまま併用し、
 # imagemagick は通常版を入れず -full を link して magick / convert を PATH に出す。
@@ -129,12 +128,8 @@ rbenv install 3.4.1
 rbenv global 3.4.1
 rbenv rehash
 gem install bundler
-gem install iStats
-gem install rcodetools  # for deoplete-rct
 gem install solargraph  # Ruby language server
-gem install mdl # markdownlint
 gem install rubocop
-gem install xcprofiler  # Xcode build time profiler
 gem install cocoapods
 rbenv rehash
 

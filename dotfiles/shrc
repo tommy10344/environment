@@ -7,12 +7,10 @@ source ${HOME}/shrc.d/other.sh
 source ${HOME}/shrc.d/fzf.zsh
 source ${HOME}/shrc.d/less.sh
 source ${HOME}/shrc.d/android.sh
-source ${HOME}/shrc.d/golang.sh
 source ${HOME}/shrc.d/nodejs.sh
 source ${HOME}/shrc.d/ruby.sh
 source ${HOME}/shrc.d/plantuml.sh
 source ${HOME}/shrc.d/google-cloud-sdk.sh
-source ${HOME}/shrc.d/walk.sh
 source ${HOME}/shrc.d/yazi.sh
 source ${HOME}/shrc.d/sdkman.sh
 source ${HOME}/shrc.d/safe-chain.sh
