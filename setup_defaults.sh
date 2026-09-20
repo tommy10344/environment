@@ -111,14 +111,21 @@ defaults write com.apple.dt.Xcode KeyBindingsMode -string "Vi"
 
 # ----- Date -----
 
-# 日付と時刻のフォーマット（24時間表示、秒表示あり、日付・曜日を表示）
-defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  H:mm:ss"
+# メニューバーの時計（24時間表示、秒表示あり、曜日を表示、日付はスペースに余裕があるとき）
+# macOS 11 以降は DateFormat の書式文字列ではなく項目ごとのキーで決まる。
+defaults write com.apple.menuextra.clock Show24Hour -bool true
+defaults write com.apple.menuextra.clock ShowSeconds -bool true
+defaults write com.apple.menuextra.clock ShowDayOfWeek -bool true
+# 0: スペースに余裕があるとき  1: 常に  2: 表示しない
+defaults write com.apple.menuextra.clock ShowDate -int 0
+
+killall ControlCenter
 
 # ----- Safari -----
 
-defaults write com.apple.Safari IncludeDevelopMenu -bool true
-defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
-defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
+# Safari の設定はサンドボックスのコンテナ内にあり、ターミナルにフルディスクアクセスが無いと
+# defaults では読み書きできない(書いても Safari が読まない別ファイルに入る)。
+# 「開発」メニューの表示と「ダウンロード後に安全なファイルを開く」のオフは、Safari の設定画面で行う。
 
 
 # ----- iTerm2 -----
