@@ -30,3 +30,24 @@ mkdir -p "${HOME}/Library/Application Support/iTerm2/DynamicProfiles"
 ln -sfn "${BASE_DIR}/iterm2/DynamicProfiles.json" "${HOME}/Library/Application Support/iTerm2/DynamicProfiles/DynamicProfiles.json"
 
 ${BASE_DIR}/vim/link.sh
+
+# ----- 残骸リンクの掃除 -----
+# ln -sfn は張るだけなので、リポジトリからファイルと上の ln 行を消しても HOME 側のリンクは残り続ける。
+# このリポジトリ内を指していて、指す先がもう存在しないリンクだけを外す(実ファイルや、リポジトリ外を指すリンクには触らない)。
+# リンク先のディレクトリを増やしたらここにも足す。ln 行を消すときも、他のマシンで外し終わるまでここには残す。
+REPO_DIR=$(cd "${BASE_DIR}/.." && pwd)
+prune_stale_links() {
+  # $1: 探すディレクトリ  $2: 探す深さ
+  [ -d "$1" ] || return 0
+  find "$1" -maxdepth "$2" -type l -lname "${REPO_DIR}/*" ! -exec test -e {} \; \
+    -exec sh -c 'echo "unlink: $1 -> $(readlink "$1")"; rm "$1"' _ {} \;
+}
+prune_stale_links "${HOME}"                                                     1
+prune_stale_links "${HOME}/.config"                                             2
+prune_stale_links "${HOME}/.claude"                                             1
+prune_stale_links "${HOME}/.codex"                                              1
+prune_stale_links "${HOME}/.vim"                                                1
+prune_stale_links "${HOME}/Library/Services"                                    1
+prune_stale_links "${HOME}/Library/Application Support/Code/User"               1
+prune_stale_links "${HOME}/Library/Application Support/iTerm2/DynamicProfiles"  1
+prune_stale_links "${HOME}/Library/Developer/Xcode/UserData"                    1
