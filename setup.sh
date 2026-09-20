@@ -54,9 +54,7 @@ brew install git
 brew install openssl
 brew install curl
 brew install wget
-brew install the_silver_searcher
 brew install ripgrep
-brew install ctags
 brew install tree
 brew install fzf
 brew install ghq
@@ -113,11 +111,6 @@ git config --global ghq.root ~/src
 git config --global alias.unstage "restore --staged"
 git config --global alias.name "config user.name"
 git config --global alias.email "config user.email"
-
-# Haskell
-# brew install haskell-stack
-# stack install ghc-mod hlint haskell-docs
-# stack install hoogle && hoogle data
 
 # Ruby
 brew install ruby
