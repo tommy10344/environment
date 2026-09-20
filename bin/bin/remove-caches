@@ -16,7 +16,9 @@ brew cleanup -s
 rm -rf $(brew --cache)
 
 # CocoaPods
-/usr/local/bin/pod cache clean --all
+if command -v pod > /dev/null 2>&1; then
+    pod cache clean --all
+fi
 
 # Carthage
 rm -rf "${HOME}/Library/Caches/org.carthage.CarthageKit"

@@ -6,8 +6,8 @@ alias lla="ll -a"
 alias grep="grep --color"
 alias cl="clear"
 alias cls="clear"
-alias mkdirtoday="mkdir $(date +'%Y-%m-%d')"
-alias cdtoday="cd $(date +'%Y-%m-%d')"
+alias mkdirtoday='mkdir $(date +%Y-%m-%d)'
+alias cdtoday='cd $(date +%Y-%m-%d)'
 
 # vim
 # if type ${HOME}/neovim/bin/nvim > /dev/null 2>&1; then
@@ -67,10 +67,6 @@ alias be="bundle exec"
 
 # Android
 alias adb-restart="adb kill-server && adb start-server"
-
-# Proxy Settings
-alias set_proxy="source ${HOME}/.set_proxy"
-alias unset_proxy="source ${HOME}/.unset_proxy"
 
 # mitmproxy(mitmproxy.org) with docker
 alias mitmproxy="docker run --rm -it -p 58080:8080 mitmproxy/mitmproxy mitmproxy"

@@ -13,7 +13,7 @@ brew cleanup
 # brew doctor
 
 # Node.js
-npm install -g npm
+# npm 本体は volta が node 同梱版を管理する(npm install -g npm で上げると、既定の node が対応しない版になり npm / npx が ERR_REQUIRE_ESM で動かなくなる)
 npm install -g yarn
 npm install -g http-server
 npm install -g npm-check-updates
