@@ -12,13 +12,6 @@ defaults write com.apple.dock autohide -bool true
 # defaults write com.apple.dock orientation -string "left"
 defaults write com.apple.dock orientation -string "bottom"
 
-# ----- AirDrop -----
-
-# 有線接続でもAirDropを可能にする
-
-defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
-
-
 # ----- Mission Control -----
 
 # ウインドウをアプリケーションごとにグループ化
