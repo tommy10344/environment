@@ -3,7 +3,6 @@
 
 winget install --id DEVCOM.JetBrainsMonoNerdFont
 winget install --id Starship.Starship
-if (!(Test-Path -Path $PROFILE)) {
-    New-Item -Path $PROFILE -ItemType File -Force
-}
-echo "Invoke-Expression (&starship init powershell)" >> $PROFILE
+
+# "starship init" lives in profile.ps1; make $PROFILE load it.
+& (Join-Path $PSScriptRoot 'link.ps1')
