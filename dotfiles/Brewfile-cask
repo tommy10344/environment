@@ -8,6 +8,7 @@ cask "font-ricty-diminished"
 cask "font-hackgen"
 cask "font-noto-sans-cjk"
 cask "font-symbols-only-nerd-font"
+cask "font-hack-nerd-font"
 
 # Utilities
 cask "macwinzipper"
@@ -23,7 +24,9 @@ cask "iterm2"
 cask "sourcetree"
 cask "wireshark"
 cask "visual-studio-code"
-cask "docker"
+cask "docker-desktop"
+cask "gcloud-cli"
+cask "xcodes-app"
 cask "mongodb-realm-studio"
 cask "sf-symbols"
 

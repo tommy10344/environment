@@ -66,7 +66,19 @@ brew install jq
 brew install fastlane
 brew install cloc
 brew install walk
-brew install yazi ffmpeg sevenzip poppler fd zoxide resvg imagemagick
+brew install yazi ffmpeg sevenzip poppler fd zoxide resvg
+# 全部入り版。どちらも keg-only。ffmpeg は通常版を PATH に出したまま併用し、
+# imagemagick は通常版を入れず -full を link して magick / convert を PATH に出す。
+brew install ffmpeg-full
+brew install imagemagick-full
+brew link --force imagemagick-full
+brew install gh
+brew install pandoc
+brew install nmap
+brew install apktool
+brew install gradle
+brew install hashicorp/tap/terraform
+brew install jamf-concepts/tap/jamf-cli
 brew install ccusage  # Claude Code のトークン使用量を集計
 
 # zsh (to default shell)
@@ -124,6 +136,7 @@ gem install mdl # markdownlint
 gem install rubocop
 gem install jazzy # Generates documentation for Swift or Objective-C
 gem install xcprofiler  # Xcode build time profiler
+gem install cocoapods
 rbenv rehash
 
 # Node.js
@@ -173,11 +186,14 @@ ghq get -b stable https://github.com/flutter/flutter
 # 本体（ネイティブインストーラ。~/.local/bin/claude に入る）
 curl -fsSL https://claude.ai/install.sh | bash
 # プラグイン
-# marketplace(claude-plugins-official) と有効化は settings.json の
+# marketplace(claude-plugins-official / claude-community) と有効化は settings.json の
 # extraKnownMarketplaces / enabledPlugins で宣言済み。
 # ただし enabledPlugins だけでは本体がダウンロードされないため install が必要。
 "${HOME}/.local/bin/claude" plugin install swift-lsp@claude-plugins-official --scope user
 "${HOME}/.local/bin/claude" plugin install security-guidance@claude-plugins-official --scope user
+"${HOME}/.local/bin/claude" plugin install ruby-lsp@claude-plugins-official --scope user
+"${HOME}/.local/bin/claude" plugin install figma@claude-plugins-official --scope user
+"${HOME}/.local/bin/claude" plugin install mattpocock-skills@claude-community --scope user
 
 # pipx
 brew install pipx
