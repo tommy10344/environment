@@ -24,9 +24,6 @@ volta setup
 gem update
 rbenv rehash
 
-# Golang
-go get -u github.com/nsf/gocode
-
 # Neovim
 nvim +UpdatePlugin +UpdateRemotePlugins +qa
 
