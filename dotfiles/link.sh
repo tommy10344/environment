@@ -29,9 +29,4 @@ ln -sfn "${BASE_DIR}/Codex/AGENTS.md"            "${HOME}/.codex/AGENTS.md"
 mkdir -p "${HOME}/Library/Application Support/iTerm2/DynamicProfiles"
 ln -sfn "${BASE_DIR}/iterm2/DynamicProfiles.json" "${HOME}/Library/Application Support/iTerm2/DynamicProfiles/DynamicProfiles.json"
 
-# Link All Services
-find "${BASE_DIR}/Services" -maxdepth 1 -name '*.workflow' \
-  | xargs -I{} basename "{}" \
-  | xargs -I{} ln -sfn "${BASE_DIR}/Services/{}" "${HOME}/Library/Services/{}"
-
 ${BASE_DIR}/vim/link.sh
