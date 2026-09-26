@@ -182,12 +182,6 @@ curl -fsSL https://claude.ai/install.sh | bash
 "${HOME}/.local/bin/claude" plugin install figma@claude-plugins-official --scope user
 "${HOME}/.local/bin/claude" plugin install mattpocock-skills@claude-community --scope user
 
-# pipx
-brew install pipx
-
-# it2 (Claude Code Agent Teams の Split Panes で必要)
-pipx install it2
-
 # ----- Homebrew Cask -----
 brew bundle install --file="${DOTFILES_DIR}/Brewfile-cask"
 

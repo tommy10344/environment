@@ -123,9 +123,6 @@ killall ControlCenter
 
 # ----- iTerm2 -----
 
-# Python APIを有効化（Claude Code Agent Teams の Split Panes で必要）
-defaults write com.googlecode.iterm2 EnableAPIServer -bool true
-
 # 既定プロファイルを dotfiles/iterm2/DynamicProfiles.json の Dynamic Profile にする。
 # Dynamic Profile を一時的に読み込めなくなると iTerm2 が既定を別のプロファイルへ移し、読み込めるようになっても戻さないため明示する。
 # iTerm2 は終了時に設定を書き戻すので、iTerm2 を終了した状態で実行すること。
