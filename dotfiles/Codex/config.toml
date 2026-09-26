@@ -1,3 +1,6 @@
+# 手書きの Codex 設定。link.sh がトップレベルの key = value 行だけを ~/.codex/config.toml に流し込む。
+# テーブル([...])は書けない。信頼したディレクトリやプラグインなど Codex が書き戻す状態は ~/.codex/config.toml 側に残る。
+# 推論の強さ(model_reasoning_effort)は指定せず、モデルごとの既定値に任せる。
 model = "gpt-6-astra"
 approval_policy = "on-request"
 approvals_reviewer = "auto_review"
