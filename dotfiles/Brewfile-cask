@@ -13,7 +13,6 @@ cask "font-hack-nerd-font"
 # Utilities
 cask "macwinzipper"
 cask "raycast"
-cask "deepl"
 cask "appcleaner"
 cask "the-unarchiver"
 
