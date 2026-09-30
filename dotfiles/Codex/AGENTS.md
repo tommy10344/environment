@@ -7,11 +7,14 @@ GPT 系どうしのレビューは見落としの傾向が重なりやすい。�
 ```sh
 git diff main...HEAD | claude -p --agent verifier --model opus \
   --tools "Read,Grep,Glob" --permission-mode dontAsk --no-session-persistence \
+  --strict-mcp-config --settings '{"disableAllHooks":true}' \
   "<レビュー指示>"
 ```
 
 - `--agent verifier`: `~/.claude/agents/verifier.md` の検証係として動かす（疑ってかかる、file:line と原文引用を添える、確かめられないものは「未確認」と書く）。
-- `--tools "Read,Grep,Glob"`: 使えるツールを読み取りだけに絞る。Bash も渡さないので、Claude はファイルの変更もコマンドの実行もできない。diff は標準入力で渡す（プロンプトの後ろに付く）。
+- `--tools "Read,Grep,Glob"`: 組み込みのツールを読み取りだけに絞る。Bash も渡さないので、Claude はファイルの変更もコマンドの実行もできない。diff は標準入力で渡す（プロンプトの後ろに付く）。
+- `--strict-mcp-config`: MCP のツールを外す。`--tools` は組み込みのツールしか絞らず、これがないと claude.ai のコネクタ（Outlook の送信など）が残る。
+- `--settings '{"disableAllHooks":true}'`: Claude Code のフックを止める。フックは `--tools` の制限の外でコマンドを実行し、`settings.json` の iTerm2 の `cc-status` はこのタブの表示を Claude の状態に書き換えうる。
 - `--permission-mode dontAsk`: 許可されていない操作は確認せずに拒否する。非対話なので、確認待ちで止まらないようにする。
 - `--model opus`: 既定。最重要の成果物の最終確認なら `fable` にする。
 - `--no-session-persistence`: レビューのたびに Claude のセッションを残さない。
