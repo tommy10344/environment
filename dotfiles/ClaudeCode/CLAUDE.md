@@ -36,10 +36,18 @@ subagent への移譲は義務ではなく道具。メインループは自分�
 
 ## subagent 運用（メインループのモデルによらず共通）
 
-カスタム agent 定義 = `~/.claude/agents/`: `verifier`（読み取り専用の検証係・既定 sonnet）／`impl`（実装係・sonnet）／`extract`（機械抽出係・haiku）。
+カスタム agent 定義 = `~/.claude/agents/`: `verifier`（読み取り専用の検証係・既定 sonnet）／`impl`（実装係・sonnet）／`extract`（機械抽出係・haiku）／`codex-reviewer`（Codex に読み取り専用でレビューさせ、指摘を裏どりする係・sonnet）。
 
 - **読むだけの作業に Edit/Write を持たせない**: 探索は Explore、検証・裏どり・レビューは `verifier`（難所は呼び出し時に `model: opus` へ昇格）。検証 agent に編集権があると勝手に編集して不整合を作る。編集を伴う実装のみ `impl` / general-purpose。
 - **移譲プロンプトは自己完結で書く**: subagent は会話履歴を一切見ていない。背景・対象パス・期待する出力形式（結論＋file:line＋原文引用）・やらないこと（編集禁止／スコープ外に踏み込まない）を毎回明記する。
 - **報告は鵜呑みにしない**: 結論に効く主張（file:line・仕様値など）は親が実物を開いて裏どりしてから採用する。advisor の主張も同じで、とくに移譲プロンプトや成果物へ書き写す前に実物で確かめる（書き写すと subagent がそれを事実として成果物に入れる）。
 - **Workflow の schema 強制×重い調査は 1 claim / 1 agent に分割する**（多 claim だと StructuredOutput 未呼出を量産する）。
 - **長い報告は分割で受け取る**: 完了通知の本文には上限があり、file:line＋引用つきの報告は途中で切れる。Write を持たない agent（`verifier`・Explore・`extract`）への依頼文には最初から「長くなるときは 1 通 6,000 字程度を目安に複数メッセージへ分けて送る（判定表→指摘→未確認の順）」と書く。Write を持つ agent（`impl`・general-purpose）には scratchpad の絶対パスを指定して全文を書かせ、通知は「書いた＋要点 3 行」だけにする。書かせたら親が `ls` で実在とサイズを確認する（「書いた」報告は確認の代わりにならない）。
+
+## 別系統のモデルでのレビュー（Codex）
+
+Claude 系どうし（`verifier`・advisor・`fable`）は、context を分けても見落としの傾向が重なりやすい。別系統の目として `codex-reviewer` で Codex（GPT 系）にもレビューさせる。
+
+- **使う場面**: まとまった実装や PR 前の最終確認、設計判断の難所で Claude 系のレビューが決着しないとき。数行の修正や設定変更には使わない（数分かかり、ノイズの裏どりが割に合わない）。
+- **`verifier` の代わりではなく追加**: Codex の指摘も他の報告と同じく、結論に効くものは親が実物で確かめてから採用する。
+- Codex が使えないとき（未インストール・未ログイン）は、その旨を報告して `verifier`（`model: opus`）で代える。
