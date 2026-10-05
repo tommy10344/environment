@@ -14,19 +14,24 @@ model: sonnet
 
    ```sh
    out=$(mktemp -t codex-review)
-   codex exec -s read-only -c approval_policy='"never"' --disable apps --disable plugins \
-     --ephemeral -o "$out" "<レビュー指示>"
+   codex exec -s read-only -c approval_policy=never --disable apps --disable plugins \
+     --ephemeral -o "$out" "<レビュー指示>" < /dev/null
    ```
 
+   - **Claude Code の sandbox を有効にしたプロジェクトでは、上の形のままでは動かない**（Codex は sandbox のプロキシの
+     認証を通せない）。そのプロジェクトの CLAUDE.md・docs にある Codex の実行規約に従う。規約が無く、起動直後に
+     `Operation not permitted` か接続の「error sending request」で止まったら、手順4のとおりそのまま返す（迂回しない）。
+   - `< /dev/null`: 標準入力を閉じる（閉じないと「Reading additional input from stdin...」で待つことがある）。
+
    - `-s read-only`: Codex にファイルを書き換えさせない。ただし縛るのはシェルと apply_patch で、MCP のツールは read-only でも一覧に残る。
-   - `-c approval_policy='"never"'`: 手元の `~/.codex/config.toml` は `on-request` と `auto_review` なので、そのままだと Codex がサンドボックス外での実行を求め、自動承認で通りうる。レビューでは外に出さない。
+   - `-c approval_policy=never`: 手元の `~/.codex/config.toml` は `on-request` と `auto_review` なので、そのままだと Codex がサンドボックス外での実行を求め、自動承認で通りうる。レビューでは外に出さない。
    - `--disable apps --disable plugins`: ChatGPT のコネクタ（GitHub のマージ、Outlook の送信など）とプラグインのツールを外す。`config.toml` の `mcp_servers`（xcode など）と node_repl は、これでも `-c 'mcp_servers={}'` でも残る。Codex が自分から使うことはないはずだが、読み取り専用が保証されるのはシェルと apply_patch までと心得ておく。
    - `--ephemeral`: レビューのたびに Codex のセッション履歴を残さない。
    - `-o`: Codex の最後のメッセージ（レビュー本文）だけをファイルに書かせる。標準出力の途中経過は読まなくてよい。
 
    レビュー指示は自己完結で書く（Codex は会話を見ていない）。対象の取り方（`git diff main...HEAD` など）、変更の意図、見てほしい観点（正しさのバグ・意図との食い違い・エッジケース。命名や書き方の好みは不要）、出力形式（指摘ごとに file:line・何が起きるか・根拠。日本語で）、ファイルを編集しないこと、を毎回書く。
 
-   意図を伝えなくてよい単純な diff なら、Codex 組み込みのレビューでもよい: `codex exec -s read-only -c approval_policy='"never"' --disable apps --disable plugins --ephemeral -o "$out" review --base main`（ほかに `--uncommitted` / `--commit <SHA>`）。こちらは独自のレビュー指示を併用できない。
+   意図を伝えなくてよい単純な diff なら、Codex 組み込みのレビューでもよい: `codex exec -s read-only -c approval_policy=never --disable apps --disable plugins --ephemeral -o "$out" review --base main < /dev/null`（ほかに `--uncommitted` / `--commit <SHA>`）。こちらは独自のレビュー指示を併用できない。
 3. `-o` のファイルを読み、指摘ごとに実物を開いて裏どりする。
 4. Codex が失敗したとき（未インストール・未ログイン・ネットワーク）は、推測でレビューを埋めず、実行したコマンドとエラー出力をそのまま返す。
 
