@@ -31,6 +31,10 @@ setopt nolistbeep
 # 同じコマンドをヒストリに残さない
 setopt hist_ignore_all_dups
 
+# Claude Code のシェルでだけ、マッチしないグロブを文字列のまま渡す（bash と同じ挙動）
+# `grep --include=*.cs` をクォートし忘れて no matches found で落ちるのを防ぐ
+[[ -n $CLAUDECODE ]] && setopt no_nomatch
+
 # git prompt(vcs_info)
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats '[%b]'
