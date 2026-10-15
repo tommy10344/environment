@@ -66,6 +66,10 @@ merge_toml_top_level "${BASE_DIR}/Codex/config.toml" "${HOME}/.codex/config.toml
 mkdir -p "${HOME}/Library/Application Support/iTerm2/DynamicProfiles"
 ln -sfn "${BASE_DIR}/iterm2/DynamicProfiles.json" "${HOME}/Library/Application Support/iTerm2/DynamicProfiles/DynamicProfiles.json"
 
+# Ghostty は ~/.config/ghostty も読むが、macOS ではこちらが後に読まれて優先されるので、こちらへ張る
+mkdir -p "${HOME}/Library/Application Support/com.mitchellh.ghostty"
+ln -sfn "${BASE_DIR}/ghostty/config.ghostty"     "${HOME}/Library/Application Support/com.mitchellh.ghostty/config.ghostty"
+
 ${BASE_DIR}/vim/link.sh
 
 # ----- 残骸リンクの掃除 -----
@@ -87,4 +91,5 @@ prune_stale_links "${HOME}/.vim"                                                
 prune_stale_links "${HOME}/Library/Services"                                    1
 prune_stale_links "${HOME}/Library/Application Support/Code/User"               1
 prune_stale_links "${HOME}/Library/Application Support/iTerm2/DynamicProfiles"  1
+prune_stale_links "${HOME}/Library/Application Support/com.mitchellh.ghostty"   1
 prune_stale_links "${HOME}/Library/Developer/Xcode/UserData"                    1

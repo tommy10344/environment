@@ -18,6 +18,7 @@ cask "the-unarchiver"
 
 # Terminal
 cask "iterm2"
+cask "ghostty"
 
 # Development Environments
 cask "sourcetree"
