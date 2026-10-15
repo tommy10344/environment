@@ -1,3 +1,9 @@
 theme = GitHub
 font-family = HackGen Console
 font-size = 14
+
+# ペイン分割のたびに全ペインを均等な大きさにそろえる(iTerm2 と同じ挙動)
+keybind = super+d=new_split:right
+keybind = chain=equalize_splits
+keybind = super+shift+d=new_split:down
+keybind = chain=equalize_splits
