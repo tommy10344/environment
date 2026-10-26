@@ -184,7 +184,8 @@
     "security-guidance@claude-plugins-official": true,
     "ruby-lsp@claude-plugins-official": true,
     "figma@claude-plugins-official": true,
-    "mattpocock-skills@claude-community": true
+    "mattpocock-skills@claude-community": true,
+    "miro@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "claude-plugins-official": {
