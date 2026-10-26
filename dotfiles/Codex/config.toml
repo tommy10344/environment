@@ -1,6 +1,6 @@
 # 手書きの Codex 設定。link.sh が Codex のシステム設定 /etc/codex/config.toml としてリンクする。
 # ~/.codex/config.toml(Codex と ChatGPT アプリが書き戻す実ファイル)より優先度が低く、同じキーがあちらにあればそちらが勝つ。
 # 推論の強さ(model_reasoning_effort)は指定せず、モデルごとの既定値に任せる。
-model = "gpt-5.6-sol"
+model = "gpt-6.1-sol"
 approval_policy = "on-request"
 approvals_reviewer = "auto_review"
