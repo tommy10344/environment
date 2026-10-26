@@ -24,7 +24,7 @@ model: sonnet
    - `< /dev/null`: 標準入力を閉じる（閉じないと「Reading additional input from stdin...」で待つことがある）。
 
    - `-s read-only`: Codex にファイルを書き換えさせない。ただし縛るのはシェルと apply_patch で、MCP のツールは read-only でも一覧に残る。
-   - `-c approval_policy=never`: 手元の `~/.codex/config.toml` は `on-request` と `auto_review` なので、そのままだと Codex がサンドボックス外での実行を求め、自動承認で通りうる。レビューでは外に出さない。
+   - `-c approval_policy=never`: 手元の Codex の設定は `on-request` と `auto_review` なので、そのままだと Codex がサンドボックス外での実行を求め、自動承認で通りうる。レビューでは外に出さない。
    - `--disable apps --disable plugins`: ChatGPT のコネクタ（GitHub のマージ、Outlook の送信など）とプラグインのツールを外す。`config.toml` の `mcp_servers`（xcode など）と node_repl は、これでも `-c 'mcp_servers={}'` でも残る。Codex が自分から使うことはないはずだが、読み取り専用が保証されるのはシェルと apply_patch までと心得ておく。
    - `--ephemeral`: レビューのたびに Codex のセッション履歴を残さない。
    - `-o`: Codex の最後のメッセージ（レビュー本文）だけをファイルに書かせる。標準出力の途中経過は読まなくてよい。

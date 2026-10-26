@@ -2,40 +2,6 @@
 
 BASE_DIR=$(cd $(dirname $0);pwd)
 
-# リポジトリ側の TOML にあるトップレベルの key = value 行を、実ファイル側の同名の行と置き換える(無ければ先頭に足す)。
-# 実ファイル側のそれ以外の行(テーブルを含む)はそのまま残す。内容が変わらないときは書き込まない。
-# $1: リポジトリ側  $2: 実ファイル
-merge_toml_top_level() {
-  src=$1; dst=$2
-  if grep -q '^[[:space:]]*\[' "$src"; then
-    echo "merge_toml_top_level: $src にテーブル([...])があるが、流し込めるのはトップレベルの key = value 行だけ" >&2
-    return 1
-  fi
-  if [ -L "$dst" ]; then
-    # 以前はリポジトリへのリンクだった。リンク先の内容(アプリが書いた状態を含む)を実ファイルへ移す
-    cp -L "$dst" "$dst.tmp" && rm "$dst" && mv "$dst.tmp" "$dst"
-  fi
-  [ -e "$dst" ] || : > "$dst"
-  cp -p "$dst" "$dst.tmp"
-  awk '
-    FNR == NR {
-      if ($0 ~ /^[A-Za-z0-9_.-]+[[:space:]]*=/) { key = $0; sub(/[[:space:]]*=.*/, "", key); keys[key] = 1; lines[++n] = $0 }
-      next
-    }
-    !printed { for (i = 1; i <= n; i++) print lines[i]; printed = 1 }
-    !intable && /^[[:space:]]*\[/ { intable = 1 }
-    !intable && /^[A-Za-z0-9_.-]+[[:space:]]*=/ { key = $0; sub(/[[:space:]]*=.*/, "", key); if (key in keys) next }
-    { print }
-    END { if (!printed) for (i = 1; i <= n; i++) print lines[i] }
-  ' "$src" "$dst" > "$dst.tmp"
-  if cmp -s "$dst.tmp" "$dst"; then
-    rm "$dst.tmp"
-  else
-    mv "$dst.tmp" "$dst"
-    echo "merge: $src -> $dst"
-  fi
-}
-
 ln -sfn "${BASE_DIR}/IntelliJ_IDEA/ideavimrc"    "${HOME}/.ideavimrc"
 ln -sfn "${BASE_DIR}/zshrc"                      "${HOME}/.zshrc"
 ln -sfn "${BASE_DIR}/zprofile"                   "${HOME}/.zprofile"
@@ -58,10 +24,14 @@ ln -sfn "${BASE_DIR}/ClaudeCode/hooks"           "${HOME}/.claude/hooks"
 
 mkdir -p "${HOME}/.codex"
 ln -sfn "${BASE_DIR}/Codex/AGENTS.md"            "${HOME}/.codex/AGENTS.md"
-# config.toml はリンクにしない。Codex と ChatGPT アプリが、信頼したディレクトリ・プラグインのキャッシュ位置・
-# MCP の配線・フックの信頼ハッシュなど、この Mac 固有の状態を同じファイルに書き戻すため。
-# 実ファイルを Codex に持たせ、リポジトリ側の手書きの設定だけを流し込む。Codex アプリを終了した状態で実行すること。
-merge_toml_top_level "${BASE_DIR}/Codex/config.toml" "${HOME}/.codex/config.toml"
+# config.toml は ~/.codex ではなく、Codex がシステム設定として読む /etc/codex/config.toml へ張る。
+# ~/.codex/config.toml には Codex と ChatGPT アプリが、信頼したディレクトリ・プラグインのキャッシュ位置・MCP の配線など
+# この Mac 固有の状態を書き戻すので、実ファイルのままアプリに任せる。システム設定はそれより優先度が低く、
+# 同じキーが ~/.codex/config.toml にあればそちらが勝つ(アプリでモデルを選ぶと model が書き戻される)。
+# /etc は root の持ち物なので、リンクが張られていないときだけ sudo で張る。
+if [ "$(readlink /etc/codex/config.toml)" != "${BASE_DIR}/Codex/config.toml" ]; then
+  sudo mkdir -p /etc/codex && sudo ln -sfn "${BASE_DIR}/Codex/config.toml" /etc/codex/config.toml
+fi
 
 mkdir -p "${HOME}/Library/Application Support/iTerm2/DynamicProfiles"
 ln -sfn "${BASE_DIR}/iterm2/DynamicProfiles.json" "${HOME}/Library/Application Support/iTerm2/DynamicProfiles/DynamicProfiles.json"
