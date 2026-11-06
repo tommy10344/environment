@@ -43,6 +43,7 @@
 - 例外は Codex の設定。Codex と ChatGPT アプリが、信頼したディレクトリやプラグインのキャッシュ位置などこの Mac 固有の状態を `~/.codex/config.toml` に書き戻すため、そこはリンクにせず実ファイルのままアプリに任せる。`dotfiles/Codex/config.toml` は、Codex がシステム設定として読む `/etc/codex/config.toml` へ張る。`/etc` は root の持ち物なので、リンクが無いときだけ `link.sh` が `sudo` でパスワードを聞く。
   - システム設定は `~/.codex/config.toml` より優先度が低く、同じキーがあちらにあればそちらが勝つ。アプリでモデルを選ぶと `model` が書き戻されるので、リポジトリの値に戻すときは `~/.codex/config.toml` からその行を消す。以前の `link.sh` が流し込んだ `model` などの行が残っているマシンでも同じ。
   - このリンクは末尾の残骸リンクの掃除の対象外なので、外すときは手で消す。
+- Herdr は自分で書いた `keys.json` と mod(`dotfiles/herdr/mods/` 以下)だけを `~/.config/herdr-app/` へ張る。`settings.json` はズームを変えるたびに Herdr が書き戻して差分が出続けるので、実ファイルのまま任せる。mod を足すときはフォルダを置いて流すだけでよい(`link.sh` がフォルダごとに張る)。Herdr はリンク先の書き換えに気づかないので、`keys.json` を編集したら(pull で変わったときも)流し直す。
 
 設定を追加・削除するとき:
 

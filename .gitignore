@@ -51,3 +51,6 @@ $RECYCLE.BIN/
 *.lnk
 
 
+### Herdr が mod のフォルダに書く型定義と設定(エディタ補完用。管理しない)
+dotfiles/herdr/mods/*/jsconfig.json
+dotfiles/herdr/mods/*/gpui-kit.d.ts

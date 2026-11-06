@@ -40,6 +40,19 @@ ln -sfn "${BASE_DIR}/iterm2/DynamicProfiles.json" "${HOME}/Library/Application S
 mkdir -p "${HOME}/Library/Application Support/com.mitchellh.ghostty"
 ln -sfn "${BASE_DIR}/ghostty/config.ghostty"     "${HOME}/Library/Application Support/com.mitchellh.ghostty/config.ghostty"
 
+# Herdr は自分で書いたキーと mod だけを張る。settings.json は、ズームを変えるたびに Herdr が
+# 書き戻し(キーの順序や 1 → 1.0 の書き方まで変わる)、差分が出続けるので実ファイルのまま任せる。
+# mod のフォルダに Herdr が書く jsconfig.json と gpui-kit.d.ts は .gitignore で外している。
+# Herdr はリンク先の書き換えに気づかないので、keys.json を編集したらこのスクリプトを流し直す
+# (張り直しで読み直す。`touch -h ~/.config/herdr-app/keys.json` でもよい)。mod は開くたびに読まれる。
+# 復旧キー(ctrl-alt-shift-escape)は keys.json を脇へ退けて既定に戻すので、押したら流し直す。
+mkdir -p "${HOME}/.config/herdr-app/mods"
+ln -sfn "${BASE_DIR}/herdr/keys.json"            "${HOME}/.config/herdr-app/keys.json"
+for mod in "${BASE_DIR}"/herdr/mods/*/; do
+  mod=${mod%/}
+  ln -sfn "${mod}" "${HOME}/.config/herdr-app/mods/${mod##*/}"
+done
+
 ${BASE_DIR}/vim/link.sh
 
 # ----- 残骸リンクの掃除 -----
@@ -55,6 +68,7 @@ prune_stale_links() {
 }
 prune_stale_links "${HOME}"                                                     1
 prune_stale_links "${HOME}/.config"                                             2
+prune_stale_links "${HOME}/.config/herdr-app/mods"                              1
 prune_stale_links "${HOME}/.claude"                                             1
 prune_stale_links "${HOME}/.codex"                                              1
 prune_stale_links "${HOME}/.vim"                                                1
