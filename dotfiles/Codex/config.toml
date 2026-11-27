@@ -3,3 +3,7 @@
 # モデルと推論の強さ(model_reasoning_effort)は指定せず、Codex とモデルごとの既定値に任せる。
 approval_policy = "on-request"
 approvals_reviewer = "auto_review"
+
+[tui]
+# 既定の表示項目に、5 時間枠と週間枠の残り割合を追加する。
+status_line = ["model-with-reasoning", "current-dir", "thread-name", "five-hour-limit", "weekly-limit"]
